@@ -1,0 +1,18 @@
+---
+title: Optimization in Group Coordination
+research_code: OPT  
+layout: research
+image: /img/research/NDSOptimization/x_n20_T70.jpg
+hero_height: is-small
+hero_image: /img/connect_globe.jpeg  
+price: 7 # for sorting 
+
+---
+
+Distributed optimization has become a vital aspect of research for multi-agent systems. On the one hand, it is important to study and develop algorithms that solve global optimization problem at a local and distributed level. This has immediate applications in problems related to the development of “smart-grid” power systems, as well as problems related to team decision-making. On the other hand, tools from optimization can lead to deep insights into the behavior of highly complex and non-linear dynamical system. One research thread is using tools from saddle-point optimization to study and explain the manifestation of synchronization or clustering in multi-agent systems.
+
+cluster.png
+
+
+<p class="title is-4">Related Publications:</p>
+{% bibliography --query @*[researchtopic=Placeholder] --group_by none --order descending %}
