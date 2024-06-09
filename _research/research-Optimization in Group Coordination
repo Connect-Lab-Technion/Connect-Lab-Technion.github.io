@@ -15,4 +15,4 @@ cluster.png
 
 
 <p class="title is-4">Related Publications:</p>
-{% bibliography --query @*[researchtopic=Placeholder] --group_by none --order descending %}
+{% bibliography --query @*[researchtopic~=Testing] --group_by none --order descending %}

@@ -19,4 +19,4 @@ Modeling and design of complex networked systems requires both a physical unders
 
 
 <p class="title is-4">Related Publications:</p>
-{% bibliography --query @*[researchtopic=Placeholder] --group_by none --order descending %}
+{% bibliography --query @*[researchtopic~=Placeholder] --group_by none --order descending %}
