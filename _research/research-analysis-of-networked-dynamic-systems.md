@@ -26,4 +26,4 @@ Identifying the structure of canonical models for networked dynamic systems allo
 Additional related works are provided below.
 
 <p class="title is-4">Related Publications:</p>
-{% bibliography --query @*[researchtopic=Placeholder] --group_by none --order descending %}
+{% bibliography --query @*[researchtopic~=Placeholder] --group_by none --order descending %}

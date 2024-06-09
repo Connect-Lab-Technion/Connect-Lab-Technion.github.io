@@ -17,4 +17,4 @@ This project seeks to contribute fundamental theoretical results and validation 
 
 
 <p class="title is-4">Related Publications:</p>
-{% bibliography --query @*[researchtopic=Placeholder] --group_by none --order descending %}
+{% bibliography --query @*[researchtopic~=Placeholder] --group_by none --order descending %}
