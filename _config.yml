@@ -130,9 +130,9 @@ scholar:
  style: _bibliography/ieee.csl 
  source: _bibliography
  bibliography_template: bib #bib_thumbnail
- bibliography: VadimIndelman.bib
+ bibliography: DZ_Complete.bib
  group_by: type
- type_order: [article, InProceedings]
+ type_order: [article , inproceedings]
  sort_by: year
  order: descending
 
