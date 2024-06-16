@@ -1,42 +1,43 @@
 - title: Slide 3
   description: Slide 3 description  
-  image: /img/ANPL-team.jpg
+  image: /img/forced_sym_formation_control1.png
 
 - title: Slide 3
   description: Slide 3 description    
-  image: /img/homepage_images/ambiguity.png
+  image: /img/homepage_images/ETKF1.png
+  
+- title: Slide 3
+  description: Slide 3 description    
+  image: /img/homepage_images/moving_target.png
 
 - title: Slide 3
   description: Slide 3 description    
-  image: /img/homepage_images/LevYehudi24aaai-concept.png
+  image: /img/homepage_images/secure_nds1.png
 
 - title: Slide 3
   description: Slide 3 description    
-  image: /img/homepage_images/belief_tree_inference_path.png
+  image: /img/homepage_images/secure_nds2.png
+  
+- title: Slide 3
+  description: Slide 3 description    
+  image: /img/homepage_images/PSGBlockDiagram.png
+  
 
 - title: Slide 3
   description: Slide 3 description    
-  image: /img/homepage_images/track_3d_b-eps-converted-to-1024x731.jpg
+  image: /img/homepage_images/NDS_venn.png
+  
+- title: Slide 3
+  description: Slide 3 description    
+  image: /img/homepage_images/skynet.png
+  
+- title: Slide 3
+  description: Slide 3 description    
+  image: /img/homepage_images/NDS.png
 
 - title: Slide 3
   description: Slide 3 description    
-  image: /img/homepage_images/Ex_Layout.png
-
-- title: Slide 3
-  description: Slide 3 description    
-  image: /img/homepage_images/ThreeViewGeometry.jpg
-
-- title: Slide 3
-  description: Slide 3 description    
-  image: /img/homepage_images/belief_tree_inference_path_screenshot.png
-
-- title: Slide 3
-  description: Slide 3 description    
-  image: /img/homepage_images/marginals.png
-
-- title: Slide 3
-  description: Slide 3 description    
-  image: /img/homepage_images/inplace_simp.png
+  image: /img/homepage_images/NDS_bd3.png
 
 - title: Slide 3
   description: Slide 3 description
@@ -44,5 +45,5 @@
 
 - title: Slide 3
   description: Slide 3 description    
-  image: /img/homepage_images/Robomaster-quad-ANPL.jpeg
+  image: /img/homepage_images/turtlebots1.png
 

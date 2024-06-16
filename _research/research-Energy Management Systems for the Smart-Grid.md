@@ -17,4 +17,4 @@ This vision ultimately describes a multi-scale model of the smart-grid. This pro
 Additional related works are provided below.
 
 <p class="title is-4">Related Publications:</p>
-{% bibliography --query @*[researchtopic~=Placeholder] --group_by none --order descending %}
+{% bibliography --query @*[researchtopic~=energy] --group_by none --order descending %}
