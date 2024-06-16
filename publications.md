@@ -4,7 +4,7 @@ title: Publications
 show_sidebar: false
 hide_footer: false
 hero_height: is-small
-hero_image: /img/ANPL_quantum_field.jpg 
+hero_image: /img/Connect_head_bkg.jpg 
 ---
 
 <div id="hidden-pdf-links" style="display:none;">
@@ -51,9 +51,9 @@ Sort publications <span style="color:red">
 <b>chronologically</b>
 </span> or by [<span style="color:red">
 type
-</span>](https://anpl-technion.github.io/publications_by_type/). You are also welcome to browse slides from [<span style="color:red">
+</span>](https://connect-lab.github.io/publications_by_type/). You are also welcome to browse slides from [<span style="color:red">
 talks
-</span>](https://anpl-technion.github.io/talks).
+</span>](https://connect-lab.github.io/talks).
 
 [[2024]](#2024) [[2023]](#2023) [[2022]](#2022) [[2021]](#2021) [[2020]](#2020) [[2019]](#2019) [[2018]](#2018) [[2017]](#2017) [[2016]](#2016) [[2015]](#2015) [[2014]](#2014) [[2013]](#2013) [[2012]](#2012) [[2011]](#2011) [[2010]](#2010) [[2009]](#2009) [[2008]](#2008) [[2007]](#2007)
 
