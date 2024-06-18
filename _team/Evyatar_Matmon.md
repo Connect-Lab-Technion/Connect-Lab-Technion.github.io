@@ -1,23 +1,22 @@
 ---
-title: Ohad Levy-Or
+title: Evyatar Matmon
 subtitle: M.Sc. Student
-field : Robotics
-faculty : TASP
+field : Network Identification
+faculty : Technion Autonomous Systems Program (TASP)
 category: master_student
 layout: team_member_personal_page
-image: /img/team/OhadLevyOr.jpeg
+image: 
 link-new-tab: true
 bio:
     - M.Sc. TASP, Technion, since 2022
-    - B.Sc. Super Cum Laude, Mechanical Engineering, Technion, 2021
 
 twitter: 
 youtube: 
 github: 
-email: ohadlor@gmail.com
+email: 
 bitbucket: 
 facebook: 
-linkedin: https://www.linkedin.com/in/ohad-levy-or/
+linkedin: 
 ---
 
 <!-- ## ANPL Publications:
