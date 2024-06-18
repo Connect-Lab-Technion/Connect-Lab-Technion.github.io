@@ -23,6 +23,6 @@ linkedin:
 website: https://www.shiyuzhao.net/
 ---
 
-## ANPL Publications:
+## Connect Lab Publications:
 
 {% bibliography -q @*[author ~= \bZhao\b] --group_by none --order descending %}

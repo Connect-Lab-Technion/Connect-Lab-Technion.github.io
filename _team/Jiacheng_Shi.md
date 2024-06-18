@@ -8,7 +8,7 @@ layout: team_member_personal_page
 image: 
 link-new-tab: true
 bio:
-    - M.Sc. TASP, Technion, since 2022
+    - M.Sc. TASP, Technion, since 2021
     - B.Sc. Mechanical Engineering, Technion, 2022
 
 twitter: 
