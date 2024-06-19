@@ -5,16 +5,16 @@ theme: bulma-clean-theme
 remote_theme: chrisrhymes/bulma-clean-theme
 
 
-title: ANPL
-tagline: Autonomous Navigation and Perception Lab Website
-email: anpl.aero@gmail.com
+title: Connect-Lab
+tagline: Cooperative Networks and Controls Lab  Website
+email: 
 description: >
   Researching, developing, and testing autonomous robots at Technion – Israel Institute of Technology
 baseurl: ""
-url: "https://anpl-technion.github.io"
+url: "https://connect-lab-technion.github.io"
 
-twitter_username: ANPL_Technion
-github_username:  anpl-technion
+twitter_username: 
+github_username:  connect-lab-technion
 
 
 permalink: pretty
@@ -33,7 +33,7 @@ disqus:
  # Leave shortname blank to disable comments site-wide.
  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
  # shortname: my_disqus_shortname
- shortname: anpl
+ shortname: connect-lab-technion
 
 
 
@@ -137,7 +137,7 @@ scholar:
  order: descending
 
 # Google Analytics
-google_analytics: G-XH2GVJYE1D
+google_analytics: 
 
 categories_order:
   - staff
