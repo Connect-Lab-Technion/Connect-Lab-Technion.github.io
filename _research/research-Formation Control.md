@@ -15,13 +15,17 @@ pattern. This can include alignment of orientations and velocities for flocking 
 spacecraft constellations for sensing or vehicle platoons for
 autonomous driving. The *formation control* problem seeks to design distributed control strategies for each agent that ensure the entire ensemble can arrange into the desired formation.
 
-There are many challenges associated with the formation control problem.  They include:
-* sensing capabilities of each agent (bearing, range, relative positions, etc.);
-* availability or absence of a common reference frame;
-* dynamics of each agent.
+A fundamental challenge for solving the formation control problem relates to the sensing and control architecture for the multi-agent system.  Our approach is to leverage results from *rigidity theory*. Rigidity theory studies the solution of a set of geometric constraints on a discrete configuration of points in an Euclidean space. These constraints can include distance or
+bearing constraints between pairs of points. Of interest in
+rigidity theory is to determine whether the set of polynomial
+equations representing these constraints (i) has a solution
+(independence); (ii) has locally isolated solutions (rigidity); or (iii) has exactly one solution in the given space up to isometric motions (global rigidity).  
 
-
-*Formation rigidity* is an architectural requirement of multi-agent systems when a common inertial reference frame is unavailable.  Rigidity is a property of the sensing and communication graph of the system that allows team objectives such as formation control and localization to be achieved using range-only measurements.  This project is exploring various aspects of formation rigidity, including dynamic controllers to ensure the rigidity property is maintained in a multi-robot formation even in the presence of various constraints such as collision and obstacle avoidance or sensing and communication ranges, and notions of optimality for rigid formations.
+Our research explores various aspects of rigidity theory and formation control.  Topics include:
+* Formation control using bearing sensing and bearing rigidity theory.
+* Alternative architectures exploiting symmetry found in formations.
+* Dynamic controllers to ensure the rigidity property is maintained in a multi-robot formation with uncertain environments.
+* Formations consisting of heterogeneous agent types with different sensing capabilities.
 
 <div style="display: flex; justify-content: center;">
   <img src="/img/research/FormationControl/fig_sim_Global_2D_polygon_final.png" alt="Bearing-only Formation Control" style="max-width: 30%; margin: 0 10px;">
