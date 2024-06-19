@@ -1,5 +1,5 @@
 ---
-title: Ariel Dobrovenski
+title: Nofar Koskas
 subtitle: Undergraduate Student
 field : Robotic Testbed Development
 faculty : Aerospace
