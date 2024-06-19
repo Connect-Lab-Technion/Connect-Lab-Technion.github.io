@@ -5,7 +5,7 @@ field : Multi-agent Control
 faculty : Aerospace Engineering
 category: phd_students
 layout: team_member_personal_page
-image: /img/team/Fengyu.jpg
+image: /img/team/Fengyu.png
 link-new-tab: true
 bio:
     - Ph.D. student, Aerospace Engineering, Technion, since 2024
