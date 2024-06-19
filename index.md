@@ -15,15 +15,15 @@ The Cooperative Networks and Controls lab focuses on the control and coordinatio
 
 
 
- Please visit our [<span style="color:red">
+<!-- Please visit our [<span style="color:red">
 <b>research</b>
 </span>](https://anpl-technion.github.io/research/) and [<span style="color:red">
 <b>publications</b>
-</span>](https://anpl-technion.github.io/publications/) pages to see our ongoing research activities.
+</span>](https://anpl-technion.github.io/publications/) pages to see our ongoing research activities. -->
 
 <span style="color:red">
 <b>
-We are always looking for highly-motivated individuals to join our group, see details [here.](https://anpl-technion.github.io/Positions/)
+We are always looking for highly-motivated individuals to join our group, see details [here.]()
 </b>
 </span>
 
@@ -61,5 +61,6 @@ We are always looking for highly-motivated individuals to join our group, see de
     <img src="/img/funding/TASP-logo.png" alt="TASP">
   </div> -->
   <!-- Add more grid items for more images -->
-</div>
--->
+  <!-- </div>  -->
+
+

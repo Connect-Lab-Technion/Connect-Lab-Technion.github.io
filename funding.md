@@ -12,9 +12,11 @@ hero_image:
 
 - Israel Science Foundation (ISF)
 - United States – Israel Binational Science Foundation (BSF), a joint program with National Science Foundation (NSF)
+- German-Israeli Foundation for Scientific Research & Development
 - Technion Autonomous Systems Program (TASP)
-- Ministry of Science, Technology & Space (MOST)
-- Intel ltd.
-- META ltd.
+- Grand Technion Energy Program (GTEP)
+- Technion Bernard M. Gordon Center for Systems Engineering
+- Technion Center for Security Science and Technology (CSST)
+- Israel Ministry of Energy
 - Israel Ministry of Defense (MAFAT)
 

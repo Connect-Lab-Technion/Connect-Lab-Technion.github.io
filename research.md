@@ -9,8 +9,9 @@ sort: price
 
 <!-- # research -->
 
-<p class="title is-3">Research overview (from 2024, 2022 and 2019)</p>
+<!-- <p class="title is-3">Research overview (from 2024, 2022 and 2019)</p> -->
 
+Here you can find an overview of our main research activities.
 
 
 <hr>
