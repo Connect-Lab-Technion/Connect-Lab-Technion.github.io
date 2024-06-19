@@ -5,7 +5,7 @@ graduation: 2016
 faculty : Aerospace Engineering
 category: alumni
 layout: team_member_personal_page
-image: 
+image: /img/team/Rozenheck.jpeg
 link-new-tab: true
 next-position: 
 bio:

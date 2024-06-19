@@ -4,14 +4,14 @@ show_sidebar: false
 ---
 
 
-Principal Investigator
+<! -- Principal Investigator
 Research Team
  -Staff
  -Graduate Students (phd , master)
  -Undergraduate Students
 Robots
 Alumni 
-
+-->
 
 <div class="columns is-multiline">
   <div class="column is-11">
@@ -29,7 +29,7 @@ Alumni
         <div class="PI_card" style="display: block; width: max-content; margin-top: 1cm;">
           <a href="{{ product.url | prepend: site.baseurl }}">
           {% if product.image %}
-            <div class="card-image" style="width: 350px; height: 350px; object-fit: cover;">
+            <div class="card-image" style="width: 200px; height: 200px; object-fit: cover;">
               <img src="{{ product.image }}" alt="{{ product.title }}">
             </div>
           {% endif %}
@@ -146,6 +146,26 @@ Alumni
 <hr>
 <h1 style="font-size:35px;">Alumni</h1>
 <br>
+<hr>
+<h1 style="font-size:20px;">Postdocs</h1>
+<br>
+<div class="columns is-multiline">
+  {% assign sorted_alumni = site.team | where: "category", "alumni_researcher_and_postdoctoral" | sort: "graduation" | reverse %}
+    {% for alumni in sorted_alumni %}
+  
+      <div class="column is-one-fifth-desktop is-6-tablet">
+          <div class="card">
+            <div class="card-content">
+              <a href="{{ alumni.url | prepend: site.baseurl }}">
+                <p class="title is-5">{{ alumni.title }}</p>
+                <hr>
+                <p class="subtitle is-6">{{ alumni.subtitle }}</p>
+              </a>
+            </div>
+          </div>
+      </div>
+    {% endfor %}
+  </div>
 <h1 style="font-size:20px;">Ph.D.</h1>
 <br>
 <div class="columns is-multiline">
@@ -191,48 +211,8 @@ Alumni
   {% endfor %}
 </div>
 
-<hr>
-<h1 style="font-size:20px;">Postdocs & Research Scientists </h1>
-<br>
-<div class="columns is-multiline">
-  {% assign sorted_alumni = site.team | where: "category", "alumni_researcher_and_postdoctoral" | sort: "graduation" | reverse %}
-    {% for alumni in sorted_alumni %}
-  
-      <div class="column is-one-fifth-desktop is-6-tablet">
-          <div class="card">
-            <div class="card-content">
-              <a href="{{ alumni.url | prepend: site.baseurl }}">
-                <p class="title is-5">{{ alumni.title }}</p>
-                <hr>
-                <p class="subtitle is-6">{{ alumni.subtitle }}</p>
-              </a>
-            </div>
-          </div>
-      </div>
-    {% endfor %}
-  </div>
 
-    <hr>
-    <h1 style="font-size:20px;">Staff</h1>
-    <br>
-    <div class="columns is-multiline">
-      {% assign sorted_alumni = site.team | where: "category", "alumni_lab_engineer" | sort: "graduation" | reverse %}
-        {% for alumni in sorted_alumni %}
-      
-          <div class="column is-one-fifth-desktop is-6-tablet">
-              <div class="card">
-                <div class="card-content">
-                  <a href="{{ alumni.url | prepend: site.baseurl }}">
-                    <p class="title is-5">{{ alumni.title }}</p>
-                    <hr>
-                    <p class="subtitle is-6">{{ alumni.subtitle }}</p>
-                  </a>
-                </div>
-              </div>
-          </div>
-        {% endfor %}
-      </div>
-
+   
 <hr>
 <h1 style="font-size:20px;">Undergrad Students </h1>
 <br>
