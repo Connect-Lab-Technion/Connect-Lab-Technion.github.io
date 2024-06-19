@@ -1,11 +1,11 @@
 ---
-# title: Current Members
-# subtitle: We're lucky to have a wonderful group of people
+# title: Our Team
+# subtitle: The Connect Lab Engine
 layout: team_members
 show_sidebar: false
 hide_footer: false
 sort: subtitle
-hero_image: /img/social/2021-04-social-event.jpeg
+hero_image: 
 hero_height: is-large
 ---
  
