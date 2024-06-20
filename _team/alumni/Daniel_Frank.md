@@ -1,11 +1,11 @@
 ---
 title: Daniel Frank
-subtitle: Visiting M.Sc. Student
+subtitle: M.Sc.
 graduation: 2018
-faculty : Aerospace
+faculty : IST, University of Stuttgart
 category: alumni
 layout: team_member_personal_page
-image: 
+image: /img/team/Daniel_Frank.jpg
 link-new-tab: true
 next-position: 
 bio:
@@ -23,5 +23,5 @@ website:
 
 ## Connect Lab Publications:
 
-{% bibliography -q @*[author ~= \bFrank\b] --group_by none --order descending %}
+{% bibliography --query @*[researchtopic~=DFRANK] --group_by none --order descending %}
 

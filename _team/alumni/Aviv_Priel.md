@@ -2,7 +2,7 @@
 title: Aviv Priel
 subtitle: M.Sc. 
 graduation: 2022
-faculty : AE
+faculty : Aerospace Engineering
 category: alumni
 layout: team_member_personal_page
 image: 

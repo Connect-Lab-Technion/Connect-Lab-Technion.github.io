@@ -1,11 +1,11 @@
 ---
 title: Hao Chen
-subtitle: Visiting Ph.D. Student
+subtitle: Ph.D.
 graduation: 2017-2018
 faculty : Aerospace
 category: alumni
 layout: team_member_personal_page
-image: 
+image: /img/team/chen.jpg
 link-new-tab: true
 next-position: 
 bio:

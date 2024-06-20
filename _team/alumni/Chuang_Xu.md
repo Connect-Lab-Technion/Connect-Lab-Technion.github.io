@@ -1,6 +1,6 @@
 ---
 title: Chuang Xu
-subtitle: Visiting Ph.D. Student
+subtitle: Ph.D.
 graduation: 2021-2022
 faculty : Aerospace
 category: alumni

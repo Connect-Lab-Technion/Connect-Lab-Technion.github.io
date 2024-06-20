@@ -2,7 +2,7 @@
 title: Control of Multi-Agent Systems Systems
 research_code: NDS
 layout: research
-image: /img/research/NDSAnalysis/dynamic_network.jpg
+image: /img/research/NDS/dynamic_network.jpg
 hero_height: is-small
 hero_image: /img/connect_globe.jpeg  
 price: 7 # for sorting 
@@ -13,16 +13,49 @@ Multi-agent systems are large-scale systems comprised of a group of coupled dyna
 1. How does the underlying connection topology of networked dynamic systems affect its systems-theoretic properties?
 2. Can the connection topology be designed in conjunction with other synthesis techniques and tools used for dynamic systems?
 
-# Canonical Modeling of Networked Dynamic Systems
+We explore many different research questions in this area.  Below is a sample of some of our contributions.
 
-Identifying the structure of canonical models for networked dynamic systems allows for a systematic way to study the properties of the system for both analysis and synthesis purposes. At times it is very straightforward to embed the connection topology of a networked system inside the overall dynamics. However, it becomes more enlightening to specify the connection topology as an additional parameter to the system dynamics, allowing for a more transparent understanding of how that parameter affects. 
+## Consensus Algorithms
 
-<p>
-    <img src="/img/research/NDSAnalysis/NDS_classification.jpg" alt="Classification of network dynamic systems" style="width: 30%;">
-    <em>Classification of network dynamic systems</em>
-</p>
+<div style="display: flex; align-items: flex-start;">
+  <div style="flex: 2; padding-right: 20px;">
+    <p>A fundamental task in many multi-agent coordination problems is the ability of the agents to distributedly agree on some quantity of interest. This may include agreeing on a common heading and speed for autonomous vehicles, opinions in social networks, or estimates of measured quantities. Our works have explored how the information exchange structure between agents influences the performance of these consensus algorithms.</p>
+  </div>
+  <div style="flex: 1;">
+    <div style="text-align: center;">
+      <img src="/img/research/NDS/consensus_traj.png" alt="Consensus trajectories" style="width: 70%;">
+      <div style="margin-top: 10px;">
+        <em>Trajectories of a consensus protocol.</em>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="title is-4">Selected Publications:</p>
+{% bibliography --query @*[researchtopic~=consensus] --group_by none --order descending %}
+
+
+## Network Identification
+
+<div style="display: flex; align-items: flex-start;">
+  <div style="flex: 2; padding-right: 20px;">
+    <p>Many large scale networks are often designed with hopes of plug-and-play behavior. In other applications, agents in a network may be vulnerable to attack or failure resulting in changes to the network structure and behavior.  As a result, the network structure may not be known.  It is of interest, therefore, to try to estimate or recover the network structure using only limited measurements from the network itself.  This  is known as the network identification problem. </p>
+  </div>
+  <div style="flex: 1;">
+    <div style="text-align: center;">
+      <img src="/img/research/NDS/netid_ex.png" alt="Network Identification" style="width: 70%;">
+      <div style="margin-top: 10px;">
+        <em>Fault identification in networks.</em>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="title is-4">Selected Publications:</p>
+{% bibliography --query @*[researchtopic~=netID] --group_by none --order descending %}
+
 
 Additional related works are provided below.
 
 <p class="title is-4">Related Publications:</p>
-{% bibliography --query @*[researchtopic~=Placeholder] --group_by none --order descending %}
+{% bibliography --query @*[researchtopic~=nds] --group_by none --order descending %}
