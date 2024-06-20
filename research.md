@@ -7,16 +7,14 @@ hero_image: /img/ANPL_quantum_field.jpg
 sort: price
 ---
 
-<!-- # research -->
 
-<!-- <p class="title is-3">Research overview (from 2024, 2022 and 2019)</p> -->
 
-Here you can find an overview of our main research activities.
+Research in the Connect Lab is diverse with an emphasis on exploring the theoretical foundations of networked and multi-agent sytsems.  Here you can explore the different research directions we are currently engaged in.
 
 
 <hr>
 
-<p class="title is-4">Specific research directions & projects:</p>
+<p class="title is-4">Research Themes:</p>
 
 
 

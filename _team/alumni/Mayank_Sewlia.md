@@ -5,7 +5,7 @@ graduation: 2020
 faculty : Aerospace Engineering
 category: alumni
 layout: team_member_personal_page
-image: 
+image: /img/team/Sewlia.png
 link-new-tab: true
 next-position: Ph.D. student at KTH
 bio:

@@ -1,5 +1,5 @@
 ---
-title: Energy Management Systems for the "Smart”-Grid
+title: Distributed Energy Systems
 research_code: NRG
 layout: research
 image: /img/research/Energy/solar_community.jpg
