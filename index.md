@@ -10,7 +10,7 @@ hero_image: /img/Connect_head_bkg.png
 
 # Our Mission
 
-The Cooperative Networks and Controls lab focuses on the control and coordination of multi-agent systems.  Our approach for studying these systems is through a blend of systems and control theory with graph theory.   While our hear and soul rests in the fundamental and theoretical challenges of networked systems, we also consider their real-world application through a robotic testbed consisting of ground and aerial vehicles.
+The Cooperative Networks and Controls lab focuses on the control and coordination of multi-agent systems.  Our approach for studying these systems is through a blend of systems and control theory with graph theory.   While our heart and soul rests in the fundamental and theoretical challenges of networked systems, we also consider their real-world application through a robotic testbed consisting of ground and aerial vehicles.
 
 
 
