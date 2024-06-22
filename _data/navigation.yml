@@ -14,5 +14,5 @@
 #   link: /Software_and_Datasets/
 - name: Gallery
   link: /gallery/
-- name: Directions
-  link: /directions/
+# - name: Directions
+#  link: /directions/

@@ -23,5 +23,5 @@ website:
 
 ## Connect Lab Publications:
 
-{% bibliography -q @*[author ~= \bChen\b] --group_by none --order descending %}
+{% bibliography -q @*[author ~= \bLincheng\b] --group_by none --order descending %}
 

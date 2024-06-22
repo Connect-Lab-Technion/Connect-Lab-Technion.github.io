@@ -1,6 +1,6 @@
 - title: Slide 3
   description: Slide 3 description  
-  image: /img/forced_sym_formation_control1.png
+  image: /img/homepage_images/forced_sym_formation_control1.png
 
 - title: Slide 3
   description: Slide 3 description    
@@ -22,7 +22,6 @@
   description: Slide 3 description    
   image: /img/homepage_images/PSGBlockDiagram.png
   
-
 - title: Slide 3
   description: Slide 3 description    
   image: /img/homepage_images/NDS_venn.png
@@ -39,9 +38,6 @@
   description: Slide 3 description    
   image: /img/homepage_images/NDS_bd3.png
 
-- title: Slide 3
-  description: Slide 3 description
-  image: /img/homepage_images/real_exp-1024x467.jpg
 
 - title: Slide 3
   description: Slide 3 description    

@@ -1,6 +1,6 @@
 ---
 title: Minh-Hoang Trinh 
-subtitle: Visiting Ph.D. Student
+subtitle: Ph.D.
 graduation: 2016
 faculty : Aerospace
 category: alumni
@@ -23,5 +23,5 @@ website: https://sites.google.com/view/minhhoangtrinh/home?authuser=0
 
 ## Connect Lab Publications:
 
-{% bibliography -q @*[author ~= \bFrank\b] --group_by none --order descending %}
+{% bibliography -q @*[author ~= \bTrinh\b] --group_by none --order descending %}
 

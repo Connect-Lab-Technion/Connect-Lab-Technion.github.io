@@ -1,5 +1,5 @@
 ---
-title: Nathaniel Drelich
+title: Nathaniel Drellich
 subtitle: M.Sc. 
 graduation: 2021
 faculty : Aerospace Engineering
@@ -22,4 +22,4 @@ linkedin:
 
 ## Connect Lab Publications:
 
-{% bibliography -q @*[author ~= \bDrelich\b] --group_by none --order descending %}
+{% bibliography -q @*[author ~= \bDrellich\b] --group_by none --order descending %}
