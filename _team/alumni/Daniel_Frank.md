@@ -7,7 +7,7 @@ category: alumni
 layout: team_member_personal_page
 image: /img/team/Daniel_Frank.jpg
 link-new-tab: true
-next-position: 
+next-position: Researcher, Institute of AI, University of Stuttgart
 bio:
     
 twitter: 
