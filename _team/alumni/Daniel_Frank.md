@@ -1,8 +1,8 @@
 ---
 title: Daniel Frank
-subtitle: M.Sc.
+subtitle: Visiting Student
 graduation: 2018
-faculty : IST, University of Stuttgart
+faculty : University of Stuttgart
 category: alumni
 layout: team_member_personal_page
 image: /img/team/Daniel_Frank.jpg

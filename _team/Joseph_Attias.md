@@ -1,8 +1,8 @@
 ---
 title: Joseph Attias
-subtitle: M.Sc. Student
-field : Robitcs
-faculty : Aerospace Engineering
+subtitle: Visiting Student
+field : Robotics
+faculty : Rochester Institute of Technology
 category: master_student
 layout: team_member_personal_page
 image: 

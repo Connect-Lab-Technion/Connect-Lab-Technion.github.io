@@ -1,11 +1,11 @@
 ---
-title: Hao Chen
+title: Abraham Krebs
 subtitle: Visiting Student
-graduation: 2017-2018
-faculty : National University of Defense Technology 
+graduation: 2023
+faculty : Massachusetts Institute of Technology
 category: alumni
 layout: team_member_personal_page
-image: /img/team/chen.jpg
+image: 
 link-new-tab: true
 next-position: 
 bio:
@@ -17,11 +17,11 @@ email:
 bitbucket: 
 facebook: 
 linkedin: 
-website: 
+website: authuser=0
 
 ---
 
 ## Connect Lab Publications:
 
-{% bibliography -q @*[author ~= \bLincheng\b] --group_by none --order descending %}
+{% bibliography -q @*[author ~= \bUlmer\b] --group_by none --order descending %}
 

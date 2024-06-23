@@ -1,8 +1,8 @@
 ---
 title: Johannes Rist
 subtitle: Visiting Student
-graduation: 
-faculty : Aerospace
+graduation: 2016
+faculty : Technical University Munich (TU/M)
 category: alumni
 layout: team_member_personal_page
 image: 

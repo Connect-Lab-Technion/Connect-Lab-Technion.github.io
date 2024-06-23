@@ -1,8 +1,8 @@
 ---
 title: Minh-Hoang Trinh 
-subtitle: Ph.D.
+subtitle: Visiting Student
 graduation: 2016
-faculty : Aerospace
+faculty : Gwangju Institute of Science & Technology
 category: alumni
 layout: team_member_personal_page
 image: /img/team/Minh.JPG

@@ -1,8 +1,8 @@
 ---
 title: Chuang Xu
-subtitle: Ph.D.
+subtitle: Visiting Student
 graduation: 2021-2022
-faculty : Aerospace
+faculty : Harbin Institute of Technology
 category: alumni
 layout: team_member_personal_page
 image: 

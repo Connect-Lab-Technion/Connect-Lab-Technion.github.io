@@ -1,8 +1,8 @@
 ---
 title: Miguel Dias 
 subtitle: Visiting Student
-graduation: 
-faculty : Aerospace
+graduation: 2016
+faculty : Instituto Superior Técnico
 category: alumni
 layout: team_member_personal_page
 image: 
