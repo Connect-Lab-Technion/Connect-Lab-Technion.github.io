@@ -1,8 +1,8 @@
 ---
 title: Fabian Ulmer
 subtitle: Visiting Student
-graduation: 
-faculty : Aerospace
+graduation: 2023
+faculty : Swiss Federal Institute of Technology (ETH)
 category: alumni
 layout: team_member_personal_page
 image: 

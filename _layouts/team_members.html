@@ -166,6 +166,7 @@ Alumni
       </div>
     {% endfor %}
   </div>
+<hr>
 <h1 style="font-size:20px;">Ph.D.</h1>
 <br>
 <div class="columns is-multiline">
@@ -211,8 +212,28 @@ Alumni
   {% endfor %}
 </div>
 
-
-   
+<hr>
+<h1 style="font-size:20px;">Visiting Students </h1>
+<br>
+<div class="columns is-multiline">
+{% assign sorted_alumni = site.team | where: "category", "alumni" | sort: "graduation" | reverse %}
+  {% for alumni in sorted_alumni %}
+    {% if alumni.subtitle == "Visiting Student" %}
+    <div class="column is-one-fifth-desktop is-6-tablet">
+        <div class="card">
+          <div class="card-content">
+            <a href="{{ alumni.url | prepend: site.baseurl }}">
+              <p class="title is-5">{{ alumni.title }}</p>
+              <p class="subtitle is-6" style="margin-bottom: 0;">{{ alumni.graduation}} {{ alumni.faculty }}</p>
+              <hr>
+              <p class="subtitle is-6">{{ alumni.next-position}}</p>
+            </a>
+          </div>
+        </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
 <hr>
 <h1 style="font-size:20px;">Undergrad Students </h1>
 <br>
