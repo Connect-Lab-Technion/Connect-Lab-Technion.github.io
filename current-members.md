@@ -6,6 +6,6 @@ show_sidebar: false
 hide_footer: false
 sort: subtitle
 hero_image: 
-hero_height: is-large
+hero_height: is-small
 ---
  
