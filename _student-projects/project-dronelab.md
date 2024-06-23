@@ -1,5 +1,5 @@
 ---
-title: Open-source Quadcopter Project For Students
+title: Open-source Quadcopter Project 
 layout: student_project
 image: /img/student_project/Lab_TestBench2.jpeg
 hero_height: is-small
@@ -18,10 +18,10 @@ Possible student involvement includes the design and integration of hardware for
 
 
 ### Prerequisites:
-- Knowledge of control theory, 
-- Matlab and simulink, 
-- Mechanical design and CAD for integrating hardware,
-- Programming in c++ for work with the toolchain,
+- control theory 
+- Matlab and simulink 
+- Mechanical design and CAD for integrating hardware
+- Programming in c++ for work with the toolchain
 - UI/UX for frontend development 
 
 ### Main Supervisor: 
@@ -30,4 +30,4 @@ Possible student involvement includes the design and integration of hardware for
 ### Academic supervisor:
 - Prof. Daniel Zelazo [mail](mailto:dzelazo@technion.ac.il)
 
-Duration: 1 or 2 semesters. To be deployed Spring 2025. 
+Duration: 1 or 2 semesters. 
