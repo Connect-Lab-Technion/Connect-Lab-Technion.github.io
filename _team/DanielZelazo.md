@@ -40,7 +40,17 @@ cv:
 
 ---
 
+Faculty Duties:
+
+* Vice Dean of Graduate Studies
+* Director of the [Philadelphia Flight Control Laboratory](https://pfcl.technion.ac.il/)
+
 Service:
+* IEEE Senior Member
+* Israeil Association for Automatic Control (IAAC) Treasurer
+* Member IEEE CSS Technical Committee on Networks and Communications
+* Member IEEE RAS Technical Committee on Multi-Robot Systems
+* Member IFAC Technical Committee 1.5: Networked Systems
 * Associate Editor for IEEE System & Controls Letters between 2017-2020
 * Subject Editor for the International Journal of Robust and Nonlinear Control between 2019-2023
 
