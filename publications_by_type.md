@@ -4,7 +4,7 @@ title: Publications
 show_sidebar: false
 hide_footer: false
 hero_height: is-small
-hero_image: /img/ANPL_quantum_field.jpg 
+hero_image: /img/Connect_head_bkg.png 
 ---
 
 <style>
