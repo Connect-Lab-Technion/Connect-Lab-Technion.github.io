@@ -43,7 +43,7 @@ chronologically
 <!-- You are also welcome to browse slides from [<span style="color:red">talks</span>]({{ site.baseurl }}/talks). -->
 
 
-[[Journal Articles]](#Journal-Articles) [[Book Chapters]](#Book-Chapters) [[Conference Articles]](#Conference-Articles) [[ArXiv & Technical Reports]](#Technical-Reports) [[PhD Theses]](#PhD-Theses) [[Master's Theses]](#Master-Theses)
+[[Journal Articles]](#Journal-Articles) [[Book Chapters]](#Book-Chapters) [[Conference Articles]](#Conference-Articles) [[ArXiv & Technical Reports]](#Technical-Reports) [[PhD & MSc Theses]](#Theses)
 
 # Journal Articles
 <div id="Journal-Articles"></div>
@@ -69,15 +69,15 @@ chronologically
 
 [Back to Top](#Top)
 
-# PhD Theses
-<div id="PhD-Theses"></div>
-{% bibliography --group_by none --query @phdthesis --order descending %}
+# PhD & MSc Theses
+<div id="Theses"></div>
+{% bibliography --group_by none --query @thesis --order descending %}
 
 [Back to Top](#Top)
 
-# Master's Theses
+<!--# Master's Theses
 <div id="Master-Theses"></div>
-{% bibliography --group_by none --query @mastersthesis --order descending %}
+{% bibliography --group_by none --query @mastersthesis --order descending %}-->
 
 [Back to Top](#Top)
 

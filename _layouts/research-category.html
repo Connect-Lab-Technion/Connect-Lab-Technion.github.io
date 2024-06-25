@@ -21,7 +21,7 @@ show_sidebar: false
         {% if research.image %}
         <div class="card-image">
           <figure class="image is-4by3">
-            <img src="{{ research.image }}" alt="{{ research.title }}" />
+            <img src="{{ research.image }}" alt="{{ research.title }}" style="object-fit:contain;"/>
           </figure>
         </div>
         {% endif %}
