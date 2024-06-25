@@ -36,11 +36,11 @@ hero_image: /img/Connect_head_bkg.png
 
 Sort publications [<span style="color:red">
 chronologically
-</span>](https://anpl-technion.github.io/publications/) or by <span style="color:red">
+</span>]({{ site.baseurl }}/publications/) or by <span style="color:red">
 <b>type</b>
-</span>. You are also welcome to browse slides from [<span style="color:red">
-talks
-</span>](https://anpl-technion.github.io/talks).
+</span>. 
+
+<!-- You are also welcome to browse slides from [<span style="color:red">talks</span>]({{ site.baseurl }}/talks). -->
 
 
 [[Journal Articles]](#Journal-Articles) [[Book Chapters]](#Book-Chapters) [[Conference Articles]](#Conference-Articles) [[ArXiv & Technical Reports]](#Technical-Reports) [[PhD Theses]](#PhD-Theses) [[Master's Theses]](#Master-Theses)
