@@ -9,7 +9,10 @@ hero_height: is-small
 hero_image: /img/ANPL_quantum_field.jpg 
 link-new-tab: true
 
-anpl: PI of the Cooperative Networks and Controls Lab
+connect: PI of the Cooperative Networks and Controls Lab
+
+pfcl: Director of the Philadelphia Flight Control Laboratory
+pfcl_link: https://pfcl.technion.ac.il/
 
 ae: Department of Aerospace Engineering
 ae_link: https://aerospace.technion.ac.il/

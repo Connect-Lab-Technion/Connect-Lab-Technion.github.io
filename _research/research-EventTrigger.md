@@ -4,7 +4,7 @@ research_code: Event Trigger
 layout: research
 image: /img/research/EventTrigger/EventTrigger.png
 hero_height: is-small
-hero_image: /img/connect_globe.jpeg  
+hero_image: /img/Connect_head_bkg.png 
 price: 7 # for sorting 
 
 ---
@@ -13,9 +13,9 @@ Sensing and communication for autonomous sytsems can be demanding in terms of en
 
 
 <div style="display: flex; justify-content: center;">
-  <img src="/img/research/EventTrigger/Kalman_ETC.png" alt="Kalman Event Triggered Filter" style="max-width: 30%; margin: 0 10px;">
-  <img src="/img/research/EventTrigger/formation_etc.png" alt="Event triggered formation control" style="max-width: 30%; margin: 0 10px;">
-  <img src="/img/research/EventTrigger/emulation_sync.png" alt="Asynchronous synchronization" style="max-width: 30%; margin: 0 10px;">
+  <img src="/img/research/EventTrigger/Kalman_ETC.png" alt="Kalman Event Triggered Filter" style="max-width: 75%; margin: 0 10px; object-fit: contain; max-height: 200px;">
+  <img src="/img/research/EventTrigger/formation_etc.png" alt="Event triggered formation control" style="max-width: 75%; margin: 0 10px; object-fit: contain; max-height: 200px;">
+  <img src="/img/research/EventTrigger/emulation_sync.png" alt="Asynchronous synchronization" style="max-width: 75%; margin: 0 10px; object-fit: contain; max-height: 200px;">
 </div>
 
 <p class="title is-4">Related Publications:</p>

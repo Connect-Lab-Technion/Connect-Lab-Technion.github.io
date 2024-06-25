@@ -28,9 +28,9 @@ Our research explores various aspects of rigidity theory and formation control. 
 * Formations consisting of heterogeneous agent types with different sensing capabilities.
 
 <div style="display: flex; justify-content: center;">
-  <img src="/img/research/FormationControl/fig_sim_Global_2D_polygon_final.png" alt="Bearing-only Formation Control" style="max-width: 30%; margin: 0 10px;">
-  <img src="/img/research/FormationControl/Example8_traj.png" alt="Symmetry Forced Formations" style="max-width: 30%; margin: 0 10px;">
-  <img src="/img/research/FormationControl/FeketeFormation.png" alt="Formation Balancing" style="max-width: 30%; margin: 0 10px;">
+  <img src="/img/research/FormationControl/fig_sim_Global_2D_polygon_final.png" alt="Bearing-only Formation Control" style="width: 75%; margin: 0 10px; object-fit: contain; max-height: 200px;">
+  <img src="/img/research/FormationControl/Example8_traj.png" alt="Symmetry Forced Formations" style="width: 75%; margin: 0 10px; object-fit: contain; max-height: 200px;">
+  <img src="/img/research/FormationControl/FeketeFormation.png" alt="Formation Balancing" style="width: 75%; margin: 0 10px; object-fit: contain; max-height: 200px;">
 </div>
 
 <p class="title is-4">Related Publications:</p>

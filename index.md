@@ -23,7 +23,7 @@ The Connect lab is a research group in the [Faculty of Aerospace Engineering](ht
 
 
 <b>
-We are always looking for highly-motivated individuals to join our group, see details [here.]()
+We are always looking for highly-motivated individuals to join our group, see details [here]({{ site.baseurl }}/Positions).
 </b>
 
 
