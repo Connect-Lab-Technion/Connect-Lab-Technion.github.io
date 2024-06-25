@@ -4,7 +4,7 @@ title: Positions
 # hero_image: /img/Positions.png
 # hero_height: is-medium
 hero_height: is-small
-hero_image: /img/ANPL_quantum_field.jpg 
+hero_image: /img/Connect_head_bkg.png
 show_sidebar: false
 hide_footer: false
 ---

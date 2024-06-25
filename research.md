@@ -3,7 +3,7 @@ title: Research
 layout: research-category
 show_sidebar: false
 hero_height: is-small
-hero_image: /img/ANPL_quantum_field.jpg 
+hero_image: /img/Connect_head_bkg.png 
 sort: price
 ---
 

@@ -4,7 +4,7 @@ subtitle: Technion - Israel Institute of Technology
 layout: page
 show_sidebar: false
 hide_footer: false
-hero_height: is-medium
+hero_height: is-small
 hero_image: /img/Connect_head_bkg.png
 ---
 
