@@ -2,7 +2,9 @@
 title: Daniel Frank
 subtitle: Visiting Student
 graduation: 2018
-faculty : University of Stuttgart
+university : University of Stuttgart
+country : Germany
+faculty : Institute for Systems Theory & Automatic Control
 category: alumni
 layout: team_member_personal_page
 image: /img/team/Daniel_Frank.jpg

@@ -2,13 +2,15 @@
 title: Seth Cohen
 subtitle: Visiting Student
 field : Robotics
-faculty : University of Texas - Austin
+university : University of Texas - Austin
+country : USA
+faculty : Mechanial Engineering
 category: undergraduate_students
 layout: team_member_personal_page
 image: /img/team/seth_cohen.jpeg
 link-new-tab: true
 bio:
-    - B.Sc. student in Mechanial Engineering
+    - B.Sc. student 
 
 twitter: 
 youtube: 

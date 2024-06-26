@@ -2,7 +2,9 @@
 title: Joseph Attias
 subtitle: Visiting Student
 field : Robotics
-faculty : Rochester Institute of Technology
+university : Rochester Institute of Technology
+country : USA
+faculty : 
 category: master_student
 layout: team_member_personal_page
 image: 

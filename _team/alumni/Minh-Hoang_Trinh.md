@@ -2,7 +2,8 @@
 title: Minh-Hoang Trinh 
 subtitle: Visiting Student
 graduation: 2016
-faculty : Gwangju Institute of Science & Technology
+university : Gwangju Institute of Science & Technology
+country : Korea
 category: alumni
 layout: team_member_personal_page
 image: /img/team/Minh.JPG

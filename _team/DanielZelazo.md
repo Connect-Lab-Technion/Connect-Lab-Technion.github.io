@@ -11,7 +11,7 @@ link-new-tab: true
 
 connect: PI of the Cooperative Networks and Controls Lab
 
-pfcl: Director of the Philadelphia Flight Control Laboratory
+pfcl: Director of the Philadelphia Flight Control Lab
 pfcl_link: https://pfcl.technion.ac.il/
 
 ae: Department of Aerospace Engineering

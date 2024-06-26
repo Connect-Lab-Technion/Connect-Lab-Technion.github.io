@@ -70,6 +70,18 @@ layout: team_member_base
             <p class="subtitle is-3">{{ page.graduation }}</p>
         {% endif %}
 
+        {% if page.university %}
+        <p class="subtitle is-4">{{ page.university }}</p>
+        {% endif %}
+
+        {% if page.country %}
+        <p class="subtitle is-4">{{ page.country }}</p>
+        {% endif %}
+
+        {% if page.faculty %}
+            <p class="subtitle is-4">{{ page.faculty }}</p>
+        {% endif %}
+
         {% if page.next-position %}
             <p class="subtitle is-4">{{ page.next-position }}</p>
         {% endif %}

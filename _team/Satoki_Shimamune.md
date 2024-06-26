@@ -1,14 +1,16 @@
 ---
 title: Satoki Shimamune
 subtitle: Visiting Student
-field : Robotics
-faculty : University of Cambridge
+field : 
+university : University of Cambridge
+country : UK
+faculty : 
 category: master_student
 layout: team_member_personal_page
 image: /img/team/Satoki.jpeg
 link-new-tab: true
 bio:
-    - B.A. and M.Eng in Aerospace and Mechanical Engineering
+    - B.A. and M.Eng 
 
 twitter: 
 youtube: 

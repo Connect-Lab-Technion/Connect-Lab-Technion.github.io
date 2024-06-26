@@ -2,13 +2,13 @@
 title: Nofar Koskas
 subtitle: Undergraduate Student
 field : Robotic Testbed Development
-faculty : Aerospace
+faculty : Aerospace Engineering
 category: undergraduate_students
 layout: team_member_personal_page
 image: /img/team/Nofar.jpeg
 link-new-tab: true
 bio:
-    - B.Sc. student in Aerospace Engineering
+    - B.Sc. student 
 
 twitter: 
 youtube: 

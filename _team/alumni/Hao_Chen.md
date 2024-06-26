@@ -2,7 +2,8 @@
 title: Hao Chen
 subtitle: Visiting Student
 graduation: 2017-2018
-faculty : National University of Defense Technology 
+university : National University of Defense Technology 
+country : China
 category: alumni
 layout: team_member_personal_page
 image: /img/team/chen.jpg
