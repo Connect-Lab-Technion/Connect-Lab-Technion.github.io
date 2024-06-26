@@ -131,13 +131,23 @@
     </names>
   </macro>
   -->
-  <!-- DZ additions-->
+  <!-- DZ additions
  <macro name="article-author">
   <names variable="author">
     <name>
       <name-part name="given" initialize-with=". " text-case="capitalize-first"/>
       <name-part name="family" text-case="capitalize-first"/>
     </name>
+    <label form="short" prefix=", " text-case="capitalize-first"/>
+    <substitute>
+      <names variable="editor"/>
+      <names variable="translator"/>
+    </substitute>
+  </names>
+</macro>-->
+<macro name="article-author">
+  <names variable="author">
+    <name initialize-with=". " delimiter=", " and="text"/>
     <label form="short" prefix=", " text-case="capitalize-first"/>
     <substitute>
       <names variable="editor"/>
@@ -355,6 +365,7 @@
         <else-if type="report">
           <group delimiter=". ">
             <group delimiter=", ">
+            <text macro="article-author"/>
               <text macro="title"/>
               <text macro="publisher"/>
               <group delimiter=" ">
@@ -367,6 +378,7 @@
         </else-if>
         <else-if type="thesis">
           <group delimiter=", ">
+          <text macro="article-author"/>
             <text macro="title"/>
             <text variable="genre"/>
             <text macro="publisher"/>
@@ -382,6 +394,7 @@
         </else-if>
         <else-if type="patent">
           <group delimiter=", ">
+          <text macro="article-author"/>
             <text macro="title"/>
             <text variable="number"/>
             <text macro="issued"/>
@@ -411,6 +424,7 @@
         </else-if>
         <else-if type="chapter paper-conference" match="any">
           <group delimiter=", " suffix=", ">
+          <text macro="article-author"/>
             <text macro="title"/>
             <group delimiter=" ">
               <text term="in"/>
@@ -427,6 +441,7 @@
         </else-if>
         <else>
           <group delimiter=", " suffix=". ">
+          <text macro="article-author"/>
             <text macro="title"/>
             <text variable="container-title" font-style="italic"/>
             <text macro="locators"/>
