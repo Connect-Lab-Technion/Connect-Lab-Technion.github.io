@@ -45,7 +45,7 @@ talks
 <!-- You are also welcome to browse slides from [<span style="color:red">talks</span>]({{ site.baseurl }}/talks). -->
 
 
-[[Journal Articles]](#Journal-Articles) [[Book Chapters]](#Book-Chapters) [[Conference Articles]](#Conference-Articles) [[ArXiv & Technical Reports]](#Technical-Reports) [[PhD & MSc Theses]](#Theses)
+[[Journal Articles]](#Journal-Articles) [[Book Chapters]](#Book-Chapters) [[Conference Articles]](#Conference-Articles) [[ArXiv & Technical Reports]](#Technical-Reports) [[PhD & MSc Theses]](#Theses) [[Patents](#Patents)]
 
 # Journal Articles
 <div id="Journal-Articles" style="padding-top: 150px; margin-top: -150px;"></div>
@@ -80,6 +80,10 @@ talks
 <!--# Master's Theses
 <div id="Master-Theses"></div>
 {% bibliography --group_by none --query @mastersthesis --order descending %}-->
+
+# Patents
+<div id="Patents" style="padding-top: 150px; margin-top: -150px;"></div>
+{% bibliography --file DZ_Patents  --group_by none  --order descending %}
 
 [Back to Top](#Top)
 
