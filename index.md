@@ -26,6 +26,16 @@ The Connect lab is a research group in the [Faculty of Aerospace Engineering](ht
 We are always looking for highly-motivated individuals to join our group, see details [here]({{ site.baseurl }}/Positions).
 </b>
 
+<p>Latest News:</p>
+<div class="news-section">
+  {% for news in site.news limit:5 %}
+    <article>
+      <h2><a href="{{ news.url }}">{{ news.title }}</a></h2>
+      <p><time datetime="{{ news.date }}">{{ news.date | date: "%B %-d, %Y" }}</time></p>
+      <p>{{ news.excerpt }}</p>
+    </article>
+  {% endfor %}
+</div>
 
 <div class="slick-slider">
   {% for slide in site.data.home_slides %}
