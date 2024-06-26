@@ -4,7 +4,7 @@ research_code: Formation
 layout: research
 image: /img/research/FormationControl/formation_maneuver3D.png
 hero_height: is-small
-hero_image: /img/connect_globe.jpeg  
+hero_image: /img/Connect_head_bkg.png 
 price: 7 # for sorting 
 
 ---
