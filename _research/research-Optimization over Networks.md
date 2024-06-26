@@ -4,7 +4,7 @@ research_code: OPT
 layout: research
 image: /img/research/NDSOptimization/x_n20_T70.jpg
 hero_height: is-small
-hero_image: /img/connect_globe.jpeg  
+hero_image: /img/Connect_head_bkg.png 
 price: 7 # for sorting 
 
 ---

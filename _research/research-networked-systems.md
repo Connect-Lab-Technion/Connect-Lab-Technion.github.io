@@ -55,7 +55,8 @@ We explore many different research questions in this area.  Below is a sample of
 {% bibliography --query @*[researchtopic~=netID] --group_by none --order descending %}
 
 
-Additional related works are provided below.
+
+All our publications in this area can be found below:
 
 <p class="title is-4">Related Publications:</p>
 {% bibliography --query @*[researchtopic~=nds] --group_by none --order descending %}
