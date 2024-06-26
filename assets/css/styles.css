@@ -6,3 +6,15 @@
     margin: 0 auto;
   }
   
+.news-section {
+  /* Your styles here */
+}
+.news-section article {
+  margin-bottom: 20px;
+}
+.news-section h2 {
+  font-size: 1.5em;
+}
+.news-section time {
+  color: #666;
+}

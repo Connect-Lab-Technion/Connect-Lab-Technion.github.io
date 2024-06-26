@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="news-post">
+  <h2>{{ page.title }}</h2>
+  <p><time datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+  <div class="news-content">
+    {{ content }}
+  </div>
+</article>
+
