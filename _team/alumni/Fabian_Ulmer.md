@@ -2,7 +2,9 @@
 title: Fabian Ulmer
 subtitle: Visiting Student
 graduation: 2023
-faculty : Swiss Federal Institute of Technology (ETH)
+university : Swiss Federal Institute of Technology (ETH)
+country : Switzerland
+faculty : 
 category: alumni
 layout: team_member_personal_page
 image: 

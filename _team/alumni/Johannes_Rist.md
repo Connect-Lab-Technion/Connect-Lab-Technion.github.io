@@ -2,10 +2,11 @@
 title: Johannes Rist
 subtitle: Visiting Student
 graduation: 2016
-faculty : Technical University Munich (TU/M)
+university : Technical University Munich (TU/M)
+country : Germany
 category: alumni
 layout: team_member_personal_page
-image: 
+image: /img/team/Rist.jpeg
 link-new-tab: true
 next-position: 
 bio:
@@ -16,8 +17,8 @@ github:
 email: 
 bitbucket: 
 facebook: 
-linkedin: 
-website: authuser=0
+linkedin: https://www.linkedin.com/in/johannes-rist-5b5871127/?originalSubdomain=de
+website: 
 
 ---
 

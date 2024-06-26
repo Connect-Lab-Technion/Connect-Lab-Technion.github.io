@@ -2,13 +2,15 @@
 title: Henrique Santos
 subtitle: Visiting Student
 field : Robotics
-faculty : Inteli - Instituto de Tecnologia e Liderança
+university : Inteli - Instituto de Tecnologia e Liderança
+country : Brazil
+faculty : Computer Engineering
 category: undergraduate_students
 layout: team_member_personal_page
 image: /img/team/Hernique.jpeg
 link-new-tab: true
 bio:
-    - B.Sc. student in Computer Engineering
+    - B.Sc. student 
 
 twitter: 
 youtube: 
@@ -19,7 +21,7 @@ facebook:
 linkedin: http://linkedin.com/in/henriquemarlon
 ---
 
-<!-- ## ANPL Publications:
+<!-- ## Connect Lab Publications:
 
 {% bibliography -q @*[author ~= \bLevy-Or\b] --group_by none --order descending %}
  -->

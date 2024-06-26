@@ -2,7 +2,9 @@
 title: Chuang Xu
 subtitle: Visiting Student
 graduation: 2021-2022
-faculty : Harbin Institute of Technology
+university : Harbin Institute of Technology
+country : China
+faculty : 
 category: alumni
 layout: team_member_personal_page
 image: 

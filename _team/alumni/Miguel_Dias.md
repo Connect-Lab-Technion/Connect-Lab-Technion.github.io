@@ -2,7 +2,8 @@
 title: Miguel Dias 
 subtitle: Visiting Student
 graduation: 2016
-faculty : Instituto Superior Técnico
+university : Instituto Superior Técnico
+country : Portugal
 category: alumni
 layout: team_member_personal_page
 image: 
