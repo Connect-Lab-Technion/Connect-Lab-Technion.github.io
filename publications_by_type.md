@@ -38,7 +38,9 @@ Sort publications [<span style="color:red">
 chronologically
 </span>]({{ site.baseurl }}/publications/) or by <span style="color:red">
 <b>type</b>
-</span>. 
+</span>. You are also welcome to browse slides from [<span style="color:red">
+talks
+</span>]({{ site.baseurl }}/talks).
 
 <!-- You are also welcome to browse slides from [<span style="color:red">talks</span>]({{ site.baseurl }}/talks). -->
 
@@ -46,31 +48,31 @@ chronologically
 [[Journal Articles]](#Journal-Articles) [[Book Chapters]](#Book-Chapters) [[Conference Articles]](#Conference-Articles) [[ArXiv & Technical Reports]](#Technical-Reports) [[PhD & MSc Theses]](#Theses)
 
 # Journal Articles
-<div id="Journal-Articles"></div>
+<div id="Journal-Articles" style="padding-top: 150px; margin-top: -150px;"></div>
 {% bibliography --group_by none --query @article --order descending %}
 
 [Back to Top](#Top)
 
 # Book Chapters
-<div id="Book-Chapters"></div>
+<div id="Book-Chapters" style="padding-top: 150px; margin-top: -150px;"></div>
 {% bibliography --group_by none --query @incollection --order descending %}
 
 [Back to Top](#Top)
 
 # Conference Articles
-<div id="Conference-Articles"></div>
+<div id="Conference-Articles" style="padding-top: 150px; margin-top: -150px;"></div>
 {% bibliography --group_by none --query @InProceedings --order descending %}
 
 [Back to Top](#Top)
 
 # ArXiv and Technical Reports
-<div id="Technical-Reports"></div>
+<div id="Technical-Reports" style="padding-top: 150px; margin-top: -150px;"></div>
 {% bibliography --group_by none --query @TechReport --order descending %}
 
 [Back to Top](#Top)
 
 # PhD & MSc Theses
-<div id="Theses"></div>
+<div id="Theses" style="padding-top: 150px; margin-top: -150px;"></div>
 {% bibliography --group_by none --query @thesis --order descending %}
 
 [Back to Top](#Top)
