@@ -20,6 +20,9 @@ ae_link: https://aerospace.technion.ac.il/
 tasp: Technion Autonomous Systems Program (TASP)
 tasp_link: https://tasp-technion.org/
 
+math: Technion Applied Math Graduate Program
+math_link: https://math.technion.ac.il/en/applied-math-graduate-program/
+
 technion: Technion – Israel Institute of Technology
 technion_link: https://www.technion.ac.il/
 
@@ -50,11 +53,11 @@ Faculty Duties:
 
 Service:
 * IEEE Senior Member
-* Israeil Association for Automatic Control (IAAC) Treasurer
+* [Israeil Association for Automatic Control](https://iaac.technion.ac.il/) (IAAC) Treasurer
 * Member IEEE CSS Technical Committee on Networks and Communications
 * Member IEEE RAS Technical Committee on Multi-Robot Systems
 * Member IFAC Technical Committee 1.5: Networked Systems
-* Associate Editor for IEEE System & Controls Letters between 2017-2020
+* Associate Editor for IEEE System & Controls Letters between 2017-2023
 * Subject Editor for the International Journal of Robust and Nonlinear Control between 2019-2023
 
 Contact:
