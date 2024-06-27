@@ -90,3 +90,22 @@
   text-decoration: underline;
 }
 /* NEWS ARCHIVE STYLE */
+
+
+
+/* CUSTOM HERO STYLES */
+@media screen and (min-width: 769px), print {
+  .hero.is-index-height .hero-body {
+    padding: 7rem 6rem;
+  }
+}
+/* CUSTOM HERO STYLES */
+
+
+/* ADDITIONAL IMAGE STYLES */
+/* .img.is-4by3 {
+  object-fit: cover;
+  object-position: center;
+} */
+/* ADDITIONAL IMAGE STYLES */
+

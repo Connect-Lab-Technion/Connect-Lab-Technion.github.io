@@ -83,7 +83,7 @@ talks
 
 # Patents
 <div id="Patents" style="padding-top: 150px; margin-top: -150px;"></div>
-{% bibliography --file DZ_Patents  --group_by none  --order descending %}
+{% bibliography --file DZ_patents  --group_by none  --order descending %}
 
 [Back to Top](#Top)
 
