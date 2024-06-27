@@ -4,8 +4,8 @@ subtitle: Technion - Israel Institute of Technology
 layout: page
 show_sidebar: false
 hide_footer: false
-hero_height: is-small
-hero_image: /img/Connect_head_bkg.png
+hero_height: is-index-height
+hero_color: is-black
 ---
 
 # Our Mission
