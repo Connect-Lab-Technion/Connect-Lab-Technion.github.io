@@ -27,16 +27,16 @@ We are always looking for highly-motivated individuals to join our group, see de
 </b>
 
 <h2>Latest News:</h2>
-<div class="news-section">
+<ul class="news-list">
   {% assign sorted_news = site.news | sort: 'date' | reverse %}
   {% for news in sorted_news limit:10 %}
-    <article>
-      <h2><a href="{{ news.url }}">{{ news.title }}</a></h2>
-      <p><time datetime="{{ news.date }}">{{ news.date | date: "%B %-d, %Y" }}</time></p>
-      <p>{{ news.excerpt }}</p>
-    </article>
+    <li>
+      <a href="{{ news.url }}">{{ news.title }}</a>
+      <span class="news-date">{{ news.date | date: "%B %-d, %Y" }}</span>
+      <p class="news-description">{{ news.description | escape }}</p>
+    </li>
   {% endfor %}
-</div>
+</ul>
 
 <!--<div style="display: flex; justify-content: center;">
   <a class="twitter-timeline" data-width="45%" data-height="800" href="https://twitter.com/ANPL_Technion?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AANPL_Technion%7Ctwcon%5Es2">Tweets from Anpl Technion</a> 
