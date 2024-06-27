@@ -26,6 +26,15 @@ The Connect lab is a research group in the [Faculty of Aerospace Engineering](ht
 We are always looking for highly-motivated individuals to join our group, see details [here]({{ site.baseurl }}/Positions).
 </b>
 
+<div class="slick-slider">
+  {% for slide in site.data.home_slides %}
+    <div>
+      <img src="{{ slide.image }}" alt="{{ slide.description }}">
+    </div>
+  {% endfor %}
+</div>
+
+
 <h2>Latest News:</h2>
 <ul class="news-list">
   {% assign sorted_news = site.news | sort: 'date' | reverse %}
@@ -37,6 +46,10 @@ We are always looking for highly-motivated individuals to join our group, see de
     </li>
   {% endfor %}
 </ul>
+
+[View All News]({{ site.baseurl }}/news_archive)
+
+
 
 <!--<div style="display: flex; justify-content: center;">
   <a class="twitter-timeline" data-width="45%" data-height="800" href="https://twitter.com/ANPL_Technion?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AANPL_Technion%7Ctwcon%5Es2">Tweets from Anpl Technion</a> 

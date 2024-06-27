@@ -1,5 +1,5 @@
 ---
-title: Robotic Testbed 
+title: Robotic Testbed and Validation 
 research_code: Robotics
 layout: research
 image: /img/research/Robotics/turtlebots1.png
