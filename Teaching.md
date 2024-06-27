@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Teaching
-# hero_image: /img/Positions.png
-# hero_height: is-medium
+hero_image: /img/Positions.png
+hero_height: is-medium
 show_sidebar: false
 hide_footer: false
 hero_height: is-small
