@@ -1,5 +1,5 @@
 ---
-title: Control of Multi-Agent Systems Systems
+title: Control of Multi-Agent Systems
 research_code: NDS
 layout: research
 image: /img/research/NDS/dynamic_network.jpg
