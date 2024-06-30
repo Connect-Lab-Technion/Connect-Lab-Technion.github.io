@@ -7,13 +7,14 @@ remote_theme: chrisrhymes/bulma-clean-theme
 
 title: Connect-Lab
 tagline: Cooperative Networks and Controls Lab Website
-email: 
+email: dzelazo@technion.ac.il
 description: >
   Exploring all aspects related to the control and coordination of multi-agent systems.
 baseurl: ""
 url: "https://connect-lab-technion.github.io"
+default_og_image: "/img/logos/Connect_logo_full.png"
 
-twitter_username: 
+twitter_username:
 github_username:  connect-lab-technion
 
 
