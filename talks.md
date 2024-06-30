@@ -40,7 +40,7 @@ type
 <b>talks</b>
 </span>.
 
-[[Invited](#Invited)] [[Talks](#Talks)]
+[[Plenary, Invited, and Workshop Talks](#Invited)] [[Seminars](#Talks)]
 
 # Plenary, Invited, and Workshop Talks
 <div id="Invited" style="padding-top: 150px; margin-top: -150px;"></div>

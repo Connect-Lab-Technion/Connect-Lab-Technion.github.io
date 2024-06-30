@@ -267,11 +267,11 @@
               <date-part name="year"/>
             </date>
           </group>
-          <text term="online" prefix="[" suffix="]" text-case="capitalize-first"/>
+          <!--<text term="online" prefix="[" suffix="]" text-case="capitalize-first"/>
           <group delimiter=": ">
             <text term="available at" text-case="capitalize-first"/>
             <text variable="URL"/>
-          </group>
+          </group>-->
         </group>
       </else>
     </choose>
