@@ -32,7 +32,10 @@ contact:
     - "Email : dzelazo@technion.ac.il"
 
 
-bio: "I am an associate professor in the Faculty of Aerospace Engineering.  My academic trajectory has sent me through a few engineering departments, although my focus has always been on the rich field of systems & control theory.  I received my B.Sc. (’99) and M.Eng. (’01) degrees in Electrical Engineering & Computer Science at the [Massachusetts Institute of Technology](https://www.mit.edu/).  After completing my master’s degree, I moved to Tsukuba, Japan to work on audio compression algorithms as a research engineer at Texas Instruments.  After a slight perturbation to my career path as an English teacher, I eventually ended up at the [University of Washington](https://www.aa.washington.edu/) to pursue my doctorate (’09) under the guidance of [Prof. Mehran Mesbahi](https://mehran-mesbahi.github.io/).  I then moved to Stuttgart, Germany as a postdoctoral research associate at the [Institute for Systems Theory and Automatic Control](https://www.ist.uni-stuttgart.de/) under the supervision Prof. Frank Allgöwer.  I joined the Technion in October of 2012."
+bio: "I am an associate professor in the Faculty of Aerospace Engineering.  My academic trajectory has sent me through a few engineering departments, although my focus has always been on the rich field of systems & control theory.  I received my B.Sc. (’99) and M.Eng. (’01) degrees in Electrical Engineering & Computer Science at the [Massachusetts Institute of Technology](https://www.mit.edu/).  After completing my master’s degree, I moved to Tsukuba, Japan to work on audio compression algorithms as a research engineer at Texas Instruments.  After a slight perturbation to my career path as an English teacher, I eventually ended up at the
+ [University of Washington](https://www.aa.washington.edu/) to pursue my doctorate (’09) under the guidance of 
+ [Prof. Mehran Mesbahi](https://mehran-mesbahi.github.io/).  I then moved to Stuttgart, Germany as a postdoctoral research associate at the 
+ [Institute for Systems Theory and Automatic Control](https://www.ist.uni-stuttgart.de/) under the supervision Prof. Frank Allgöwer.  I joined the Technion in October of 2012."
 
 twitter: 
 youtube: 
@@ -50,6 +53,13 @@ Faculty Duties:
 
 * Vice Dean of Graduate Studies
 * Director of the [Philadelphia Flight Control Laboratory](https://pfcl.technion.ac.il/)
+
+Research Profile:
+
+* [Goggle Scholar](https://scholar.google.com/citations?user=0H_NUokAAAAJ&hl=en)
+* [OrcID](https://orcid.org/0000-0002-2931-245X)
+* [Scopus](https://www.scopus.com/authid/detail.uri?authorId=23570307200)
+* [Cris](https://cris.technion.ac.il/en/persons/daniel-zelazo)
 
 Service:
 * IEEE Senior Member
