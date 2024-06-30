@@ -32,10 +32,7 @@ contact:
     - "Email : dzelazo@technion.ac.il"
 
 
-bio: "I am an associate professor in the Faculty of Aerospace Engineering.  My academic trajectory has sent me through a few engineering departments, although my focus has always been on the rich field of systems & control theory.  I received my B.Sc. (’99) and M.Eng. (’01) degrees in Electrical Engineering & Computer Science at the [Massachusetts Institute of Technology](https://www.mit.edu/).  After completing my master’s degree, I moved to Tsukuba, Japan to work on audio compression algorithms as a research engineer at Texas Instruments.  After a slight perturbation to my career path as an English teacher, I eventually ended up at the
- [University of Washington](https://www.aa.washington.edu/) to pursue my doctorate (’09) under the guidance of 
- [Prof. Mehran Mesbahi](https://mehran-mesbahi.github.io/).  I then moved to Stuttgart, Germany as a postdoctoral research associate at the 
- [Institute for Systems Theory and Automatic Control](https://www.ist.uni-stuttgart.de/) under the supervision Prof. Frank Allgöwer.  I joined the Technion in October of 2012."
+bio: "I am an associate professor in the Faculty of Aerospace Engineering.  My academic trajectory has sent me through a few engineering departments, although my focus has always been on the rich field of systems & control theory.  I received my B.Sc. (’99) and M.Eng. (’01) degrees in Electrical Engineering & Computer Science at the <a href='https://www.mit.edu/'>Massachusetts Institute of Technology</a>.  After completing my master’s degree, I moved to Tsukuba, Japan to work on audio compression algorithms as a research engineer at Texas Instruments.  After a slight perturbation to my career path as an English teacher, I eventually ended up at the <a href='https://www.aa.washington.edu/'>University of Washington</a> to pursue my doctorate (’09) under the guidance of <a href='https://mehran-mesbahi.github.io/'>Prof. Mehran Mesbahi</a>.  I then moved to Stuttgart, Germany as a postdoctoral research associate at the <a href='https://www.ist.uni-stuttgart.de/'>Institute for Systems Theory and Automatic Control</a> under the supervision Prof. Frank Allgöwer.  I joined the Technion in October of 2012."
 
 twitter: 
 youtube: 
