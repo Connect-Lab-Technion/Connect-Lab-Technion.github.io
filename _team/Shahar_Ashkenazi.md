@@ -9,6 +9,7 @@ image:
 link-new-tab: true
 bio:
     - M.Sc. TASP, Technion, since 2022
+    - B.Sc. Aerospace Engineering, Technion 2021
 
 twitter: 
 youtube: 
@@ -16,10 +17,10 @@ github:
 email: 
 bitbucket: 
 facebook: 
-linkedin: 
+linkedin: https://www.linkedin.com/in/shahar-ashkenazi-algorithm-engineer
 ---
 
-<!-- ## ANPL Publications:
+<!-- ## Connect Lab Publications:
 
 {% bibliography -q @*[author ~= \bLevy-Or\b] --group_by none --order descending %}
  -->
