@@ -20,6 +20,6 @@ facebook:
 linkedin: https://www.linkedin.com/in/galbarkai/
 ---
 
-## Connect Lab Publications: -->
+## Connect Lab Publications: 
 
  {% bibliography -q @*[author ~= \bBarkai\b] --group_by none --order descending %}

@@ -20,7 +20,6 @@ facebook:
 linkedin: 
 ---
 
-<!-- ## ANPL Publications:
+## Connect Lab Publications: 
 
-{% bibliography -q @*[author ~= \bLevy-Or\b] --group_by none --order descending %}
- -->
+ {% bibliography -q @*[author ~= \bShi\b] --group_by none --order descending %}
