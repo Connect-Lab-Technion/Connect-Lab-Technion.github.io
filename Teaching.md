@@ -9,10 +9,13 @@ hero_height: is-small
 hero_image: /img/Connect_head_bkg.png
 ---
 
+I teach a number of courses within the Faculty of Aerospace Engineering.  The flagship courses I offer are:
+
 * [Networked Dynamic Systems (086730)](#NDS)
 * [Robust Control (088792)](#RoCon)
 * [Control Lab (085705)](#DroneLab)
 
+In addition, I have also taught Control Theory (084738), Dynamic Systems (084737), Undergraduate Seminar in Controls (085802), and Control of Multi-Input Multi-Output Systems (086289). 
 
 # Networked Dynamic Systems (086730)
 <div id="NDS"></div>
