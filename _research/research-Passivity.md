@@ -11,7 +11,7 @@ price: 7 # for sorting
 
 Over the last few decades, many engineering systems
 have become much more complex, as networked systems
-and large-scale systems turned common, and “system-ofsystems” evolved into a leading design methodology. To
+and large-scale systems turned common, and “system-of-systems” evolved into a leading design methodology. To
 address the ever-growing complexity of systems, many
 researchers suggested various component-level tools that guarantee system-level properties. One important example of such
 a notion is passivity, which can be informally stated as
