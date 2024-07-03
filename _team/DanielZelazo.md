@@ -23,6 +23,9 @@ tasp_link: https://tasp-technion.org/
 math: Technion Applied Math Graduate Program
 math_link: https://math.technion.ac.il/en/applied-math-graduate-program/
 
+gtep: Technion Grand Technion Energy Program
+gtep_link: https://gtep.technion.ac.il/
+
 technion: Technion – Israel Institute of Technology
 technion_link: https://www.technion.ac.il/
 
