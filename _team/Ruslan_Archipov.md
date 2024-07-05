@@ -17,3 +17,7 @@ bitbucket:
 facebook: 
 linkedin: 
 ---
+
+## Connect Lab Publications: 
+
+ {% bibliography -q @*[author ~= \bArhipov\b] --group_by none --order descending %}

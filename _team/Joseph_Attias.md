@@ -23,4 +23,7 @@ facebook:
 linkedin: https://www.linkedin.com/in/joseph-attias/
 ---
 
+## Connect Lab Publications: 
+
+ {% bibliography -q @*[author ~= \bAttias\b] --group_by none --order descending %}
 
