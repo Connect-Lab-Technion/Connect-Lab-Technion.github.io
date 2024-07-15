@@ -5,7 +5,7 @@ field : Formation Control
 faculty : Technion Autonomous Systems Program (TASP)
 category: master_student
 layout: team_member_personal_page
-image: 
+image: /img/team/JiachengShi.png
 link-new-tab: true
 bio:
     - M.Sc. TASP, Technion, since 2021
