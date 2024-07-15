@@ -5,7 +5,7 @@ field : Formation Control
 faculty : Aerospace Engineering
 category: master_student
 layout: team_member_personal_page
-image: 
+image: /img/team/Zamir.jpeg
 link-new-tab: true
 bio:
     - M.Sc. Aerospace Engineering, Technion, since 2024
