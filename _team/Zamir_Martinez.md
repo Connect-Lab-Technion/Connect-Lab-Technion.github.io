@@ -1,5 +1,5 @@
 ---
-title: Zamar Martinez
+title: Zamir Martinez
 subtitle: M.Sc. Student
 field : Formation Control
 faculty : Aerospace Engineering
