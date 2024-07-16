@@ -5,7 +5,7 @@ field : Learning and Network Identification
 faculty : Technion Autonomous Systems Program (TASP)
 category: master_student
 layout: team_member_personal_page
-image: 
+image: /img/team/ShaharAshkenazi.jpeg
 link-new-tab: true
 bio:
     - M.Sc. TASP, Technion, since 2022
