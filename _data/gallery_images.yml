@@ -1,0 +1,11 @@
+# In your Jekyll _plugins directory, create a file named generate_image_list.rb
+require 'yaml'
+
+Jekyll::Hooks.register :site, :after_init do |site|
+  image_dir = File.join(site.source, 'img', 'social', 'connect')
+  images = Dir.glob(File.join(image_dir, '*.jpg')).map { |f| File.basename(f) }
+  
+  File.open(File.join(site.source, '_data', 'gallery_images.yml'), 'w') do |f|
+    f.write(images.to_yaml)
+  end
+end
