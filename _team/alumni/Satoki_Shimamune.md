@@ -5,7 +5,7 @@ field :
 university : University of Cambridge
 country : UK
 faculty : 
-category: master_student
+category: alumni
 layout: team_member_personal_page
 image: /img/team/Satoki.jpeg
 link-new-tab: true

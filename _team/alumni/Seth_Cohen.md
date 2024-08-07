@@ -5,7 +5,7 @@ field : Robotics
 university : University of Texas - Austin
 country : USA
 faculty : Mechanial Engineering
-category: undergraduate_students
+category: alumni
 layout: team_member_personal_page
 image: /img/team/seth_cohen.jpeg
 link-new-tab: true
