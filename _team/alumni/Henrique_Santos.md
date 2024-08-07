@@ -5,7 +5,7 @@ field : Robotics
 university : Inteli - Instituto de Tecnologia e Liderança
 country : Brazil
 faculty : Computer Engineering
-category: undergraduate_students
+category: alumni
 layout: team_member_personal_page
 image: /img/team/Hernique.jpeg
 link-new-tab: true
