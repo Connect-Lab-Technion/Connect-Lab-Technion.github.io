@@ -23,7 +23,4 @@ website: authuser=0
 
 ---
 
-## Connect Lab Publications:
-
-{% bibliography -q @*[author ~= \bUlmer\b] --group_by none --order descending %}
 
