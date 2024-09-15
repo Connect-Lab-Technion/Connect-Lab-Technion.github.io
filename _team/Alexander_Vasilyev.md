@@ -5,7 +5,7 @@ field : Formation Control
 faculty : Mechanical Engineering
 category: undergraduate_students
 layout: team_member_personal_page
-image: 
+image: /img/team/AlexanderVasilyev.jpg
 link-new-tab: true
 bio:
     - B.Sc. student 
