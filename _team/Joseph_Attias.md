@@ -1,11 +1,11 @@
 ---
 title: Joseph Attias
-subtitle: Engineer
+subtitle: Researcher
 field : Robotics
 university : Rochester Institute of Technology
 country : USA
 faculty : 
-category: staff
+category: researcher
 layout: team_member_personal_page
 image: /img/team/josephattias.jpg
 link-new-tab: true
