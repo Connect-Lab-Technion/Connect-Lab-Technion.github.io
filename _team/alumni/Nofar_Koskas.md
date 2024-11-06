@@ -1,9 +1,10 @@
 ---
 title: Nofar Koskas
 subtitle: Undergraduate Student
+graduation : 2025
 field : Robotic Testbed Development
 faculty : Aerospace Engineering
-category: undergraduate_students
+category: alumni
 layout: team_member_personal_page
 image: /img/team/Nofar.jpeg
 link-new-tab: true

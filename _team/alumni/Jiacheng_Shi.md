@@ -1,9 +1,9 @@
 ---
 title: Jiacheng Shi
-subtitle: M.Sc. Student
+subtitle: M.Sc.
 field : Formation Control
 faculty : Technion Autonomous Systems Program (TASP)
-category: master_student
+category: alumni    
 layout: team_member_personal_page
 image: /img/team/JiachengShi.png
 link-new-tab: true
