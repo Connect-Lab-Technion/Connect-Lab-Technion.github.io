@@ -5,7 +5,7 @@ layout: research
 image: /img/research/EventTrigger/EventTrigger.png
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
-price: 7 # for sorting 
+price: 5 # for sorting 
 
 ---
 
