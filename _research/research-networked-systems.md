@@ -5,7 +5,7 @@ layout: research
 image: /img/research/NDS/dynamic_network.jpg
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
-price: 7 # for sorting 
+price: 1 # for sorting 
 
 ---
 Multi-agent systems are large-scale systems comprised of a group of coupled dynamic units, such as power generation sources in a power distribution network or a team of autonomous and unmanned vehicles. These systems interact via an exchange of information over a communication and sensing network. The complexity of this general class of problems arises from the heterogeneous dynamics of the systems comprising it, the diversity of interaction and communication mediums, and their scale in terms of the number of interacting systems and system interconnections. While research in this area is very active within the controls community, there remain many challenging and open problems that must be addressed before considering this a complete theory. The fundamental research questions we are looking at are:
