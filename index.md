@@ -1,5 +1,5 @@
 ---
-title: Cooperative Network and Controls Lab (ConNeCt)
+title: Cooperative Networks and Controls Lab (ConNeCt)
 subtitle: Technion - Israel Institute of Technology
 layout: page
 show_sidebar: false
