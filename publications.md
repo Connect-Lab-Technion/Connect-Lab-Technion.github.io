@@ -60,7 +60,7 @@ talks
 
 # 2025
 <div id="2025" style="padding-top: 350px; margin-top: -350px;"></div>
-{% bibliography --query @*[year=2024] --group_by none %}
+{% bibliography --query @*[year=2025] --group_by none %}
 [Back to Top](#Top)
 
 # 2024
