@@ -8,7 +8,7 @@ layout: team_member_personal_page
 image: /img/team/JiachengShi.png
 link-new-tab: true
 bio:
-    - M.Sc. TASP, Technion, since 2021
+    - M.Sc. TASP, Technion, 2024
     - B.Sc. Mechanical Engineering, Technion, 2021
 
 twitter: 
