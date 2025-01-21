@@ -155,12 +155,12 @@ talks
 
 # 2006
 <div id="2006" style="padding-top: 350px; margin-top: -350px;"></div>
-{% bibliography --query @*[year=2007] --group_by none %}
+{% bibliography --query @*[year=2006] --group_by none %}
 [Back to Top](#Top)
 
 # 2005
 <div id="2005" style="padding-top: 350px; margin-top: -350px;"></div>
-{% bibliography --query @*[year=2007] --group_by none %}
+{% bibliography --query @*[year=2005] --group_by none %}
 [Back to Top](#Top)
 
 # 2002
