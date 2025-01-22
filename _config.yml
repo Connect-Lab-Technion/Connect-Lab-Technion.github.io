@@ -135,7 +135,9 @@ scholar:
  style: _bibliography/ieee.csl 
  source: _bibliography
  bibliography_template: bib #bib_thumbnail
- bibliography: DZ_Complete.bib
+ bibliography:
+    -DZ_Complete.bib
+    -DZ_patents.bib
  group_by: type
  type_order: [article , inproceedings, misc, thesis]
  sort_by: year
