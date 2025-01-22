@@ -139,8 +139,8 @@ scholar:
     -DZ_Complete.bib
     -DZ_patents.bib
  group_by: type
- type_order: [article , inproceedings, misc, thesis]
- sort_by: year
+ type_order: [article , inproceedings, incollection, TechReport, Thesis, patent]
+ sort_by: [year, month]
  order: descending
 
 # Google Analytics
