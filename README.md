@@ -1,17 +1,19 @@
 # Connect LAB - Web Development Repository
+[![Deploy Jekyll site to Pages](https://github.com/Connect-Lab-Technion/Connect-Lab-Technion.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/Connect-Lab-Technion/Connect-Lab-Technion.github.io/actions/workflows/jekyll.yml)
 
-CONNECT LAB - Web Development Repository
 
 Welcome to the Cooperative Networks and Controls Lab (Connect) website development repository! This repository contains the source code, assets, and documentation for our main website. As a cutting-edge technology lab, we're dedicated to showcasing our innovative projects, research, and ideas.
 
-## Contents
 
 ## Documentation
 
-## Contributing
+Test local instances of the site with the following command: 
+```bash
+bundle exec jekyll serve
+```
 
+See `_config.yml` for high level configurations. 
 
-## Development
 
 ## License
 
