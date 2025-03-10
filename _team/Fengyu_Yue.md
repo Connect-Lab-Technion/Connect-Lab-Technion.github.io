@@ -1,6 +1,6 @@
 ---
 title: Fengyu Yue
-subtitle: Ph.D. Candidate
+subtitle: Ph.D. Student
 field : Multi-agent Control
 faculty : Aerospace Engineering
 category: phd_students
