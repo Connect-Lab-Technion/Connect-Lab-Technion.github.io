@@ -20,7 +20,6 @@ facebook:
 linkedin:  
 ---
 
-<!-- ## Connect Lab Publications:
+## Connect Lab Publications: 
 
-{% bibliography -q @*[author ~= \bLevy-Or\b] --group_by none --order descending %}
- -->
+ {% bibliography -q @*[author ~= \b Martinez\b] --group_by none --order descending %}
