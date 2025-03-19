@@ -22,4 +22,4 @@ linkedin:
 
 ## Connect Lab Publications: 
 
- {% bibliography -q @*[author ~= \b Martinez\b] --group_by none --order descending %}
+ {% bibliography -q @*[author ~= \bMartinez\b] --group_by none --order descending %}
