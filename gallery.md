@@ -1,3 +1,11 @@
+---
+layout: gallery
+title: Photo Gallery
+hero_height: is-small
+hero_image: /img/Connect_head_bkg.png 
+show_sidebar: false
+---
+
 # Gallery
 
 Welcome to the CONNECT Lab photo gallery. Below you will find two curated photo collections:
