@@ -1,33 +1,13 @@
----
-layout: gallery
-title: Photo Gallery
-hero_height: is-small
-hero_image: /img/Connect_head_bkg.png 
-show_sidebar: false
----
+# Gallery
 
-## Connect Lab at work and at play 
+Welcome to the CONNECT Lab photo gallery. Below you will find two curated photo collections:
 
-<div class="slick-slider">
-  {% for slide in site.data.gallery_slides %}
-    <div>
-      <img src="{{ slide.image }}" alt="{{ slide.description }}">
-    </div>
-  {% endfor %}
-</div>
+## 👷 Work at CONNECT Lab
 
-## Photo Grid
+<div class='sk-ww-flickr-album-single' data-embed-id='25554834'></div>
+<script src='https://widgets.sociablekit.com/flickr-album-single/widget.js' defer></script>
 
-<div class="columns is-multiline">
-  {% for slide in site.data.gallery_slides %}
-    <div class="column is-one-quarter-desktop is-half-tablet">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image">
-            <img src="{{ slide.image }}" alt="{{ slide.description }}" style="width: 100%; height: auto; object-fit: contain;">
-          </figure>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</div>
+## 📸 Social Moments
+
+<div class='sk-ww-flickr-album-single' data-embed-id='25554835'></div>
+<script src='https://widgets.sociablekit.com/flickr-album-single/widget.js' defer></script>
