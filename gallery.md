@@ -11,7 +11,7 @@ show_sidebar: false
 <h2>Work at CONNECT Lab</h2>
 <div class="gallery" id="work-gallery"></div>
 
-<h2>Social Moments</h2>
+<h2>docial Moments</h2>
 <div class="gallery" id="social-gallery"></div>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css"/>
