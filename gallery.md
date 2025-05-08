@@ -6,28 +6,18 @@ hero_image: /img/Connect_head_bkg.png
 show_sidebar: false
 ---
 
-## Connect Lab at work and at play 
+# Gallery
 
-<div class="slick-slider">
-  {% for slide in site.data.gallery_slides %}
-    <div>
-      <img src="{{ slide.image }}" alt="{{ slide.description }}">
-    </div>
-  {% endfor %}
-</div>
+Welcome to the CONNECT Lab gallery! We organize our images into two collections:
 
-## Photo Grid
+## Work at CONNECT Lab
 
-<div class="columns is-multiline">
-  {% for slide in site.data.gallery_slides %}
-    <div class="column is-one-quarter-desktop is-half-tablet">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image">
-            <img src="{{ slide.image }}" alt="{{ slide.description }}" style="width: 100%; height: auto; object-fit: contain;">
-          </figure>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</div>
+<iframe src="https://www.flickr.com/photos/1yen/albums/72177720325960052/player/" 
+        width="100%" height="500" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+</iframe>
+
+## Social Moments
+
+<iframe src="https://www.flickr.com/photos/1yen/albums/72177720325957766/player/" 
+        width="100%" height="500" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+</iframe>
