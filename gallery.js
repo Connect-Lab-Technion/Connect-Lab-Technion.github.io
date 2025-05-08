@@ -1,7 +1,7 @@
 
 (function () {
   const apiKey = 'aaab877eae3850bf7b5c7f145eb045a0';
-  const userId = '1yen';
+  const userId = '62929416@N00';
   const albums = {
     'work': '72177720325960052',
     'social': '72177720325957766'
