@@ -1,15 +1,17 @@
----
-layout: default
-title: Gallery
-permalink: /gallery/
+ ---
+layout: gallery
+title: Photo Gallery
+hero_height: is-small
+hero_image: /img/Connect_head_bkg.png 
+show_sidebar: false
 ---
 
 <h1>CONNECT Lab Gallery</h1>
 
-<h2>👷 Work at CONNECT Lab</h2>
+<h2>Work at CONNECT Lab</h2>
 <div class="gallery-wrapper" id="work-gallery"></div>
 
-<h2>📸 Social Moments</h2>
+<h2>Social Moments</h2>
 <div class="gallery-wrapper" id="social-gallery"></div>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css"/>
