@@ -15,5 +15,5 @@ Welcome to the CONNECT Lab photo gallery!
 
 ## Social Moments
 
-<div class='sk-ww-flickr-album-single' data-embed-id='25554835'></div>
+<div class='sk-ww-flickr-album-single' data-embed-id='25554834'></div>
 <script src='https://widgets.sociablekit.com/flickr-album-single/widget.js' defer></script>
