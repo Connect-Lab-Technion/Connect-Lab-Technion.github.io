@@ -52,3 +52,15 @@ This laboratory course focuses on the control and estimation of a quadcopter dro
     <img src="/img/Teaching/rolling_spider.png" alt="Rolling Spider Drone">
 </div>
 
+<div style="position:relative;padding-top:56.25%;">
+  <iframe 
+    src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTechnionAero%2Fvideos%2F351288040361759&show_text=0&width=560"
+    width="560" 
+    height="315" 
+    style="border:none;overflow:hidden;position:absolute;top:0;left:0;width:100%;height:100%;" 
+    scrolling="no" 
+    frameborder="0" 
+    allowfullscreen="true" 
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+  </iframe>
+</div>
