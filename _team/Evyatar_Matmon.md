@@ -20,7 +20,6 @@ facebook:
 linkedin: linkedin.com/in/evyatar-matmon-a4a7bb129
 ---
 
-<!-- ## Connect Lab Publications:
+## Connect Lab Publications: 
 
-{% bibliography -q @*[author ~= \bLevy-Or\b] --group_by none --order descending %}
- -->
+ {% bibliography -q @*[author ~= \bMatmon\b] --group_by none --order descending %}
