@@ -6,7 +6,7 @@ show_sidebar: false
   <!--<h2>{{ page.title }}</h2>-->
   <p><time datetime="{{ page.date }}"><strong>{{ page.date | date: "%B %-d, %Y" }}</strong></time></p>
   <div class="news-content">
-    {{ content }}
+    {{ content | markdownify }}
   </div>
 </article>
 
