@@ -109,3 +109,8 @@
 } */
 /* ADDITIONAL IMAGE STYLES */
 
+/* Fix paragraph spacing in Markdown-rendered posts */
+.post-content p, .page-content p, p {
+  margin-bottom: 1em;
+  text-indent: 0;
+}
