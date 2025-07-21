@@ -113,11 +113,7 @@
 } */
 /* ADDITIONAL IMAGE STYLES */
 
-/* Fix paragraph spacing in Markdown-rendered posts */
-.post-content p, .page-content p, p {
-  margin-bottom: 1em;
-  text-indent: 0;
-}
+
 
 
 
@@ -127,7 +123,7 @@ div.content.box p {
 }
 
 /* Force visible spacing between paragraphs */
-.content p {
+/*.content p {
   margin-bottom: 1em;
   text-indent: 0;
-}
+}*/
