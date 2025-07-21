@@ -116,12 +116,17 @@
 }
 
 /* Ensure spacing between paragraphs in news posts */
-.content p {
+/*.content p {
   margin-bottom: 1em !important;
   text-indent: 0 !important;
-}
+}*/
 
 div.content.box p {
   margin-bottom: 1em !important;
   text-indent: 0 !important;
+}
+
+.content p {
+  margin-bottom: 1em;
+  text-indent: 0;
 }
