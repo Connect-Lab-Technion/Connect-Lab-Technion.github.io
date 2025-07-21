@@ -115,17 +115,14 @@
   text-indent: 0;
 }
 
-/* Ensure spacing between paragraphs in news posts */
-/*.content p {
-  margin-bottom: 1em !important;
-  text-indent: 0 !important;
-}*/
+
 
 div.content.box p {
   margin-bottom: 1em !important;
   text-indent: 0 !important;
 }
 
+/* Force visible spacing between paragraphs */
 .content p {
   margin-bottom: 1em;
   text-indent: 0;
