@@ -120,3 +120,8 @@
   margin-bottom: 1em !important;
   text-indent: 0 !important;
 }
+
+div.content.box p {
+  margin-bottom: 1em !important;
+  text-indent: 0 !important;
+}
