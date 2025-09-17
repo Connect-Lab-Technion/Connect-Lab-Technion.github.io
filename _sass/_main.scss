@@ -140,3 +140,38 @@ $hero-darken: $dark !default;
   visibility: visible;
   width: 100%;
 }
+
+// Styling for news posts
+.news-post {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.news-post time {
+  display: block;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.news-content {
+  padding-top: 0.5rem;
+}
+
+.news-content p {
+  margin-bottom: 1em;
+}
+
+.news-content ul {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.news-content h1,
+.news-content h2,
+.news-content h3 {
+  color: #002855;
+  margin-top: 1.5rem;
+}
