@@ -5,7 +5,7 @@ field : Robotics
 university : Rochester Institute of Technology
 country : USA
 faculty : 
-category: alumni
+category: alumni_researcher_and_postdoctoral
 layout: team_member_personal_page
 image: /img/team/josephattias.jpg
 link-new-tab: true
