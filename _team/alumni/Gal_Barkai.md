@@ -3,17 +3,18 @@ title: Gal Barkai
 subtitle: Ph.D. Student
 field : Multi-agent Control
 faculty : Mechanical Engineering
-category: phd_students
+category: alumni
 layout: team_member_personal_page
 image: /img/team/GalBarkai.jpeg
 link-new-tab: true
+next-position: Post-doc University of Lorraine, France
 bio:
-    - Ph.D. student (direct track), Mechanical Engineering, Technion, since 2020
+    - Ph.D. Mechanical Engineering, Technion, 2025
     - B.Sc. Mechanical Engineering, Technion, 2019 Cum laude
 
 twitter:
 youtube:
-github:
+github: https://github.com/GalBarkai
 email: galbarkai@campus.technion.ac.il
 bitbucket: 
 facebook:
