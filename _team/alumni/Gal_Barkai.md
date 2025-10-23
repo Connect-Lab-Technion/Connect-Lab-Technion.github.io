@@ -1,7 +1,7 @@
 ---
 title: Gal Barkai
-subtitle: Ph.D. Student
-field : Multi-agent Control
+subtitle: Ph.D.
+graduation: 2025
 faculty : Mechanical Engineering
 category: alumni
 layout: team_member_personal_page
