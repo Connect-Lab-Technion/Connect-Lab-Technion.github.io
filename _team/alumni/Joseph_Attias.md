@@ -1,6 +1,6 @@
 ---
 title: Joseph Attias
-subtitle: Researcher
+subtitle: Researcher, 2024-2025
 field : Robotics
 university : Rochester Institute of Technology
 country : USA
