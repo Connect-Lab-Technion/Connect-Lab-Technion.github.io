@@ -3,12 +3,12 @@ title: Alexander Vasilyev
 subtitle: Undergraduate Student
 field : Formation Control
 faculty : Mechanical Engineering
-category: undergraduate_students
+category: alumni
 layout: team_member_personal_page
 image: /img/team/AlexanderVasilyev.jpg
 link-new-tab: true
 bio:
-    - B.Sc. student 
+    - B.Sc. Mechanical Engineering, Technion 2025
 
 twitter: 
 youtube: 
