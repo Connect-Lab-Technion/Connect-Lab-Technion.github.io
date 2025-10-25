@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coordination & Control of Multi-Agent Systems (0860730) — Winter 2025</title>
+  <meta name="description" content="Self-contained course page for Coordination & Control of Multi-Agent Systems (0860730), Winter 2025." />
+  <style>
+    :root{
+      --bg:#0f172a; --card:#111827; --ink:#e5e7eb; --muted:#9ca3af; --link:#93c5fd; --accent:#22d3ee; --border:#1f2937;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans"; color:var(--ink);
+         background:radial-gradient(1200px 800px at 10% -10%, #1e293b 0%, #0b1222 45%, var(--bg) 100%);}
+    header{padding:56px 20px 28px; text-align:center}
+    header h1{margin:0 0 8px; font-size:clamp(28px,4vw,40px)}
+    header p{margin:6px 0; color:var(--muted)}
+    .wrap{max-width:1000px; margin:0 auto; padding:0 20px 60px}
+    .topbar{display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin:16px 0 0}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px;
+         background:linear-gradient(180deg,#0ea5e9 0%,#2563eb 100%); color:#fff; text-decoration:none; font-weight:600;
+         box-shadow:0 10px 20px rgba(37,99,235,.25); transition:transform .08s ease}
+    .btn:hover{transform:translateY(-1px)}
+    .grid{display:grid; gap:18px; grid-template-columns:1fr; margin-top:26px}
+    @media (min-width:900px){ .grid{grid-template-columns:1.35fr .65fr} }
+    section{background:linear-gradient(180deg,#0b1222,#0a0f1c); border:1px solid var(--border); border-radius:16px; padding:20px;
+            box-shadow:0 1px 0 #1b2433 inset, 0 10px 30px rgba(0,0,0,.25)}
+    h2{margin:0 0 12px; font-size:22px}
+    h3{margin:18px 0 8px; font-size:18px}
+    ul{margin:10px 0 0 18px}
+    li{margin:4px 0}
+    .muted{color:var(--muted)}
+    .list a{color:var(--link); text-decoration:none}
+    .list a:hover{text-decoration:underline}
+    .pill{display:inline-block; padding:4px 10px; border:1px solid var(--border); border-radius:999px; color:var(--muted); margin-right:6px; font-size:90%}
+    .sidebox{position:sticky; top:16px}
+    .small{font-size:92%}
+    .tight li{margin:2px 0}
+    footer{color:var(--muted); text-align:center; margin-top:28px}
+    .callout{background:#0b1526; border:1px solid #1f2f4a; border-radius:12px; padding:12px 14px; margin:10px 0; color:#bcd0ff}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Coordination & Control of Multi-Agent Systems <span class="muted">(0860730)</span></h1>
+    <p>Winter Semester 2025 · Lectures in English</p>
+    <div class="topbar">
+      <a class="btn" href="./pdf/NDS2025_CourseInfo.pdf" target="_blank" rel="noopener">📄 Course Handout (PDF)</a>
+      <a class="btn" href="#notes">📝 Lecture Notes</a>
+      <a class="btn" href="#homeworks">📚 Homeworks</a>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="grid">
+      <main>
+        <section>
+          <h2>Overview</h2>
+          <p>
+            This course introduces modeling, analysis, and design for networked (multi-agent) dynamical systems using
+            graph theory, dynamical systems, and optimization. Topics include consensus, formation control, performance
+            analysis, and applications to robotic and aerospace systems.
+          </p>
+          <p class="small muted">See the handout PDF for the authoritative syllabus and policies.</p>
+        </section>
+
+        <section>
+          <h2>Syllabus (topics)</h2>
+          <ul class="tight">
+            <li>Graph theory; algebraic & spectral graph theory</li>
+            <li>Consensus protocols (undirected, directed, switching, random)</li>
+            <li>Relative sensing networks (formation control, distributed estimation)</li>
+            <li>Networks as systems: stability, performance (H<sub>2</sub>/H<sub>∞</sub>), controllability, observability</li>
+            <li>Nonlinear models (Kuramoto, interconnected passive systems)</li>
+            <li>Connectivity maintenance & maximization</li>
+            <li>Rigid formations for control & localization; graph design</li>
+            <li>Applications in robotics and aerospace</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Grading Policy</h2>
+          <ul class="tight">
+            <li><span class="pill">Homeworks</span> 4–6 sets; ungraded (solutions provided; strongly recommended practice).</li>
+            <li><span class="pill">Midterm Project</span> 40% (take-home; individual).</li>
+            <li><span class="pill">Final Project</span> 60% (details TBA).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="schedule">Tentative Weekly Outline</h2>
+          <ol class="tight small">
+            <li>Intro & graph theory fundamentals; algebraic graph theory</li>
+            <li>Consensus: undirected, directed</li>
+            <li>Consensus: switching; connectivity maintenance</li>
+            <li>Consensus feedback for linear systems</li>
+            <li>Networks as systems—controllability, observability</li>
+            <li>Stability & performance; edge agreement</li>
+            <li>Rigidity theory (formation control)</li>
+            <li>Distance-based formation control</li>
+            <li>Bearing-based formation control</li>
+            <li>Consensus design & synthesis</li>
+            <li>Nonlinear consensus—Kuramoto; passive systems</li>
+            <li>Advanced topics / projects</li>
+            <li>Advanced topics / projects</li>
+          </ol>
+        </section>
+
+        <section id="notes">
+          <h2>Lecture Notes</h2>
+          <div class="callout small">
+            Add files under <code>/courses/nds2025/notes/</code> and link them below.
+          </div>
+          <ul class="list">
+            <li><a href="./notes/lec01.pdf">Lecture 01 — Introduction & Graph Theory (PDF)</a></li>
+            <li><a href="./notes/lec02.pdf">Lecture 02 — Consensus on Undirected/Directed Graphs (PDF)</a></li>
+          </ul>
+        </section>
+
+        <section id="homeworks">
+          <h2>Homeworks</h2>
+          <div class="callout small">
+            Put sets and solutions in <code>/courses/nds2025/homeworks/</code> and link them below.
+          </div>
+          <ul class="list">
+            <li>
+              <a href="./homeworks/hw01.pdf">HW 1 — Graphs & Consensus (PDF)</a>
+              · <a href="./homeworks/hw01-solutions.pdf">Solutions</a>
+            </li>
+            <li>
+              <a href="./homeworks/hw02.pdf">HW 2 — Stability & Performance (PDF)</a>
+              · <a href="./homeworks/hw02-solutions.pdf">Solutions</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Suggested Textbooks</h2>
+          <ul class="list small">
+            <li>Mesbahi & Egerstedt, <em>Graph Theoretic Methods in Multiagent Networks</em></li>
+            <li>Bullo, <em>Lectures on Network Systems</em></li>
+            <li>Lunze, <em>Networked Control of Multi-Agent Systems</em></li>
+            <li>Godsil & Royle, <em>Algebraic Graph Theory</em></li>
+            <li>Horn & Johnson, <em>Matrix Analysis</em></li>
+            <li>Bai, Arcak, Wen, <em>Cooperative Control Design</em></li>
+            <li>Ren & Beard, <em>Distributed Consensus in Multi-Vehicle Cooperative Control</em></li>
+            <li>Bullo, Cortés, Martínez, <em>Distributed Control of Robotic Networks</em></li>
+          </ul>
+        </section>
+
+        <footer>
+          <p class="small">© Winter 2025 · Coordination &amp; Control of Multi-Agent Systems (0860730)</p>
+        </footer>
+      </main>
+
+      <aside class="sidebox">
+        <section>
+          <h2>Logistics</h2>
+          <ul class="tight small">
+            <li><strong>Instructor:</strong> Prof. Daniel Zelazo</li>
+            <li><strong>Office:</strong> Lady Davis 755</li>
+            <li><strong>Phone:</strong> x3196</li>
+            <li><strong>Grader:</strong> Zamir Martinez (<a href="mailto:z.m@campus.technion.ac.il">z.m@campus.technion.ac.il</a>)</li>
+            <li><strong>When/Where:</strong> Wednesdays 09:30–12:30, Ullman 504</li>
+            <li><strong>Office Hours:</strong> TBD or by appointment</li>
+            <li><strong>Course Web:</strong> Moodle</li>
+            <li><strong>Language:</strong> English</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Quick Links</h2>
+          <ul class="list small">
+            <li><a href="./pdf/NDS2025_CourseInfo.pdf" target="_blank" rel="noopener">Course Handout (PDF)</a></li>
+            <li><a href="#schedule">Weekly Outline</a></li>
+            <li><a href="#notes">Lecture Notes</a></li>
+            <li><a href="#homeworks">Homeworks</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Maintenance</h2>
+          <p class="small muted">Edit this page directly in <code>/courses/nds2025/index.html</code>. Keep all course files in this folder and its subfolders.</p>
+        </section>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
