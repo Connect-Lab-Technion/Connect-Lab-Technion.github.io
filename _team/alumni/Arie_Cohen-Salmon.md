@@ -3,12 +3,12 @@ title: Arie Cohen-Salmon
 subtitle: Undergraduate Student
 field : Robotic Testbed Development
 faculty : Mechanical Engineering
-category: undergraduate_students
+category: alumni
 layout: team_member_personal_page
 image: /img/team/ArieCohenSalmon.jpg
 link-new-tab: true
 bio:
-    - B.Sc. student 
+    - B.Sc. Mechanical Engineering, Technion 2025
 
 twitter: 
 youtube: 
