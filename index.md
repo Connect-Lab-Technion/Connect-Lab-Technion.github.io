@@ -12,7 +12,7 @@ hero_color: is-black
 
 The Cooperative Networks and Controls (ConNeCt) lab focuses on the control and coordination of multi-agent systems.  Our approach for studying these systems is through a blend of systems and control theory with graph theory.   While our heart and soul rests in the fundamental and theoretical challenges of networked systems, we also consider their real-world application through a robotic testbed consisting of ground and aerial vehicles.
 
-The Connect lab is a research group in the [Faculty of Aerospace Engineering](https://aerospace.technion.ac.il/) at the [Technion - Israel Institute of Technology](https://www.google.com/search?q=technion&rlz=1C5CHFA_enIL991IL991&oq=technion+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDwyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMzM0NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8).  Our team consists of students from across the Technion and researchers from around the world.  Our physical home is within the [Philadelphia Flight Control Laboratory](https://pfcl.technion.ac.il/).  Come visit!
+The Connect lab is a research group in the [Stephen B. Klein Faculty of Aerospace Engineering](https://aerospace.technion.ac.il/) at the [Technion - Israel Institute of Technology](https://www.google.com/search?q=technion&rlz=1C5CHFA_enIL991IL991&oq=technion+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDwyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMzM0NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8).  Our team consists of students from across the Technion and researchers from around the world.  Our physical home is within the [Philadelphia Flight Control Laboratory](https://pfcl.technion.ac.il/).  Come visit!
 
 
 <!-- Please visit our [<span style="color:red">
