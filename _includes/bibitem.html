@@ -1,0 +1,19 @@
+<li id="{{ entry.key }}" class="publication-item">
+  <span class="pub-text">
+    {{ reference }}
+  </span>
+
+  {% if entry.bibtex %}
+    <button class="button is-small is-light"
+            type="button"
+            onclick="toggleBibtex('{{ entry.key }}')"
+            style="margin-left:0.5rem;">
+      BibTeX
+    </button>
+
+    <pre id="bibtex-{{ entry.key }}"
+         style="display:none; margin:0.25rem 0 0 0; font-size:0.85em; overflow-x:auto;">
+{{ entry.bibtex | escape }}
+    </pre>
+  {% endif %}
+</li>
