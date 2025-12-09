@@ -172,3 +172,15 @@ talks
 <div id="2001" style="padding-top: 350px; margin-top: -350px;"></div>
 {% bibliography --query @*[year=2001] --group_by none %}
 [Back to Top](#Top)
+
+<script>
+function toggleBibtex(key) {
+  var el = document.getElementById('bibtex-' + key);
+  if (!el) return;
+  if (el.style.display === 'none' || el.style.display === '') {
+    el.style.display = 'block';
+  } else {
+    el.style.display = 'none';
+  }
+}
+</script>
