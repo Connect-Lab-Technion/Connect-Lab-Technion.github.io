@@ -140,8 +140,6 @@ scholar:
  type_order: [article , inproceedings, incollection, TechReport, Thesis, patent]
  sort_by: [year, month]
  order: descending
- use_raw_bibtex_entry: true     
- bibliography_template: bibitem 
 
 # Google Analytics
 google_analytics: G-2XT08ZKN88
