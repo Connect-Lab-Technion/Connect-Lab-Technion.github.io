@@ -82,6 +82,19 @@
 	<img alt="{{key}}.poster" src="https://img.shields.io/static/v1?label=&message=poster&color=gray">
 </a>
 {% endif %}	
+{% if entry.bibtex %}
+<a href="javascript:void(0);" onclick="toggleBibtex('{{ entry.key }}')">
+    <img alt="{{key}}.bibtex" src="https://img.shields.io/static/v1?label=&message=BibTeX&color=lightgrey">
+</a>
+{% endif %}
+{% if entry.bibtex %}
+<div id="bibtex-{{ entry.key }}"
+    style="display:none; margin-top:0.5rem;">
+    <pre style="font-size:0.8em; background:#f9f9f9; border:1px solid #ddd; padding:0.5rem; white-space:pre; overflow-x:auto;">
+{{ entry.bibtex }}
+    </pre>
+</div>
+{% endif %}
 
 		</div>
 	</div>
