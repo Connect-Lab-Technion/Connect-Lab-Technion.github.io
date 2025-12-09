@@ -91,14 +91,10 @@
 <div id="bibtex-{{ entry.key }}"
     style="display:none; margin-top:0.5rem;">
     <pre style="font-size:0.8em; background:#f9f9f9; border:1px solid #ddd; padding:0.5rem; white-space:pre; overflow-x:auto;">
-{% assign bib_lines = entry.bibtex | split: '\n' %}
-{% for line in bib_lines %}
-{% unless line contains 'researchtopic' or line contains 'pdf =' or line contains 'slides =' or line contains 'keywords =' %}
-{{ line }}
-{% endunless %}
-{% endfor %}
-  </pre>
+{{ entry.bibtex }}
+    </pre>
 </div>
+{% endif %}
 
 		</div>
 	</div>
