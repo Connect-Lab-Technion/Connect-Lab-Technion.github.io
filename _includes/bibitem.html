@@ -1,0 +1,103 @@
+---
+---
+{{ reference }}
+
+<div class="pub-links" style="margin-top:0.25rem;">
+  {% if entry.pdf %}
+    <a class="button is-small is-light"
+       href="{{ entry.pdf | relative_url }}"
+       target="_blank" rel="noopener">
+      PDF
+    </a>
+  {% endif %}
+
+  {% if entry.arxiv %}
+    <a class="button is-small is-light"
+       href="{{ entry.arxiv }}"
+       target="_blank" rel="noopener">
+      arXiv
+    </a>
+  {% endif %}
+
+  {% if entry.doi %}
+    <a class="button is-small is-light"
+       href="https://dx.doi.org/{{ entry.doi }}"
+       target="_blank" rel="noopener">
+      DOI
+    </a>
+  {% endif %}
+
+  {% if entry.slides %}
+    <a class="button is-small is-light"
+       href="{{ entry.slides | relative_url }}"
+       target="_blank" rel="noopener">
+      Slides
+    </a>
+  {% endif %}
+
+  {% if entry.supplementary %}
+    <a class="button is-small is-light"
+       href="{{ entry.supplementary | relative_url }}"
+       target="_blank" rel="noopener">
+      Supplementary
+    </a>
+  {% endif %}
+
+  {% if entry.material %}
+    <a class="button is-small is-light"
+       href="{{ entry.material | relative_url }}"
+       target="_blank" rel="noopener">
+      Material
+    </a>
+  {% endif %}
+
+  {% if entry.website %}
+    <a class="button is-small is-light"
+       href="{{ entry.website }}"
+       target="_blank" rel="noopener">
+      Website
+    </a>
+  {% endif %}
+
+  {% if entry.repo %}
+    <a class="button is-small is-light"
+       href="{{ entry.repo }}"
+       target="_blank" rel="noopener">
+      Code
+    </a>
+  {% endif %}
+
+  {% if entry.video %}
+    <a class="button is-small is-light"
+       href="{{ entry.video }}"
+       target="_blank" rel="noopener">
+      Video
+    </a>
+  {% endif %}
+
+  {% if entry.poster %}
+    <a class="button is-small is-light"
+       href="{{ entry.poster | relative_url }}"
+       target="_blank" rel="noopener">
+      Poster
+    </a>
+  {% endif %}
+
+  {% if entry.bibtex %}
+    <button class="button is-small is-link is-light"
+            type="button"
+            onclick="toggleBibtex('{{ entry.key }}')">
+      BibTeX
+    </button>
+  {% endif %}
+</div>
+
+{% if entry.bibtex %}
+  <div id="bibtex-{{ entry.key }}"
+       class="bibtex-box"
+       style="display:none; margin-top:0.3rem;">
+    <pre style="font-size:0.85em; padding:0.5rem; border:1px solid #ddd; border-radius:4px; background:#f9f9f9; white-space:pre; overflow-x:auto;">
+{{ entry.bibtex | escape }}
+    </pre>
+  </div>
+{% endif %}
