@@ -3,12 +3,12 @@ title: Evyatar Matmon
 subtitle: M.Sc. Student
 field : Network Identification
 faculty : Technion Autonomous Systems Program (TASP)
-category: master_student
+category: alumni
 layout: team_member_personal_page
 image: /img/team/evyatar.jpg
 link-new-tab: true
 bio:
-    - M.Sc. TASP, Technion, since 2022
+    - M.Sc. TASP, Technion, 2025
     - B.Sc. Aerospace Engineering, Technion 2019 Summa Cum Laude
 
 twitter: 
