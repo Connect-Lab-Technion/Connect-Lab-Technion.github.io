@@ -1,6 +1,7 @@
 ---
 title: Jiacheng Shi
 subtitle: M.Sc.
+graduation: 2024
 field : Formation Control
 faculty : Technion Autonomous Systems Program (TASP)
 category: alumni    
