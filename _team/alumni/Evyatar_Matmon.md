@@ -1,6 +1,7 @@
 ---
 title: Evyatar Matmon
-subtitle: M.Sc. Student
+subtitle: M.Sc.
+graduation: 2025
 field : Network Identification
 faculty : Technion Autonomous Systems Program (TASP)
 category: alumni
