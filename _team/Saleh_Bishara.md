@@ -5,7 +5,7 @@ field :
 faculty : Stephen B. Klein Faculty of Aerospace Engineering
 category: master_student
 layout: team_member_personal_page
-image: 
+image: /img/team/SalehBishara.jpeg
 link-new-tab: true
 bio:
     - M.Sc. Aerospace Engineering, Technion, since 2025
