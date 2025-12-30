@@ -73,6 +73,7 @@ Conference, Workshop, and Session Organization:
 * CDC Invited Session on *Rigidity Theory for Problems in Multi-Robot Coordination* - co-orgainzer (2015)
 
 Service:
+* Associate Editor for IEEE Transcations on Control of Network Systems
 * IEEE Senior Member
 * [Israeil Association for Automatic Control](https://iaac.technion.ac.il/){:target="_blank"} (IAAC) Treasurer
 * Member IEEE CSS Technical Committee on Networks and Communications
