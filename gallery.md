@@ -10,11 +10,11 @@ Welcome to the CONNECT Lab photo gallery!
 
 ## Work at CONNECT Lab
 
-<div class='sk-ww-flickr-album-single' data-embed-id='25555912'></div>
+<div class="flickr-carousel" data-photoset-id="72177720325960052" data-title="Work at CONNECT Lab"></div>
 
 
 ## Social Moments
 
-<div class='sk-ww-flickr-album-single' data-embed-id='25554834'></div>
+<div class="flickr-carousel" data-photoset-id="72177720325957766" data-title="Social Moments"></div>
 
-<script src='https://widgets.sociablekit.com/flickr-album-single/widget.js' defer></script>
+<script src="/assets/js/flickr-carousel.js" defer></script>
