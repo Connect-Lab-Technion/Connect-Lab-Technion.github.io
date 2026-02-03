@@ -22,6 +22,12 @@
   padding: 1rem;
 }
 
+.flickr-carousel-track .slick-list,
+.flickr-carousel-track .slick-slide,
+.flickr-carousel-track .slick-slide > div {
+  height: auto;
+}
+
 .flickr-carousel-track .flickr-slide {
   display: flex !important;
   align-items: center;
@@ -29,7 +35,8 @@
 }
 
 .flickr-carousel-track img {
-  max-height: 420px;
+  display: block;
+  max-height: 70vh;
   width: 100%;
   height: auto;
   object-fit: contain;

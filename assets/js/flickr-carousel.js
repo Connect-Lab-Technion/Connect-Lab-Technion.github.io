@@ -59,6 +59,14 @@
       const photos = await fetchPhotos(photosetId);
       photos.forEach((photo) => track.appendChild(buildSlide(photo)));
 
+      track.querySelectorAll('img').forEach((img) => {
+        img.addEventListener('load', () => {
+          if (window.jQuery && window.jQuery(track).hasClass('slick-initialized')) {
+            window.jQuery(track).slick('setPosition');
+          }
+        });
+      });
+
       if (typeof window.jQuery === 'undefined' || typeof window.jQuery(track).slick !== 'function') {
         container.classList.add('flickr-carousel--no-slick');
         return;
@@ -73,6 +81,10 @@
         lazyLoad: 'ondemand',
         autoplay: true,
         autoplaySpeed: 4500
+      });
+
+      window.jQuery(track).on('lazyLoaded', () => {
+        window.jQuery(track).slick('setPosition');
       });
     } catch (err) {
       container.textContent = 'Unable to load Flickr album right now.';
