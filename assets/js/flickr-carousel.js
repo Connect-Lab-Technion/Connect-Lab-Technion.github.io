@@ -2,6 +2,72 @@
   const apiKey = 'aaab877eae3850bf7b5c7f145eb045a0';
   const COVERFLOW_DESKTOP_SLIDES = 5;
   const COVERFLOW_TABLET_SLIDES = 3;
+  let lightboxBound = false;
+
+  function ensureLightbox() {
+    if (document.getElementById('flickr-lightbox')) {
+      return;
+    }
+
+    const lightbox = document.createElement('div');
+    lightbox.id = 'flickr-lightbox';
+    lightbox.className = 'flickr-lightbox';
+    lightbox.innerHTML = `
+      <button class="flickr-lightbox-close" type="button" aria-label="Close lightbox">&times;</button>
+      <img class="flickr-lightbox-image" alt="">
+      <div class="flickr-lightbox-caption"></div>
+    `;
+    document.body.appendChild(lightbox);
+  }
+
+  function openLightbox(src, caption) {
+    ensureLightbox();
+    const lightbox = document.getElementById('flickr-lightbox');
+    if (!lightbox) {
+      return;
+    }
+
+    const image = lightbox.querySelector('.flickr-lightbox-image');
+    const captionEl = lightbox.querySelector('.flickr-lightbox-caption');
+    image.src = src;
+    image.alt = caption || '';
+    captionEl.textContent = caption || '';
+    lightbox.classList.add('is-open');
+    document.body.classList.add('flickr-lightbox-open');
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('flickr-lightbox');
+    if (!lightbox) {
+      return;
+    }
+    lightbox.classList.remove('is-open');
+    document.body.classList.remove('flickr-lightbox-open');
+  }
+
+  function bindLightboxEvents() {
+    if (lightboxBound) {
+      return;
+    }
+    lightboxBound = true;
+
+    document.addEventListener('click', (event) => {
+      const closeBtn = event.target.closest('.flickr-lightbox-close');
+      const lightbox = event.target.classList.contains('flickr-lightbox')
+        ? event.target
+        : null;
+
+      if (closeBtn || (lightbox && lightbox.classList.contains('is-open'))) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+  }
 
   function applyCoverflowClasses(track) {
     const $track = window.jQuery(track);
@@ -148,12 +214,32 @@
       window.jQuery(track).on('afterChange', () => {
         applyCoverflowClasses(track);
       });
+
+      track.addEventListener('click', (event) => {
+        const image = event.target.closest('img');
+        if (!image) {
+          return;
+        }
+
+        const slide = image.closest('.slick-slide');
+        if (!slide || !slide.classList.contains('slick-center')) {
+          return;
+        }
+
+        const src = image.getAttribute('src') || image.getAttribute('data-lazy');
+        if (!src) {
+          return;
+        }
+        openLightbox(src, image.getAttribute('alt') || '');
+      });
     } catch (err) {
       container.textContent = 'Unable to load Flickr album right now.';
     }
   }
 
   document.addEventListener('DOMContentLoaded', () => {
+    bindLightboxEvents();
+    ensureLightbox();
     document.querySelectorAll('.flickr-carousel').forEach((container) => {
       initCarousel(container);
     });
