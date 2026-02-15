@@ -46,22 +46,22 @@
 }
 
 .flickr-carousel-track .slick-slide.is-left-1 {
-  transform: perspective(1200px) rotateY(26deg) translateX(62px) scale(0.55);
+  transform: perspective(1200px) rotateY(26deg) translateX(-90px) scale(0.55);
   transform-origin: right center;
 }
 
 .flickr-carousel-track .slick-slide.is-left-2 {
-  transform: perspective(1200px) rotateY(34deg) translateX(138px) scale(0.42);
+  transform: perspective(1200px) rotateY(34deg) translateX(-180px) scale(0.42);
   transform-origin: right center;
 }
 
 .flickr-carousel-track .slick-slide.is-right-1 {
-  transform: perspective(1200px) rotateY(-26deg) translateX(-62px) scale(0.55);
+  transform: perspective(1200px) rotateY(-26deg) translateX(90px) scale(0.55);
   transform-origin: left center;
 }
 
 .flickr-carousel-track .slick-slide.is-right-2 {
-  transform: perspective(1200px) rotateY(-34deg) translateX(-138px) scale(0.42);
+  transform: perspective(1200px) rotateY(-34deg) translateX(180px) scale(0.42);
   transform-origin: left center;
 }
 
