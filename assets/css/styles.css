@@ -30,11 +30,11 @@
 }
 
 .flickr-carousel-track .slick-list {
-  margin: 0 -0.8rem;
+  margin: 0 -1.25rem;
 }
 
 .flickr-carousel-track .slick-slide {
-  padding: 0 0.8rem;
+  padding: 0 1.25rem;
   opacity: 0.2;
   transform: scale(0.52);
   transition: transform 320ms ease, opacity 320ms ease;
@@ -46,22 +46,22 @@
 }
 
 .flickr-carousel-track .slick-slide.is-left-1 {
-  transform: perspective(1200px) rotateY(26deg) translateX(24px) scale(0.66);
+  transform: perspective(1200px) rotateY(26deg) translateX(34px) scale(0.66);
   transform-origin: right center;
 }
 
 .flickr-carousel-track .slick-slide.is-left-2 {
-  transform: perspective(1200px) rotateY(34deg) translateX(52px) scale(0.52);
+  transform: perspective(1200px) rotateY(34deg) translateX(78px) scale(0.52);
   transform-origin: right center;
 }
 
 .flickr-carousel-track .slick-slide.is-right-1 {
-  transform: perspective(1200px) rotateY(-26deg) translateX(-24px) scale(0.66);
+  transform: perspective(1200px) rotateY(-26deg) translateX(-34px) scale(0.66);
   transform-origin: left center;
 }
 
 .flickr-carousel-track .slick-slide.is-right-2 {
-  transform: perspective(1200px) rotateY(-34deg) translateX(-52px) scale(0.52);
+  transform: perspective(1200px) rotateY(-34deg) translateX(-78px) scale(0.52);
   transform-origin: left center;
 }
 

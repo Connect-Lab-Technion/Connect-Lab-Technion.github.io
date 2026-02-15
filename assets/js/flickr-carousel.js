@@ -1,7 +1,7 @@
 (function () {
   const apiKey = 'aaab877eae3850bf7b5c7f145eb045a0';
-  const COVERFLOW_DESKTOP_SLIDES = 3;
-  const COVERFLOW_TABLET_SLIDES = 1;
+  const COVERFLOW_DESKTOP_SLIDES = 5;
+  const COVERFLOW_TABLET_SLIDES = 3;
 
   function applyCoverflowClasses(track) {
     const $track = window.jQuery(track);
@@ -107,7 +107,7 @@
         slidesToShow: desktopSlidesToShow,
         slidesToScroll: 1,
         centerMode: hasMultiplePhotos,
-        centerPadding: hasMultiplePhotos ? '6%' : '0px',
+        centerPadding: hasMultiplePhotos ? '2%' : '0px',
         focusOnSelect: hasMultiplePhotos,
         infinite: photos.length > desktopSlidesToShow,
         dots: true,
@@ -122,7 +122,7 @@
             settings: {
               slidesToShow: tabletSlidesToShow,
               centerMode: hasMultiplePhotos,
-              centerPadding: hasMultiplePhotos ? '16%' : '0px',
+              centerPadding: hasMultiplePhotos ? '10%' : '0px',
               infinite: photos.length > tabletSlidesToShow
             }
           },
