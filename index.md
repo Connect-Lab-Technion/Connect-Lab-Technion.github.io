@@ -26,7 +26,7 @@ The Connect lab is a research group in the [Stephen B. Klein Faculty of Aerospac
 We are always looking for highly-motivated individuals to join our group, see details [here]({{ site.baseurl }}/Positions).
 </b>
 
-<div class="slick-slider">
+<div class="slick-slider home-slick-slider">
   {% for slide in site.data.home_slides %}
     <div>
       <img src="{{ slide.image }}" alt="{{ slide.description }}">
@@ -77,5 +77,4 @@ We are always looking for highly-motivated individuals to join our group, see de
   </div> -->
   <!-- Add more grid items for more images -->
   <!-- </div>  -->
-
 
