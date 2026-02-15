@@ -32,18 +32,24 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+  min-height: clamp(220px, 55vh, 560px);
 }
 
 .flickr-carousel-track .flickr-figure {
   margin: 0;
   width: 100%;
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flickr-carousel-track img {
   display: block;
-  max-height: min(70vh, 560px);
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: clamp(220px, 55vh, 560px);
+  width: auto !important;
+  height: auto !important;
   object-fit: contain !important;
 }
 
