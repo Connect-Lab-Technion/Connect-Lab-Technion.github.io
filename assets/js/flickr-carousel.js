@@ -77,7 +77,7 @@
         slidesToScroll: 1,
         dots: true,
         arrows: true,
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         lazyLoad: 'ondemand',
         autoplay: true,
         autoplaySpeed: 4500
