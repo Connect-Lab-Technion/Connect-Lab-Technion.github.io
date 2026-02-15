@@ -1,5 +1,32 @@
 (function () {
   const apiKey = 'aaab877eae3850bf7b5c7f145eb045a0';
+  const COVERFLOW_DESKTOP_SLIDES = 5;
+  const COVERFLOW_TABLET_SLIDES = 3;
+
+  function applyCoverflowClasses(track) {
+    const $track = window.jQuery(track);
+    const $slides = $track.find('.slick-slide');
+    $slides.removeClass('is-left-1 is-left-2 is-right-1 is-right-2');
+
+    const $center = $track.find('.slick-slide.slick-center').first();
+    if (!$center.length) {
+      return;
+    }
+
+    $center
+      .prevAll('.slick-active')
+      .slice(0, 2)
+      .each((idx, el) => {
+        window.jQuery(el).addClass(idx === 0 ? 'is-left-1' : 'is-left-2');
+      });
+
+    $center
+      .nextAll('.slick-active')
+      .slice(0, 2)
+      .each((idx, el) => {
+        window.jQuery(el).addClass(idx === 0 ? 'is-right-1' : 'is-right-2');
+      });
+  }
   async function fetchPhotos(photosetId) {
     const url = `https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${apiKey}&photoset_id=${photosetId}&format=json&nojsoncallback=1`;
     const res = await fetch(url);
@@ -72,19 +99,54 @@
         return;
       }
 
+      const hasMultiplePhotos = photos.length > 1;
+      const desktopSlidesToShow = Math.min(COVERFLOW_DESKTOP_SLIDES, photos.length);
+      const tabletSlidesToShow = Math.min(COVERFLOW_TABLET_SLIDES, photos.length);
+
       window.jQuery(track).slick({
-        slidesToShow: 1,
+        slidesToShow: desktopSlidesToShow,
         slidesToScroll: 1,
+        centerMode: hasMultiplePhotos,
+        centerPadding: hasMultiplePhotos ? '10%' : '0px',
+        focusOnSelect: hasMultiplePhotos,
+        infinite: photos.length > desktopSlidesToShow,
         dots: true,
         arrows: true,
         adaptiveHeight: false,
         lazyLoad: 'ondemand',
         autoplay: true,
-        autoplaySpeed: 4500
+        autoplaySpeed: 4500,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: tabletSlidesToShow,
+              centerMode: hasMultiplePhotos,
+              centerPadding: hasMultiplePhotos ? '8%' : '0px',
+              infinite: photos.length > tabletSlidesToShow
+            }
+          },
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 1,
+              centerMode: hasMultiplePhotos,
+              centerPadding: hasMultiplePhotos ? '18%' : '0px',
+              infinite: hasMultiplePhotos
+            }
+          }
+        ]
       });
+
+      applyCoverflowClasses(track);
 
       window.jQuery(track).on('lazyLoaded', () => {
         window.jQuery(track).slick('setPosition');
+        applyCoverflowClasses(track);
+      });
+
+      window.jQuery(track).on('afterChange', () => {
+        applyCoverflowClasses(track);
       });
     } catch (err) {
       container.textContent = 'Unable to load Flickr album right now.';
