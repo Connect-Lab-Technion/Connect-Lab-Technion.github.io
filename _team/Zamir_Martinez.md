@@ -1,6 +1,6 @@
 ---
 title: Zamir Martinez
-subtitle: Ph.D. Candidate
+subtitle: Ph.D. Student
 field : Formation Control
 faculty : Aerospace Engineering
 category: phd_students
