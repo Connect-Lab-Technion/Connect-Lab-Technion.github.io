@@ -11,9 +11,6 @@ link-new-tab: true
 
 connect: PI of the Cooperative Networks and Controls Lab
 
-pfcl: Director of the Philadelphia Flight Control Lab
-pfcl_link: https://pfcl.technion.ac.il/
-
 ae: Stephen B. Klein Faculty of Aerospace Engineering
 ae_link: https://aerospace.technion.ac.il/
 
@@ -51,10 +48,10 @@ Technion Affiliations:
 * [Technion Applied Math Graduate Program](https://math.technion.ac.il/en/applied-math-graduate-program/){:target="_blank"}
 * [Technion Grand Technion Energy Program (GTEP)](https://gtep.technion.ac.il/){:target="_blank"}
 
-Faculty Duties:
+<!--Faculty Duties:-->
 
-* Vice Dean of Graduate Studies
-* Director of the [Philadelphia Flight Control Laboratory](https://pfcl.technion.ac.il/){:target="_blank"}
+<!--* Vice Dean of Graduate Studies-->
+<!--* Director of the [Philadelphia Flight Control Laboratory](https://pfcl.technion.ac.il/){:target="_blank"}-->
 
 Research Profile:
 
