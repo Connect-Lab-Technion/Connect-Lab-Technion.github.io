@@ -62,6 +62,8 @@ exclude:
  - vendor/cache/
  - vendor/gems/
  - vendor/ruby/
+ - img/social/connect/
+ - gallery_orig.md
 
 
 
