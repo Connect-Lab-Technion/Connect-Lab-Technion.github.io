@@ -10,6 +10,18 @@ hero_height: is-small
 hero_color: is-black
 ---
 
+## Session Overview
+
+This invited track brings together researchers working on the theoretical foundations and practical applications of graph rigidity, formation control, and distributed localization in multi-agent systems. The session highlights recent advances in geometric constraint systems and their role in enabling reliable coordination, estimation, and control for networked robotic and autonomous systems.
+
+Topics represented in the session include:
+
+- Distance, bearing, angle, and symmetry-based rigidity theory
+- Distributed formation control and formation tracking
+- Localization using limited sensing and communication
+- Geometric and sensitivity-based methods for multi-agent coordination
+- Applications involving robot swarms, mobile agents, and networked autonomous systems
+
 ## Session Details
 
 **Session:** MoA07, Open Invited Track Session  
