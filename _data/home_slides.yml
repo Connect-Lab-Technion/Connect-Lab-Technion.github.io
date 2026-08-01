@@ -42,6 +42,58 @@
   description: Network design and optimization for multi-agent coordination
   image: /img/research/NDSOptimization/network_design.png
 
-- title: Robotics Testbed
-  description: Turtlebot robotic testbed for cooperative control experiments
-  image: /img/research/Robotics/turtlebots1.png
+- title: Lab Group
+  description: Connect lab group photo
+  image: /img/homepage_images/lab_group_outdoor.jpg
+
+- title: Lab Visit
+  description: Connect lab members at a research visit
+  image: /img/homepage_images/lab_group_visit.jpg
+
+- title: Lab Activity
+  description: Connect lab group activity photo
+  image: /img/homepage_images/lab_group_activity.jpg
+
+- title: Forced Symmetric Formation Control
+  description: Forced symmetric formation control result
+  image: /img/homepage_images/forced_sym_formation_control1.png
+
+- title: Event-Triggered Kalman Filtering
+  description: Event-triggered Kalman filtering architecture
+  image: /img/homepage_images/ETKF1.png
+
+- title: Moving Target
+  description: Cooperative control around a moving target
+  image: /img/homepage_images/moving_target.png
+
+- title: Secure Networked Dynamical Systems
+  description: Secure networked dynamical systems illustration
+  image: /img/homepage_images/secure_nds1.png
+
+- title: Secure Network Structure
+  description: Secure network structure analysis
+  image: /img/homepage_images/secure_nds2.png
+
+- title: Passive Systems and Graphs
+  description: Passive systems and graph interconnection block diagram
+  image: /img/homepage_images/PSGBlockDiagram.png
+
+- title: Networked Dynamical Systems Themes
+  description: Networked dynamical systems research themes
+  image: /img/homepage_images/NDS_venn.png
+
+- title: Network Security
+  description: Network security and resilience illustration
+  image: /img/homepage_images/skynet.png
+
+- title: Networked Dynamical Systems
+  description: Networked dynamical systems schematic
+  image: /img/homepage_images/NDS.png
+
+- title: Dynamic Network Graph
+  description: Dynamic network graph illustration
+  image: /img/homepage_images/NDS_bd3.png
+
+- title: Turtlebot Testbed
+  description: Turtlebot testbed in the lab
+  image: /img/homepage_images/turtlebots1.png
