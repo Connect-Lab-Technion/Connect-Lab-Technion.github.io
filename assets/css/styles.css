@@ -6,6 +6,35 @@
     margin: 0 auto;
   }
 
+.research-topic-row {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.research-topic-row .research-figure {
+  margin: 0;
+  text-align: center;
+}
+
+.research-topic-row .research-figure img {
+  display: inline-block;
+  max-width: 100%;
+  width: auto;
+  max-height: 260px;
+  object-fit: contain;
+}
+
+.research-topic-row .research-figure figcaption {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.research-publications {
+  margin-top: 0.75rem;
+}
+
 .flickr-carousel {
   margin: 1.5rem 0 3rem;
 }
