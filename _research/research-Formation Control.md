@@ -5,33 +5,88 @@ layout: research
 image: /img/research/FormationControl/formation_maneuver3D.png
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
+menubar_toc: true
+toc_title: Topics
 price: 2 # for sorting 
 
 ---
 
-Many applications for cooperative multi-agent networks
-require the agents to arrange themselves into some spatial
-pattern. This can include alignment of orientations and velocities for flocking behaviors, or specific formations like
-spacecraft constellations for sensing or vehicle platoons for
-autonomous driving. The *formation control* problem seeks to design distributed control strategies for each agent that ensure the entire ensemble can arrange into the desired formation.
+Formation control studies how a team of agents can arrange itself into a spatial pattern using only local measurements and distributed controllers. The desired pattern may be encoded through relative positions, distances, bearings, orientations, or mixed sensing constraints, and the central question is whether those measurements contain enough geometry to stabilize the desired shape.
 
-A fundamental challenge for solving the formation control problem relates to the sensing and control architecture for the multi-agent system.  Our approach is to leverage results from *rigidity theory*. Rigidity theory studies the solution of a set of geometric constraints on a discrete configuration of points in an Euclidean space. These constraints can include distance or
-bearing constraints between pairs of points. Of interest in
-rigidity theory is to determine whether the set of polynomial
-equations representing these constraints (i) has a solution
-(independence); (ii) has locally isolated solutions (rigidity); or (iii) has exactly one solution in the given space up to isometric motions (global rigidity).  
+Our work uses rigidity theory as the organizing language for these problems. Rigidity connects the sensing graph to the geometry of the formation, making it possible to reason about uniqueness, local stability, directed sensing, maneuvering, and failure modes in a systematic way.
 
-Our research explores various aspects of rigidity theory and formation control.  Topics include:
-* Formation control using bearing sensing and bearing rigidity theory.
-* Alternative architectures exploiting symmetry found in formations.
-* Dynamic controllers to ensure the rigidity property is maintained in a multi-robot formation with uncertain environments.
-* Formations consisting of heterogeneous agent types with different sensing capabilities.
+## Bearing Rigidity
 
-<div style="display: flex; justify-content: center;">
-  <img src="/img/research/FormationControl/fig_sim_Global_2D_polygon_final.png" alt="Bearing-only Formation Control" style="width: 75%; margin: 0 10px; object-fit: contain; max-height: 200px;">
-  <img src="/img/research/FormationControl/Example8_traj.png" alt="Symmetry Forced Formations" style="width: 75%; margin: 0 10px; object-fit: contain; max-height: 200px;">
-  <img src="/img/research/FormationControl/FeketeFormation.png" alt="Formation Balancing" style="width: 75%; margin: 0 10px; object-fit: contain; max-height: 200px;">
+<div class="columns is-vcentered is-variable is-5 research-topic-row">
+  <div class="column is-two-thirds">
+    <p>Bearing-based formation control uses direction measurements rather than distances. This is attractive for vision-based and sensor-limited robotic systems, but it requires a different rigidity theory because scale and translation symmetries appear naturally in the measurements.</p>
+    <p>Our work develops bearing rigidity theory, bearing localizability, bearing Laplacian methods, and rigidity conditions that determine when bearing measurements contain enough information to specify or stabilize a formation.</p>
+  </div>
+  <div class="column">
+    <figure class="research-figure">
+      <img src="/img/research/FormationControl/fig_sim_Global_2D_polygon_final.png" alt="Bearing-only formation control convergence">
+      <figcaption>Bearing-only formation stabilization using local direction measurements.</figcaption>
+    </figure>
+  </div>
 </div>
 
+<p class="title is-4 research-publications">Representative Publications:</p>
+{% bibliography --query @*[key=Michieletto2021_J||key=Zhao2017_J||key=Zhao2017a||key=Zhao2014a_J||key=Zhao2015a_J||key=Zhao2014a||key=Zelaxo2015c1] --group_by none --order descending %}
+
+## Directed Sensing and Directed Formations
+
+<div class="columns is-vcentered is-variable is-5 research-topic-row">
+  <div class="column is-two-thirds">
+    <p>Directed sensing captures the asymmetry that appears in onboard perception: if one robot senses another, the reverse measurement is not automatically available. This changes the control problem because the sensing graph may be rigid when viewed as undirected while still failing to stabilize the directed formation dynamics.</p>
+    <p>Our recent and ongoing work separates this directed-sensing layer from classical bearing rigidity. It studies ordered leader-first-follower structures for bearing-only control, bearing equivalence and persistence in directed graphs, and a new geometric edge-space view of directed distance-based formation control. In that newer work, persistence is not the right dividing line; target-dependent stability, dynamic admissibility, and algebraic admissibility provide sharper tests for directed controllers.</p>
+  </div>
+  <div class="column">
+    <figure class="research-figure">
+      <img src="/img/research/FormationControl/directed_wheel_edge_error_node_trajectories.png" alt="Directed wheel framework with edge-error convergence and node trajectories">
+      <figcaption>Directed wheel example showing the sensing graph, edge-error convergence, and node trajectories.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<p class="title is-4 research-publications">Representative Publications:</p>
+{% bibliography --query @*[key=Theran_IFAC26||key=Shi2025_TCNS||key=Shi_IACAS2024||key=Sun2023a_C||key=Hoang2016a_J||key=Hoang2016b_J||key=Zhao2015c1] --group_by none --order descending %}
+
+## Symmetry, Distance Geometry, and Hidden Modes
+
+<div class="columns is-vcentered is-variable is-5 research-topic-row">
+  <div class="column is-two-thirds">
+    <p>Symmetry can be used as a design feature in formation control, but it can also create hidden modes and transmission zeros that are difficult to see from local measurements alone. Distance-based and symmetry-constrained formations therefore require tools that connect group actions, graph structure, and closed-loop behavior.</p>
+    <p>This line of work studies forced symmetric formations, rotation and dihedral constraints, distance-based transmission zeros, and the geometric obstructions that arise when the formation architecture hides internal motion.</p>
+  </div>
+  <div class="column">
+    <figure class="research-figure">
+      <img src="/img/research/FormationControl/Example8_traj.png" alt="Symmetry-constrained formation trajectories">
+      <figcaption>Trajectories generated by a symmetry-constrained formation controller.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<p class="title is-4 research-publications">Representative Publications:</p>
+{% bibliography --query @*[key=GoldgraberCasspi_IFAC26||key=GoldgraberCasspi_LCSS26||key=Martinez2026_ACC||key=Martinzez_IFAC26||key=Martinez2025_IACAS||key=zelazo2025TCNS||key=Zelazo2023a_C||key=Rozenheck2014b] --group_by none --order descending %}
+
+## Maneuvering, Maintenance, and Robotic Formations
+
+<div class="columns is-vcentered is-variable is-5 research-topic-row">
+  <div class="column is-two-thirds">
+    <p>Formation control must also work while the formation is moving, reconfiguring, or operating with uncertain measurements and constraints. This includes rigidity maintenance, bounded disturbances, spacecraft and aerial formations, relay positioning, pursuit, and cooperative behaviors that balance competing objectives.</p>
+    <p>These problems connect the formation-control theory to robotic implementation and to broader questions about how teams should preserve useful geometry during motion.</p>
+  </div>
+  <div class="column">
+    <figure class="research-figure">
+      <img src="/img/research/FormationControl/FeketeFormation.png" alt="Balanced formation on a sphere">
+      <figcaption>Formation balancing and maneuvering as a geometric coordination problem.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<p class="title is-4 research-publications">Representative Publications:</p>
+{% bibliography --query @*[key=Oliva_CALWAR2026||key=Xu2023b_J||key=Xu2023a_J||key=Fabris2021b_J||key=Liu_IEEETRo2019||key=Montenbruck2016a_J||key=Zelazo2013a_J||key=Zelazo2012c] --group_by none --order descending %}
+
+## Complete Related Publications
 <p class="title is-4">Related Publications:</p>
 {% bibliography --query @*[researchtopic~=formationcontrol] --group_by none --order descending %}

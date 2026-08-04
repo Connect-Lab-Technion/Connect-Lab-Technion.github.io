@@ -1,45 +1,95 @@
-- title: Slide 3
-  description: Slide 3 description  
+- title: Directed Formation Control
+  description: Directed wheel framework with edge-error convergence and node trajectories
+  image: /img/research/FormationControl/directed_wheel_edge_error_node_trajectories.png
+
+- title: Transversal Passivity
+  description: Geometric passivity figure showing transverse distance to a target manifold
+  image: /img/research/Passivity/transversal_passivity_geometry.png
+
+- title: Synchronization of Nonlinear Systems
+  description: Synchronization trajectories for control-affine networked systems
+  image: /img/research/NDS/control_affine_synchronization.png
+
+- title: Network Identification
+  description: Sparse network identification matrix from measured network responses
+  image: /img/research/NDS/network_identification_sparse_matrix.png
+
+- title: Leader Identification
+  description: Sequential leader identification in networked dynamical systems
+  image: /img/research/NDS/leader_identification_sequence.png
+
+- title: Bearing Formation Control
+  description: Bearing-only formation control convergence
+  image: /img/research/FormationControl/fig_sim_Global_2D_polygon_final.png
+
+- title: Symmetric Formations
+  description: Symmetry-constrained formation trajectories
+  image: /img/research/FormationControl/Example8_traj.png
+
+- title: Event-Triggered Coordination
+  description: Event-triggered synchronization and communication schedule
+  image: /img/research/EventTrigger/emulation_sync.png
+
+- title: Energy Networks
+  description: Hardware-in-the-loop energy network experiment
+  image: /img/research/Energy/HIL.png
+
+- title: Secure Networked Systems
+  description: Structural analysis for secure and resilient networked systems
+  image: /img/research/NDSRobust/structure_rank.png
+
+- title: Network Optimization
+  description: Network design and optimization for multi-agent coordination
+  image: /img/research/NDSOptimization/network_design.png
+
+- title: Lab Visit
+  description: Connect lab members at a research visit
+  image: /img/homepage_images/lab_group_visit.jpg
+
+- title: Lab Activity
+  description: Connect lab group activity photo
+  image: /img/homepage_images/lab_group_activity.jpg
+
+- title: Forced Symmetric Formation Control
+  description: Forced symmetric formation control result
   image: /img/homepage_images/forced_sym_formation_control1.png
 
-- title: Slide 3
-  description: Slide 3 description    
+- title: Event-Triggered Kalman Filtering
+  description: Event-triggered Kalman filtering architecture
   image: /img/homepage_images/ETKF1.png
-  
-- title: Slide 3
-  description: Slide 3 description    
+
+- title: Moving Target
+  description: Cooperative control around a moving target
   image: /img/homepage_images/moving_target.png
 
-- title: Slide 3
-  description: Slide 3 description    
+- title: Secure Networked Dynamical Systems
+  description: Secure networked dynamical systems illustration
   image: /img/homepage_images/secure_nds1.png
 
-- title: Slide 3
-  description: Slide 3 description    
+- title: Secure Network Structure
+  description: Secure network structure analysis
   image: /img/homepage_images/secure_nds2.png
-  
-- title: Slide 3
-  description: Slide 3 description    
+
+- title: Passive Systems and Graphs
+  description: Passive systems and graph interconnection block diagram
   image: /img/homepage_images/PSGBlockDiagram.png
-  
-- title: Slide 3
-  description: Slide 3 description    
+
+- title: Networked Dynamical Systems Themes
+  description: Networked dynamical systems research themes
   image: /img/homepage_images/NDS_venn.png
-  
-- title: Slide 3
-  description: Slide 3 description    
+
+- title: Network Security
+  description: Network security and resilience illustration
   image: /img/homepage_images/skynet.png
-  
-- title: Slide 3
-  description: Slide 3 description    
+
+- title: Networked Dynamical Systems
+  description: Networked dynamical systems schematic
   image: /img/homepage_images/NDS.png
 
-- title: Slide 3
-  description: Slide 3 description    
+- title: Dynamic Network Graph
+  description: Dynamic network graph illustration
   image: /img/homepage_images/NDS_bd3.png
 
-
-- title: Slide 3
-  description: Slide 3 description    
+- title: Turtlebot Testbed
+  description: Turtlebot testbed in the lab
   image: /img/homepage_images/turtlebots1.png
-
