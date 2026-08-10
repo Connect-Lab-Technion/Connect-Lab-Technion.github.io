@@ -86,6 +86,25 @@ sitemap: false
   color: #8a5a00;
 }
 
+.conference-table tr.due-soon {
+  background: #fff8e6;
+}
+
+.conference-table tr.due-soon td:first-child {
+  border-left: 4px solid #d9822b;
+}
+
+.deadline-badge {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  background: #d9822b;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
 .conference-table .topic {
   white-space: nowrap;
 }
@@ -141,6 +160,10 @@ sitemap: false
 Updated August 10, 2026. This internal page tracks upcoming submission opportunities for control, learning for control, networked systems, nonlinear control, and closely related systems venues. Expired deadlines are intentionally omitted.
 </p>
 
+<p class="conference-note">
+Rows shaded in orange have deadlines within the next six months, through February 10, 2027.
+</p>
+
 <div class="conference-toolbar">
   <a href="#upcoming-deadlines">Upcoming Deadlines</a>
   <a href="#annual-control">Annual Control</a>
@@ -165,50 +188,50 @@ Updated August 10, 2026. This internal page tracks upcoming submission opportuni
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td data-label="Deadline">September 18, 2026</td>
+    <tr class="due-soon">
+      <td data-label="Deadline">September 18, 2026<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference">CDC 2026</td>
       <td data-label="What">Final submission deadline</td>
       <td data-label="Conference Dates">December 15-18, 2026</td>
       <td data-label="Location">Honolulu, Hawaii, USA</td>
     </tr>
-    <tr>
-      <td data-label="Deadline">September 25, 2026</td>
+    <tr class="due-soon">
+      <td data-label="Deadline">September 25, 2026<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference">Allerton 2026</td>
       <td data-label="What">Final manuscript deadline</td>
       <td data-label="Conference Dates">September 15-18, 2026</td>
       <td data-label="Location">Illinois, USA</td>
     </tr>
-    <tr>
-      <td data-label="Deadline">September 25, 2026</td>
+    <tr class="due-soon">
+      <td data-label="Deadline">September 25, 2026<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference">ACC 2027</td>
       <td data-label="What">ACC manuscript submission</td>
       <td data-label="Conference Dates">July 7-9, 2027</td>
       <td data-label="Location">Philadelphia, Pennsylvania, USA</td>
     </tr>
-    <tr>
-      <td data-label="Deadline">October 26, 2026</td>
+    <tr class="due-soon">
+      <td data-label="Deadline">October 26, 2026<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference">SIAM DS27</td>
       <td data-label="What">Minisymposium proposal deadline</td>
       <td data-label="Conference Dates">May 24-28, 2027</td>
       <td data-label="Location">Long Beach, California, USA</td>
     </tr>
-    <tr>
-      <td data-label="Deadline">October 31, 2026</td>
+    <tr class="due-soon">
+      <td data-label="Deadline">October 31, 2026<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference">ECC 2027</td>
       <td data-label="What">Paper and invited-session proposal deadline</td>
       <td data-label="Conference Dates">July 13-16, 2027</td>
       <td data-label="Location">Brussels, Belgium</td>
     </tr>
-    <tr>
-      <td data-label="Deadline">November 23, 2026</td>
+    <tr class="due-soon">
+      <td data-label="Deadline">November 23, 2026<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference">SIAM DS27</td>
       <td data-label="What">Contributed lecture, poster, and minisymposium abstract deadline</td>
       <td data-label="Conference Dates">May 24-28, 2027</td>
       <td data-label="Location">Long Beach, California, USA</td>
     </tr>
-    <tr>
-      <td data-label="Deadline">February 7, 2027</td>
+    <tr class="due-soon">
+      <td data-label="Deadline">February 7, 2027<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference">CCTA 2027</td>
       <td data-label="What">Full paper submission date</td>
       <td data-label="Conference Dates">2027, exact conference dates to verify</td>
@@ -232,34 +255,34 @@ Updated August 10, 2026. This internal page tracks upcoming submission opportuni
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="due-soon">
       <td data-label="Conference"><a href="https://cdc2026.ieeecss.org/">IEEE CDC 2026</a></td>
       <td data-label="Area" class="topic">Control theory</td>
-      <td data-label="Submission Dates">Final submission: September 18, 2026.</td>
+      <td data-label="Submission Dates">Final submission: September 18, 2026.<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference Dates">December 15-18, 2026</td>
       <td data-label="Location">Honolulu, Hawaii, USA</td>
       <td data-label="Notes">Flagship IEEE CSS conference.</td>
     </tr>
-    <tr>
+    <tr class="due-soon">
       <td data-label="Conference"><a href="https://acc2027.a2c2.org/">American Control Conference 2027</a></td>
       <td data-label="Area" class="topic">Control systems</td>
-      <td data-label="Submission Dates">Joint ACC + L-CSS manuscript: September 11, 2026. ACC manuscript: September 25, 2026.</td>
+      <td data-label="Submission Dates">Joint ACC + L-CSS manuscript: September 11, 2026. ACC manuscript: September 25, 2026.<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference Dates">July 7-9, 2027</td>
       <td data-label="Location">Philadelphia, Pennsylvania, USA</td>
       <td data-label="Notes">Main annual North American controls venue.</td>
     </tr>
-    <tr>
+    <tr class="due-soon">
       <td data-label="Conference"><a href="https://ecc27.euca-ecc.org/">European Control Conference 2027</a></td>
       <td data-label="Area" class="topic">Control systems</td>
-      <td data-label="Submission Dates">Submission site opens: September 1, 2026. Papers and invited sessions: October 31, 2026. Workshops and industry abstracts: January 31, 2027.</td>
+      <td data-label="Submission Dates">Submission site opens: September 1, 2026. Papers and invited sessions: October 31, 2026. Workshops and industry abstracts: January 31, 2027.<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference Dates">July 13-16, 2027</td>
       <td data-label="Location">Brussels, Belgium</td>
       <td data-label="Notes">EUCA flagship conference.</td>
     </tr>
-    <tr>
+    <tr class="due-soon">
       <td data-label="Conference"><a href="https://allerton.csl.illinois.edu/">Allerton 2026</a></td>
       <td data-label="Area" class="topic">Communication, control, computing</td>
-      <td data-label="Submission Dates">Final versions: September 25, 2026.</td>
+      <td data-label="Submission Dates">Final versions: September 25, 2026.<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference Dates">September 15-18, 2026</td>
       <td data-label="Location">Illinois, USA</td>
       <td data-label="Notes">Useful for networked control, communication-constrained control, and information systems.</td>
@@ -282,10 +305,10 @@ Updated August 10, 2026. This internal page tracks upcoming submission opportuni
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="due-soon">
       <td data-label="Conference"><a href="https://www.siam.org/conferences-events/siam-conferences/ds27/submissions/">SIAM DS27</a></td>
       <td data-label="Area" class="topic">Dynamical systems</td>
-      <td data-label="Submission Dates">Minisymposium proposals: October 26, 2026. Contributed lecture, poster, and minisymposium abstracts: November 23, 2026.</td>
+      <td data-label="Submission Dates">Minisymposium proposals: October 26, 2026. Contributed lecture, poster, and minisymposium abstracts: November 23, 2026.<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference Dates">May 24-28, 2027</td>
       <td data-label="Location">Long Beach, California, USA</td>
       <td data-label="Notes">Good for networks, dynamics, control, and applied mathematics audiences.</td>
@@ -334,10 +357,10 @@ Updated August 10, 2026. This internal page tracks upcoming submission opportuni
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="due-soon">
       <td data-label="Conference"><a href="https://ccta2027.ieeecss.org/">IEEE CCTA 2027</a></td>
       <td data-label="Area" class="topic">Control applications</td>
-      <td data-label="Submission Dates">Full paper: February 7, 2027. Notification: May 15, 2027. Final paper: June 23, 2027. Late breaking: June 30, 2027.</td>
+      <td data-label="Submission Dates">Full paper: February 7, 2027. Notification: May 15, 2027. Final paper: June 23, 2027. Late breaking: June 30, 2027.<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference Dates"><span class="tbd">To verify on conference site.</span></td>
       <td data-label="Location"><span class="tbd">To verify on conference site.</span></td>
       <td data-label="Notes">Good annual option for applied control work.</td>
