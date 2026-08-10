@@ -138,7 +138,7 @@ sitemap: false
 <div id="conference-dates" class="conference-dates">
 
 <p class="conference-summary">
-Updated August 10, 2026. Dates are collected for a 1-2 year planning horizon. Always verify on the conference site before committing to a submission.
+Updated August 10, 2026. This internal page tracks upcoming submission opportunities for control, learning for control, networked systems, nonlinear control, and closely related systems venues. Expired deadlines are intentionally omitted.
 </p>
 
 <div class="conference-toolbar">
@@ -147,6 +147,7 @@ Updated August 10, 2026. Dates are collected for a 1-2 year planning horizon. Al
   <a href="#networked-systems">Networked Systems</a>
   <a href="#nonlinear-hybrid">Nonlinear and Hybrid</a>
   <a href="#learning-applications">Learning and Applications</a>
+  <a href="#watch-list">Watch List</a>
   <a href="#sources">Sources</a>
 </div>
 
@@ -170,6 +171,13 @@ Updated August 10, 2026. Dates are collected for a 1-2 year planning horizon. Al
       <td data-label="What">Final submission deadline</td>
       <td data-label="Conference Dates">December 15-18, 2026</td>
       <td data-label="Location">Honolulu, Hawaii, USA</td>
+    </tr>
+    <tr>
+      <td data-label="Deadline">September 25, 2026</td>
+      <td data-label="Conference">Allerton 2026</td>
+      <td data-label="What">Final manuscript deadline</td>
+      <td data-label="Conference Dates">September 15-18, 2026</td>
+      <td data-label="Location">Illinois, USA</td>
     </tr>
     <tr>
       <td data-label="Deadline">September 25, 2026</td>
@@ -227,7 +235,7 @@ Updated August 10, 2026. Dates are collected for a 1-2 year planning horizon. Al
     <tr>
       <td data-label="Conference"><a href="https://cdc2026.ieeecss.org/">IEEE CDC 2026</a></td>
       <td data-label="Area" class="topic">Control theory</td>
-      <td data-label="Submission Dates"><span class="past">Initial submissions: March 17, 2026 for L-CSS + CDC; March 31, 2026 for CDC-only.</span> Final submission: September 18, 2026.</td>
+      <td data-label="Submission Dates">Final submission: September 18, 2026.</td>
       <td data-label="Conference Dates">December 15-18, 2026</td>
       <td data-label="Location">Honolulu, Hawaii, USA</td>
       <td data-label="Notes">Flagship IEEE CSS conference.</td>
@@ -249,25 +257,9 @@ Updated August 10, 2026. Dates are collected for a 1-2 year planning horizon. Al
       <td data-label="Notes">EUCA flagship conference.</td>
     </tr>
     <tr>
-      <td data-label="Conference"><a href="https://ifac2026.org/">IFAC World Congress 2026</a></td>
-      <td data-label="Area" class="topic">Automatic control</td>
-      <td data-label="Submission Dates"><span class="past">Main submission dates have passed. Final paper submission was listed as May 19, 2026.</span></td>
-      <td data-label="Conference Dates">August 23-28, 2026</td>
-      <td data-label="Location">Busan, Republic of Korea</td>
-      <td data-label="Notes">Triennial IFAC flagship event.</td>
-    </tr>
-    <tr>
-      <td data-label="Conference"><a href="https://uwaterloo.ca/international-symposium-mathematical-theory-networks-systems/">MTNS 2026</a></td>
-      <td data-label="Area" class="topic">Systems theory</td>
-      <td data-label="Submission Dates"><span class="past">Full papers: February 9, 2026. Extended abstracts: February 16, 2026. Final submissions: June 24, 2026.</span></td>
-      <td data-label="Conference Dates">August 17-21, 2026</td>
-      <td data-label="Location">Waterloo, Ontario, Canada</td>
-      <td data-label="Notes">Mathematical theory of networks and systems; biennial.</td>
-    </tr>
-    <tr>
       <td data-label="Conference"><a href="https://allerton.csl.illinois.edu/">Allerton 2026</a></td>
       <td data-label="Area" class="topic">Communication, control, computing</td>
-      <td data-label="Submission Dates">Abstract deadline listed by third-party indexes: September 10, 2026. Final versions: September 25, 2026.</td>
+      <td data-label="Submission Dates">Final versions: September 25, 2026.</td>
       <td data-label="Conference Dates">September 15-18, 2026</td>
       <td data-label="Location">Illinois, USA</td>
       <td data-label="Notes">Useful for networked control, communication-constrained control, and information systems.</td>
@@ -291,28 +283,12 @@ Updated August 10, 2026. Dates are collected for a 1-2 year planning horizon. Al
   </thead>
   <tbody>
     <tr>
-      <td data-label="Conference"><a href="https://www.ifac-control.org/conferences/networked-systems-10th-necsys-2025tm">NecSys</a></td>
-      <td data-label="Area" class="topic">Networked systems</td>
-      <td data-label="Submission Dates"><span class="tbd">Next edition not found yet. Track IFAC conference listings and PaperCept.</span></td>
-      <td data-label="Conference Dates"><span class="past">Last edition: June 2-5/6, 2025</span></td>
-      <td data-label="Location"><span class="past">Last edition: Hong Kong</span></td>
-      <td data-label="Notes">Core specialized venue for networked control systems.</td>
-    </tr>
-    <tr>
       <td data-label="Conference"><a href="https://www.siam.org/conferences-events/siam-conferences/ds27/submissions/">SIAM DS27</a></td>
       <td data-label="Area" class="topic">Dynamical systems</td>
       <td data-label="Submission Dates">Minisymposium proposals: October 26, 2026. Contributed lecture, poster, and minisymposium abstracts: November 23, 2026.</td>
       <td data-label="Conference Dates">May 24-28, 2027</td>
       <td data-label="Location">Long Beach, California, USA</td>
       <td data-label="Notes">Good for networks, dynamics, control, and applied mathematics audiences.</td>
-    </tr>
-    <tr>
-      <td data-label="Conference"><a href="https://www2026.thewebconf.org/calls.html">The Web Conference 2026</a></td>
-      <td data-label="Area" class="topic">Network science</td>
-      <td data-label="Submission Dates"><span class="past">Abstract: September 30, 2025. Full paper: October 7, 2025.</span></td>
-      <td data-label="Conference Dates">June 29-July 3, 2026</td>
-      <td data-label="Location">Dubai, UAE</td>
-      <td data-label="Notes">Not a controls venue, but relevant for network algorithms, social networks, and large-scale network systems.</td>
     </tr>
   </tbody>
 </table>
@@ -333,28 +309,12 @@ Updated August 10, 2026. Dates are collected for a 1-2 year planning horizon. Al
   </thead>
   <tbody>
     <tr>
-      <td data-label="Conference"><a href="https://conferences.ifac-control.org/nolcos2025/">IFAC NOLCOS</a></td>
-      <td data-label="Area" class="topic">Nonlinear control</td>
-      <td data-label="Submission Dates"><span class="tbd">Next announced edition appears to be NOLCOS 2028; submission dates not posted yet.</span></td>
-      <td data-label="Conference Dates"><span class="tbd">Expected 2028; last edition was July 23-25, 2025.</span></td>
-      <td data-label="Location"><span class="tbd">NOLCOS 2028 reported as Paris, France; verify when official site is live.</span></td>
-      <td data-label="Notes">Primary specialized nonlinear-control symposium.</td>
-    </tr>
-    <tr>
       <td data-label="Conference"><a href="https://www.ifac-control.org/conferences/analysis-and-control-of-nonlinear-dynamics-and-chaos-8th-acndc-2027tm">IFAC ACNDC 2027</a></td>
       <td data-label="Area" class="topic">Nonlinear dynamics</td>
       <td data-label="Submission Dates"><span class="tbd">Submission deadlines not found on the IFAC listing yet.</span></td>
       <td data-label="Conference Dates">June 9-11, 2027</td>
       <td data-label="Location">Monte Porzio Catone, Rome, Italy</td>
       <td data-label="Notes">Specialized venue for nonlinear dynamics, chaos, and control.</td>
-    </tr>
-    <tr>
-      <td data-label="Conference"><a href="https://hscc.acm.org/2026/">HSCC/ICCPS 2026</a></td>
-      <td data-label="Area" class="topic">Hybrid/CPS</td>
-      <td data-label="Submission Dates"><span class="past">Abstract: November 6, 2025. Paper: November 13, 2025. Posters/demos: February 20, 2026.</span></td>
-      <td data-label="Conference Dates">May 11-14, 2026</td>
-      <td data-label="Location">Saint-Malo, France</td>
-      <td data-label="Notes">Relevant for hybrid systems, formal methods, CPS, and control.</td>
     </tr>
   </tbody>
 </table>
@@ -375,14 +335,6 @@ Updated August 10, 2026. Dates are collected for a 1-2 year planning horizon. Al
   </thead>
   <tbody>
     <tr>
-      <td data-label="Conference"><a href="https://ccta2026.ieeecss.org/">IEEE CCTA 2026</a></td>
-      <td data-label="Area" class="topic">Control applications</td>
-      <td data-label="Submission Dates"><span class="past">Full papers: February 8, 2026. Industry abstracts: March 8, 2026.</span> Late-breaking results posters: June 15, 2026.</td>
-      <td data-label="Conference Dates">August 12-14, 2026</td>
-      <td data-label="Location">Vancouver, British Columbia, Canada</td>
-      <td data-label="Notes">IEEE CSS applications-focused venue.</td>
-    </tr>
-    <tr>
       <td data-label="Conference"><a href="https://ccta2027.ieeecss.org/">IEEE CCTA 2027</a></td>
       <td data-label="Area" class="topic">Control applications</td>
       <td data-label="Submission Dates">Full paper: February 7, 2027. Notification: May 15, 2027. Final paper: June 23, 2027. Late breaking: June 30, 2027.</td>
@@ -390,13 +342,51 @@ Updated August 10, 2026. Dates are collected for a 1-2 year planning horizon. Al
       <td data-label="Location"><span class="tbd">To verify on conference site.</span></td>
       <td data-label="Notes">Good annual option for applied control work.</td>
     </tr>
+  </tbody>
+</table>
+
+## Watch List
+<div id="watch-list" style="padding-top: 80px; margin-top: -80px;"></div>
+
+<table class="conference-table">
+  <thead>
     <tr>
-      <td data-label="Conference"><a href="https://sites.google.com/usc.edu/l4dc2026/">L4DC 2026</a></td>
+      <th>Conference</th>
+      <th class="topic">Area</th>
+      <th>Status</th>
+      <th>Why Track</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Conference"><a href="https://www.ifac-control.org/conferences/networked-systems-10th-necsys-2025tm">NecSys</a></td>
+      <td data-label="Area" class="topic">Networked systems</td>
+      <td data-label="Status"><span class="tbd">Next edition not posted yet.</span></td>
+      <td data-label="Why Track">Core specialized venue for networked control systems.</td>
+    </tr>
+    <tr>
+      <td data-label="Conference"><a href="https://conferences.ifac-control.org/nolcos2025/">IFAC NOLCOS</a></td>
+      <td data-label="Area" class="topic">Nonlinear control</td>
+      <td data-label="Status"><span class="tbd">Next deadline not posted yet.</span></td>
+      <td data-label="Why Track">Primary specialized nonlinear-control symposium.</td>
+    </tr>
+    <tr>
+      <td data-label="Conference"><a href="https://ifac2026.org/">IFAC World Congress</a></td>
+      <td data-label="Area" class="topic">Automatic control</td>
+      <td data-label="Status"><span class="tbd">Track next World Congress cycle after 2026.</span></td>
+      <td data-label="Why Track">Triennial IFAC flagship event.</td>
+    </tr>
+    <tr>
+      <td data-label="Conference"><a href="https://uwaterloo.ca/international-symposium-mathematical-theory-networks-systems/">MTNS</a></td>
+      <td data-label="Area" class="topic">Systems theory</td>
+      <td data-label="Status"><span class="tbd">Track next edition after 2026.</span></td>
+      <td data-label="Why Track">Important venue for mathematical systems and control theory.</td>
+    </tr>
+    <tr>
+      <td data-label="Conference"><a href="https://sites.google.com/usc.edu/l4dc2026/">L4DC</a></td>
       <td data-label="Area" class="topic">Learning + control</td>
-      <td data-label="Submission Dates"><span class="past">Main submission: November 8/10, 2025. Late-breaking results: April 3, 2026.</span></td>
-      <td data-label="Conference Dates">June 17-19, 2026</td>
-      <td data-label="Location">University of Southern California, Los Angeles, USA</td>
-      <td data-label="Notes">Useful for learning-based control, optimization, and data-driven dynamics.</td>
+      <td data-label="Status"><span class="tbd">Track next edition when announced.</span></td>
+      <td data-label="Why Track">Useful for learning-based control, optimization, and data-driven dynamics.</td>
     </tr>
   </tbody>
 </table>
@@ -408,13 +398,11 @@ Updated August 10, 2026. Dates are collected for a 1-2 year planning horizon. Al
 Primary sources used where available: <a href="https://cdc2026.ieeecss.org/">CDC 2026</a>,
 <a href="https://acc2027.a2c2.org/">ACC 2027</a>,
 <a href="https://ecc27.euca-ecc.org/">ECC 2027</a>,
-<a href="https://ifac2026.org/">IFAC World Congress 2026</a>,
+<a href="https://ifac2026.org/">IFAC World Congress</a>,
 <a href="https://uwaterloo.ca/international-symposium-mathematical-theory-networks-systems/key-dates">MTNS 2026</a>,
 <a href="https://allerton.csl.illinois.edu/">Allerton 2026</a>,
 <a href="https://www.ifac-control.org/conferences/networked-systems-10th-necsys-2025tm">NecSys IFAC listing</a>,
 <a href="https://www.ifac-control.org/conferences/analysis-and-control-of-nonlinear-dynamics-and-chaos-8th-acndc-2027tm">ACNDC 2027</a>,
-<a href="https://hscc.acm.org/2026/">HSCC/ICCPS 2026</a>,
-<a href="https://ccta2026.ieeecss.org/">CCTA 2026</a>,
 <a href="https://ccta2027.ieeecss.org/">CCTA 2027</a>,
 <a href="https://sites.google.com/usc.edu/l4dc2026/">L4DC 2026</a>, and
 <a href="https://www.siam.org/conferences-events/siam-conferences/ds27/submissions/">SIAM DS27</a>.
