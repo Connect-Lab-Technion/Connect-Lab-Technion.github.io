@@ -157,11 +157,11 @@ sitemap: false
 <div id="conference-dates" class="conference-dates">
 
 <p class="conference-summary">
-Updated August 10, 2026. This internal page tracks upcoming submission opportunities for control, learning for control, networked systems, nonlinear control, and closely related systems venues. Expired deadlines are intentionally omitted.
+Updated September 14, 2026. This internal page tracks upcoming submission opportunities for control, learning for control, networked systems, nonlinear control, and closely related systems venues. Expired deadlines are intentionally omitted.
 </p>
 
 <p class="conference-note">
-Rows shaded in orange have deadlines within the next six months, through February 10, 2027.
+Rows shaded in orange have deadlines within the next six months, through March 14, 2027.
 </p>
 
 <div class="conference-toolbar">
@@ -224,6 +224,13 @@ Rows shaded in orange have deadlines within the next six months, through Februar
       <td data-label="Location">Brussels, Belgium</td>
     </tr>
     <tr class="due-soon">
+      <td data-label="Deadline">November 13, 2026<br><span class="deadline-badge">Due soon</span></td>
+      <td data-label="Conference">L4DC 2027</td>
+      <td data-label="What">Paper submission deadline</td>
+      <td data-label="Conference Dates">June 16-18, 2027</td>
+      <td data-label="Location">Stockholm, Sweden</td>
+    </tr>
+    <tr class="due-soon">
       <td data-label="Deadline">November 23, 2026<br><span class="deadline-badge">Due soon</span></td>
       <td data-label="Conference">SIAM DS27</td>
       <td data-label="What">Contributed lecture, poster, and minisymposium abstract deadline</td>
@@ -236,6 +243,20 @@ Rows shaded in orange have deadlines within the next six months, through Februar
       <td data-label="What">Full paper submission date</td>
       <td data-label="Conference Dates">2027, exact conference dates to verify</td>
       <td data-label="Location">To verify</td>
+    </tr>
+    <tr>
+      <td data-label="Deadline">April 5, 2027</td>
+      <td data-label="Conference">L4DC 2027</td>
+      <td data-label="What">Late-breaking results deadline</td>
+      <td data-label="Conference Dates">June 16-18, 2027</td>
+      <td data-label="Location">Stockholm, Sweden</td>
+    </tr>
+    <tr>
+      <td data-label="Deadline">April 19, 2027</td>
+      <td data-label="Conference">L4DC 2027</td>
+      <td data-label="What">Camera-ready deadline</td>
+      <td data-label="Conference Dates">June 16-18, 2027</td>
+      <td data-label="Location">Stockholm, Sweden</td>
     </tr>
   </tbody>
 </table>
@@ -358,6 +379,14 @@ Rows shaded in orange have deadlines within the next six months, through Februar
   </thead>
   <tbody>
     <tr class="due-soon">
+      <td data-label="Conference"><a href="https://l4dc2027.control.ee.ethz.ch/">L4DC 2027</a></td>
+      <td data-label="Area" class="topic">Learning + control</td>
+      <td data-label="Submission Dates">Paper submission: November 13, 2026. Paper decision: January 25, 2027. Late-breaking results: April 5, 2027. Camera-ready: April 19, 2027.<br><span class="deadline-badge">Due soon</span></td>
+      <td data-label="Conference Dates">June 16-18, 2027</td>
+      <td data-label="Location">KTH Royal Institute of Technology, Stockholm, Sweden</td>
+      <td data-label="Notes">9th annual Learning for Dynamics &amp; Control Conference. Topics include system identification; optimization for machine learning; data-driven control; agentic AI and algorithmic robustness; reinforcement learning and adaptive control; statistical learning for dynamical and control systems; reduced-order and physics-constrained modeling; and applications in robotics, autonomy, biology, energy, transportation, cognitive systems, and neuroscience. Papers are limited to 10 PMLR pages, excluding references and appendices.</td>
+    </tr>
+    <tr class="due-soon">
       <td data-label="Conference"><a href="https://ccta2027.ieeecss.org/">IEEE CCTA 2027</a></td>
       <td data-label="Area" class="topic">Control applications</td>
       <td data-label="Submission Dates">Full paper: February 7, 2027. Notification: May 15, 2027. Final paper: June 23, 2027. Late breaking: June 30, 2027.<br><span class="deadline-badge">Due soon</span></td>
@@ -405,12 +434,6 @@ Rows shaded in orange have deadlines within the next six months, through Februar
       <td data-label="Status"><span class="tbd">Track next edition after 2026.</span></td>
       <td data-label="Why Track">Important venue for mathematical systems and control theory.</td>
     </tr>
-    <tr>
-      <td data-label="Conference"><a href="https://sites.google.com/usc.edu/l4dc2026/">L4DC</a></td>
-      <td data-label="Area" class="topic">Learning + control</td>
-      <td data-label="Status"><span class="tbd">Track next edition when announced.</span></td>
-      <td data-label="Why Track">Useful for learning-based control, optimization, and data-driven dynamics.</td>
-    </tr>
   </tbody>
 </table>
 
@@ -427,7 +450,7 @@ Primary sources used where available: <a href="https://cdc2026.ieeecss.org/">CDC
 <a href="https://www.ifac-control.org/conferences/networked-systems-10th-necsys-2025tm">NecSys IFAC listing</a>,
 <a href="https://www.ifac-control.org/conferences/analysis-and-control-of-nonlinear-dynamics-and-chaos-8th-acndc-2027tm">ACNDC 2027</a>,
 <a href="https://ccta2027.ieeecss.org/">CCTA 2027</a>,
-<a href="https://sites.google.com/usc.edu/l4dc2026/">L4DC 2026</a>, and
+<a href="https://l4dc2027.control.ee.ethz.ch/">L4DC 2027</a>, and
 <a href="https://www.siam.org/conferences-events/siam-conferences/ds27/submissions/">SIAM DS27</a>.
 </p>
 
