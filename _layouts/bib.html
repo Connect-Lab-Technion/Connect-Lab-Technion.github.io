@@ -59,7 +59,9 @@
         {% elsif extracted_figure != empty %}
           <img src="{{ extracted_figure | relative_url }}" alt="Figure extracted from {{ entry.title | strip_html }}" loading="lazy">
         {% else %}
-          <div class="publication-snapshot__placeholder" aria-hidden="true"><span>Connect Lab</span><strong>{{ entry.year }}</strong></div>
+          <div class="publication-snapshot__placeholder">
+            <img src="{{ '/img/logos/Connect_logo_full.png' | relative_url }}" alt="Connect Lab" loading="lazy">
+          </div>
         {% endif %}
       </div>
       <div class="publication-snapshot__story">
