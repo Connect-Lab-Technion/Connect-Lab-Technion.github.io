@@ -6,78 +6,166 @@ hide_hero: true
 hide_footer: false
 ---
 
-<div class="home-page">
-  <section class="home-hero" aria-labelledby="home-title">
-    <div class="home-hero__copy">
-      <p class="home-eyebrow">Cooperative Networks and Controls Lab · Technion</p>
-      <h1 id="home-title">Theory for <span>networked dynamical systems.</span></h1>
-      <p class="home-intro">We develop mathematical foundations for coordination, stability, and performance in multi-agent systems—where systems and control theory meets graph theory.</p>
-      <div class="home-actions">
-        <a class="home-button home-button--primary" href="{{ site.baseurl }}/research/">Explore our research <span aria-hidden="true">→</span></a>
-        <a class="home-button home-button--secondary" href="{{ site.baseurl }}/current-members/">Meet the team</a>
+<div class="home-alt">
+  <section class="home-alt-hero" aria-labelledby="alt-title">
+    <div class="home-alt-hero__intro">
+      <p class="home-alt-kicker">Cooperative Networks and Controls Lab · Technion</p>
+      <h1 id="alt-title">Mathematical structure behind <em>collective behavior.</em></h1>
+      <p>We develop theory for networked dynamical and multi-agent systems at the intersection of control, graph theory, geometry, and optimization.</p>
+      <div class="home-alt-links">
+        <a href="{{ site.baseurl }}/research/">Research areas <span aria-hidden="true">↗</span></a>
+        <a href="{{ site.baseurl }}/publications/">Publications <span aria-hidden="true">↗</span></a>
       </div>
     </div>
-    <figure class="home-hero__visual home-hero__visual--figure">
-      <img src="{{ site.baseurl }}/img/home/geometric-passivity.webp" alt="Geometric decomposition into motion tangent and transverse to a target manifold" width="1536" height="1024" fetchpriority="high">
-      <figcaption><span>Geometric passivity</span>Separating motion along a target manifold from transverse disagreement</figcaption>
-    </figure>
-  </section>
 
-  <section class="home-mission" aria-labelledby="mission-title">
-    <div>
-      <p class="home-section-label">Our mission</p>
-      <h2 id="mission-title">Understanding networks.<br>Enabling cooperation.</h2>
-    </div>
-    <div class="home-mission__text">
-      <p>The Connect Lab develops theory for the fundamental challenges behind coordination in networked and multi-agent systems. Our work draws on systems and control, graph theory, geometry, and optimization.</p>
-      <p>We are part of the <a href="https://aerospace.technion.ac.il/">Stephen B. Klein Faculty of Aerospace Engineering</a> at the <a href="https://www.technion.ac.il/">Technion – Israel Institute of Technology</a>, with our physical home in the <a href="https://pfcl.technion.ac.il/">Philadelphia Flight Control Laboratory</a>.</p>
-    </div>
-  </section>
-
-  <section class="home-research" aria-labelledby="research-title">
-    <div class="home-section-heading">
-      <div>
-        <p class="home-section-label">What we explore</p>
-        <h2 id="research-title">Theory at the dynamics–graph interface</h2>
+    <article class="home-alt-feature" aria-labelledby="featured-paper-title">
+      <div class="home-alt-feature__label"><span>Paper of the week</span><time id="featured-paper-date" datetime="2026">2026</time></div>
+      <img id="featured-paper-figure" src="{{ site.baseurl }}/img/home/transversal-passivity-paper.png" alt="Representative figure for the featured paper">
+      <div class="home-alt-feature__copy">
+        <p class="home-alt-tag" id="featured-paper-topic">Geometric systems theory</p>
+        <h2 id="featured-paper-title">Transversal Passivity: Dissipation Relative to Input and Output Manifolds</h2>
+        <p class="home-alt-feature__meta" id="featured-paper-authors">Fengyu Yue and Daniel Zelazo · 2026</p>
+        <p id="featured-paper-description">Classical passivity measures energy relative to an equilibrium. This work develops a framework that measures only the error transverse to prescribed manifolds—allowing motion along the target while retaining feedback and convergence guarantees.</p>
+        <div class="home-alt-feature__actions">
+          <a id="featured-paper-link" href="https://arxiv.org/abs/2611.06251">Read the paper <span aria-hidden="true">→</span></a>
+          <a href="{{ site.baseurl }}/publications/">Browse publications</a>
+        </div>
       </div>
-      <a class="home-text-link" href="{{ site.baseurl }}/research/">View all research <span aria-hidden="true">→</span></a>
-    </div>
-    <div class="home-research-grid">
-      <a class="home-research-card home-research-card--wide" href="{{ site.baseurl }}/research/research-Formation%20Control/">
-        <img src="{{ site.baseurl }}/img/home/formation-trajectories.png" alt="Trajectories of a four-agent formation converging to a target framework" loading="lazy">
-        <div class="home-research-card__body"><span>01</span><h3>Rigidity &amp; formation control</h3><p>Geometry, controllability, and stability for formations with directed and undirected sensing.</p></div>
-      </a>
-      <a class="home-research-card" href="{{ site.baseurl }}/research/research-Passivity/">
-        <img src="{{ site.baseurl }}/img/home/transversal-passivity-paper.png" alt="Input and output manifolds in the transversal passivity framework" loading="lazy">
-        <div class="home-research-card__body"><span>02</span><h3>Geometric passivity</h3><p>Dissipation and feedback theory relative to manifolds rather than isolated equilibria.</p></div>
-      </a>
-      <a class="home-research-card" href="{{ site.baseurl }}/research/research-networked-systems/">
-        <img src="{{ site.baseurl }}/img/home/network-dynamics.webp" alt="A dynamical system interconnected with a communication graph in a feedback loop" loading="lazy">
-        <div class="home-research-card__body"><span>03</span><h3>Network dynamics &amp; consensus</h3><p>Structural methods for collective behavior, identification, reduction, and resilience.</p></div>
-      </a>
-    </div>
+    </article>
   </section>
 
-  <section class="home-news" aria-labelledby="news-title">
-    <div class="home-section-heading">
-      <div><p class="home-section-label">From the lab</p><h2 id="news-title">Latest news</h2></div>
-      <a class="home-text-link" href="{{ site.baseurl }}/news_archive/">All news <span aria-hidden="true">→</span></a>
+  <section class="home-alt-questions" aria-labelledby="questions-title">
+    <div class="home-alt-section-title">
+      <p>Our perspective</p>
+      <h2 id="questions-title">The questions that drive us</h2>
     </div>
-    <div class="home-news-grid">
+    <ol>
+      <li>
+        <span>01</span>
+        <figure class="home-alt-question-figure"><img src="{{ site.baseurl }}/img/home/paper-interface-reduction.png" alt="Network with designated control and output nodes"><figcaption>Interface structure</figcaption></figure>
+        <p>How does network structure shape stability and performance?</p>
+      </li>
+      <li>
+        <span>02</span>
+        <figure class="home-alt-question-figure"><img src="{{ site.baseurl }}/img/home/question-geometry.svg" alt="Rigid and flexible frameworks, together with a shape shown at two scales"><figcaption>Rigid · flexible · scale</figcaption></figure>
+        <p>Which geometric properties make collective objectives achievable?</p>
+      </li>
+      <li>
+        <span>03</span>
+        <figure class="home-alt-question-figure"><img src="{{ site.baseurl }}/img/home/question-convergence.svg" alt="Three-dimensional agent trajectories converging to a target formation"><figcaption>Trajectories → target shape</figcaption></figure>
+        <p>How can local interactions produce reliable global behavior?</p>
+      </li>
+      <li>
+        <span>04</span>
+        <figure class="home-alt-question-figure"><img src="{{ site.baseurl }}/img/home/question-inference.svg" alt="Observed signals entering an inference method that outputs a network graph"><figcaption>Measurements → inferred graph</figcaption></figure>
+        <p>What can be inferred, optimized, or secured from limited network information?</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="home-alt-news" aria-labelledby="alt-news-title">
+    <div class="home-alt-section-title home-alt-section-title--row">
+      <div><p>Notes from the lab</p><h2 id="alt-news-title">Recent news</h2></div>
+      <a href="{{ site.baseurl }}/news_archive/">News archive →</a>
+    </div>
+    <div class="home-alt-news__list">
       {% assign sorted_news = site.news | sort: 'date' | reverse %}
-      {% for news in sorted_news limit:6 %}
-        <article class="home-news-card">
-          <time datetime="{{ news.date | date: '%Y-%m-%d' }}">{{ news.date | date: "%d %b %Y" }}</time>
-          <h3><a href="{{ site.baseurl }}{{ news.url }}">{{ news.title }}</a></h3>
-          {% if news.description %}<p>{{ news.description | escape }}</p>{% endif %}
-          <a class="home-news-card__link" href="{{ site.baseurl }}{{ news.url }}" aria-label="Read {{ news.title | escape }}">Read story <span aria-hidden="true">↗</span></a>
-        </article>
+      {% for news in sorted_news limit:4 %}
+      <a href="{{ site.baseurl }}{{ news.url }}">
+        <time datetime="{{ news.date | date: '%Y-%m-%d' }}">{{ news.date | date: "%d.%m.%Y" }}</time>
+        <h3>{{ news.title }}</h3>
+        <span aria-hidden="true">↗</span>
+      </a>
       {% endfor %}
     </div>
   </section>
 
-  <section class="home-join" aria-labelledby="join-title">
-    <div><p class="home-section-label">Join the network</p><h2 id="join-title">Curious minds are always welcome.</h2></div>
-    <div><p>We are always looking for highly motivated students and researchers who want to rethink how autonomous systems cooperate.</p><a class="home-button home-button--light" href="{{ site.baseurl }}/Positions/">See open opportunities <span aria-hidden="true">→</span></a></div>
+  <section class="home-alt-footer-cta">
+    <p>Students &amp; researchers</p>
+    <h2>Interested in the theory of interconnected systems?</h2>
+    <a href="{{ site.baseurl }}/Positions/">Work with us <span aria-hidden="true">→</span></a>
   </section>
 </div>
+
+<script type="application/json" id="featured-paper-data">{{ site.data.featured_papers | jsonify }}</script>
+<script>
+(function () {
+  var source = document.getElementById('featured-paper-data');
+  if (!source) return;
+
+  var papers;
+  try { papers = JSON.parse(source.textContent); } catch (error) { return; }
+  if (!papers || !papers.length) return;
+
+  var maxYear = Math.max.apply(null, papers.map(function (paper) { return paper.year; }));
+  var topicNames = {
+    passivity: 'Passivity & nonlinear systems', formationcontrol: 'Formation control',
+    consensus: 'Consensus & collective behavior', nds: 'Networked dynamical systems',
+    optimization: 'Optimization over networks', eventtrigger: 'Event-triggered control',
+    robotics: 'Multi-robot systems', secure: 'Resilient & secure networks', energy: 'Energy systems'
+  };
+  var topicDescriptions = {
+    passivity: 'A systems-theoretic study of energy, interconnection, and stability in nonlinear or networked dynamics.',
+    formationcontrol: 'A geometric study of how sensing, rigidity, and feedback shape coordinated formations.',
+    consensus: 'A study of how local interaction laws generate agreement and collective dynamics across a network.',
+    nds: 'A systems perspective on how graph structure and local dynamics determine global network behavior.',
+    optimization: 'A study of computation and decision-making when information is distributed across a network.',
+    eventtrigger: 'A study of when networked agents should communicate or update while preserving stability and performance.',
+    robotics: 'A study of coordination, sensing, and control for teams of autonomous robots.',
+    secure: 'A study of inference, resilience, and control when network information is limited or unreliable.',
+    energy: 'A network-systems approach to analysis, optimization, and control in energy applications.'
+  };
+
+  function hash(text) {
+    var value = 2166136261;
+    for (var i = 0; i < text.length; i += 1) {
+      value ^= text.charCodeAt(i);
+      value = Math.imul(value, 16777619);
+    }
+    return value >>> 0;
+  }
+
+  papers.forEach(function (paper) {
+    paper.weight = Math.max(1, 8 - (maxYear - paper.year) * 2);
+  });
+  papers.sort(function (a, b) { return hash(a.key) - hash(b.key); });
+
+  var schedule = [];
+  for (var round = 1; round <= 8; round += 1) {
+    var candidates = papers.filter(function (paper) { return paper.weight >= round; });
+    if (!candidates.length) continue;
+    var offset = round % candidates.length;
+    candidates = candidates.slice(offset).concat(candidates.slice(0, offset));
+    if (schedule.length && candidates.length > 1 && schedule[schedule.length - 1].key === candidates[0].key) {
+      candidates.push(candidates.shift());
+    }
+    schedule = schedule.concat(candidates);
+  }
+  if (!schedule.length) return;
+
+  var now = new Date();
+  var isoDate = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  var isoDay = isoDate.getUTCDay() || 7;
+  isoDate.setUTCDate(isoDate.getUTCDate() + 4 - isoDay);
+  var isoYear = isoDate.getUTCFullYear();
+  var yearStart = new Date(Date.UTC(isoYear, 0, 1));
+  var isoWeek = Math.ceil((((isoDate - yearStart) / 86400000) + 1) / 7);
+  var week = Math.floor((Date.now() + 3 * 86400000) / 604800000);
+  var paper = schedule[week % schedule.length];
+  var primaryTopic = (paper.topics || []).find(function (topic) { return topicNames[topic]; });
+  var description = paper.description || topicDescriptions[primaryTopic] ||
+    'A contribution from the group on the mathematical foundations of interconnected dynamical systems.';
+  if (description.length > 360) description = description.slice(0, 357).replace(/\s+\S*$/, '') + '…';
+
+  document.getElementById('featured-paper-title').textContent = paper.title;
+  document.getElementById('featured-paper-topic').textContent = topicNames[primaryTopic] || 'Network systems & control';
+  document.getElementById('featured-paper-authors').textContent = paper.authors + ' · ' + paper.year;
+  document.getElementById('featured-paper-description').textContent = description;
+  document.getElementById('featured-paper-date').textContent = 'Week ' + isoWeek + ' · ' + isoYear;
+  document.getElementById('featured-paper-date').setAttribute('datetime', isoYear + '-W' + String(isoWeek).padStart(2, '0'));
+  document.getElementById('featured-paper-link').href = paper.link;
+  document.getElementById('featured-paper-figure').src = '{{ site.baseurl }}' + paper.figure;
+  document.getElementById('featured-paper-figure').alt = paper.figure_alt || ('Figure from “' + paper.title + '”');
+}());
+</script>
+
