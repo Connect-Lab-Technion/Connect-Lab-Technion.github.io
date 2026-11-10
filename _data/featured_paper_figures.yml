@@ -1,0 +1,23 @@
+Yue_TAC26:
+  figure: /img/home/transversal-passivity-paper.png
+  alt: Input and output manifolds used to define the transversal supply rate
+
+Zelazo_ECC27:
+  figure: /img/home/flatness-consensus.png
+  alt: Five nonlinear agents following a common reference under an open-loop flatness input
+
+Leiter_TCNS26:
+  figure: /img/home/paper-interface-reduction.png
+  alt: Network system with preserved control and output interface nodes
+
+Theran_TAC26:
+  figure: /img/home/paper-edge-dynamics.png
+  alt: Geometric relationship between formation configurations and edge measurements
+
+GoldgraberCasspi_LCSS26:
+  figure: /img/home/paper-transmission-polygon.png
+  alt: Global transmission polygon and zero-transmission loci for a four-agent formation
+
+Matmon2026_ECC:
+  figure: /img/home/paper-leader-identification.png
+  alt: Sensing graph with identified leader nodes highlighted in green

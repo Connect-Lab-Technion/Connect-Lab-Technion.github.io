@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">Six agent trajectories converging to a three-dimensional target formation</title>
+  <desc id="desc">Six agents begin at distinct open circles and follow curved trajectories to the six vertices of an octahedral target framework.</desc>
+  <defs>
+    <marker id="redHead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#d06952"/></marker>
+    <marker id="blueHead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#4f91b3"/></marker>
+    <style>.plane{fill:#edf3f5;stroke:#c3d0d7;stroke-width:1}.grid{stroke:#c3d0d7;stroke-width:1}.visible{fill:none;stroke:#173a60;stroke-width:4;stroke-linejoin:round}.hidden{fill:none;stroke:#7e91a4;stroke-width:3;stroke-dasharray:7 6}.trail-r{fill:none;stroke:#d06952;stroke-width:4;stroke-linecap:round;marker-end:url(#redHead)}.trail-b{fill:none;stroke:#4f91b3;stroke-width:4;stroke-linecap:round;marker-end:url(#blueHead)}.start-r{fill:#fff;stroke:#d06952;stroke-width:4}.start-b{fill:#fff;stroke:#4f91b3;stroke-width:4}.target{fill:#132641;stroke:#fff;stroke-width:3}.label{fill:#1b5e8f;font:700 16px Arial,sans-serif;letter-spacing:1px}.note{fill:#617082;font:14px Arial,sans-serif}</style>
+  </defs>
+  <path class="plane" d="M180 230 350 137 610 190 440 282Z"/>
+  <g class="grid" opacity=".7"><path d="M226 240 397 147M282 252 453 159M338 264 509 171M394 276 565 183M225 205 485 258M270 180 530 233M315 155 575 208"/></g>
+  <text class="note" x="34" y="34">initial agent positions</text><text class="label" x="516" y="53">TARGET FRAMEWORK</text>
+  <!-- Target octahedron: top, bottom and a four-vertex equatorial cycle. -->
+  <path class="hidden" d="M398 52 350 142 408 125 505 148M398 242 350 142 408 125"/>
+  <path class="visible" d="M398 52 300 155 408 201 505 148 408 125 300 155M398 52 505 148M398 52 408 201M398 242 300 155M398 242 408 201M398 242 505 148M408 125 408 201"/>
+  <!-- Six distinct closed-loop trajectories, one per target vertex. -->
+  <path class="trail-r" d="M72 73c102-16 205-12 317-19"/><path class="trail-b" d="M87 247c111 25 202 15 300-2"/>
+  <path class="trail-b" d="M186 58c20 53 54 83 105 95"/><path class="trail-r" d="M635 70c-55 6-91 30-124 71"/>
+  <path class="trail-r" d="M648 251c-90 9-157-13-230-45"/><path class="trail-b" d="M550 270c-55-38-92-79-134-137"/>
+  <g><circle class="start-r" cx="72" cy="73" r="8"/><circle class="start-b" cx="87" cy="247" r="8"/><circle class="start-b" cx="186" cy="58" r="8"/><circle class="start-r" cx="635" cy="70" r="8"/><circle class="start-r" cx="648" cy="251" r="8"/><circle class="start-b" cx="550" cy="270" r="8"/></g>
+  <g class="target"><circle cx="398" cy="52" r="9"/><circle cx="398" cy="242" r="9"/><circle cx="300" cy="155" r="9"/><circle cx="505" cy="148" r="9"/><circle cx="408" cy="125" r="9"/><circle cx="408" cy="201" r="9"/></g>
+</svg>

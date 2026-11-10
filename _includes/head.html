@@ -19,12 +19,11 @@
     <!-- slick JS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content={{ site.theme_color | default: '#ffffff' }}>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/app.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     <link rel="shortcut icon" type="image/Connect_logo_clean.png"
           {% if site.favicon %} href="{{ site.favicon | relative_url }}" {% else %} href="{{ site.baseurl }}/img/logos/Connect_logo_clean.png" {% endif %}
     />

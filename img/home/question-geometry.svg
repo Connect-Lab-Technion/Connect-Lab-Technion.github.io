@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 280" role="img" aria-labelledby="title desc">
+  <title id="title">Rigid, flexible, and scale-varying frameworks</title>
+  <desc id="desc">A braced quadrilateral is rigid, an unbraced quadrilateral can flex, and two similar triangles illustrate a change of scale with shape preserved.</desc>
+  <defs>
+    <style>
+      .panel{fill:#fff;stroke:#c7d0d8;stroke-width:2}.edge{fill:none;stroke:#40546b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.accent{fill:none;stroke:#d06952;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#d06952;stroke-width:3;stroke-dasharray:8 7}.node{fill:#132641;stroke:#fff;stroke-width:3}.ghost-node{fill:#fff;stroke:#d06952;stroke-width:3}.label{fill:#1b5e8f;font:700 17px Arial,sans-serif;letter-spacing:1.5px}.note{fill:#617082;font:14px Arial,sans-serif}.math{fill:#d06952;font:italic 17px Georgia,serif}.arrow{fill:none;stroke:#d06952;stroke-width:3;marker-end:url(#head)}
+    </style>
+    <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#d06952"/></marker>
+  </defs>
+  <rect class="panel" x="10" y="10" width="220" height="260" rx="8"/><rect class="panel" x="250" y="10" width="220" height="260" rx="8"/><rect class="panel" x="490" y="10" width="220" height="260" rx="8"/>
+  <text class="label" x="120" y="42" text-anchor="middle">RIGID</text>
+  <path class="edge" d="M54 88 184 88 174 200 64 200ZM54 88 174 200"/><path class="accent" d="M64 200 184 88"/>
+  <g class="node"><circle cx="54" cy="88" r="9"/><circle cx="184" cy="88" r="9"/><circle cx="174" cy="200" r="9"/><circle cx="64" cy="200" r="9"/></g>
+  <text class="note" x="120" y="242" text-anchor="middle">bracing fixes the shape</text>
+  <text class="label" x="360" y="42" text-anchor="middle">FLEXIBLE</text>
+  <path class="edge" d="M292 88 424 88 415 200 303 200Z"/><path class="ghost" d="M292 88 424 88 448 181 334 216Z"/><path class="arrow" d="M402 146c23 4 34 16 37 30"/>
+  <g class="node"><circle cx="292" cy="88" r="9"/><circle cx="424" cy="88" r="9"/><circle cx="415" cy="200" r="9"/><circle cx="303" cy="200" r="9"/></g><g class="ghost-node"><circle cx="448" cy="181" r="7"/><circle cx="334" cy="216" r="7"/></g>
+  <text class="note" x="360" y="242" text-anchor="middle">edge lengths allow a flex</text>
+  <text class="label" x="600" y="42" text-anchor="middle">SCALE</text>
+  <path class="ghost" d="M515 202 600 62 690 202Z"/><path class="edge" d="M550 192 600 108 653 192Z"/>
+  <g class="ghost-node"><circle cx="515" cy="202" r="7"/><circle cx="600" cy="62" r="7"/><circle cx="690" cy="202" r="7"/></g><g class="node"><circle cx="550" cy="192" r="8"/><circle cx="600" cy="108" r="8"/><circle cx="653" cy="192" r="8"/></g>
+  <path class="arrow" d="M563 167 538 135"/><text class="math" x="535" y="121" text-anchor="middle">s</text><text class="note" x="600" y="242" text-anchor="middle">same shape, different size</text>
+</svg>

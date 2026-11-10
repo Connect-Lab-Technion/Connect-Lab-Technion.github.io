@@ -2,11 +2,17 @@
     <div class="container">
         
         <div class="navbar-brand">
-            <a class="navbar-item navbar-logo" href="{{ site.baseurl }}/">
-                <img src="/img/logos/Connect_logo_clean.png" style="height: 1000px; width: auto; display: block; max-width: none;">
+            <a class="navbar-item navbar-logo" href="{{ site.baseurl }}/" aria-label="Connect Lab home">
+                <img src="{{ site.baseurl }}/img/logos/Connect_logo_clean.png" alt="Connect Lab mark">
+                <span class="navbar-lab-name"><strong>Connect Lab</strong><small>Cooperative Networks and Controls</small></span>
             </a>
 
-            <button id="navbar-toggler" class="navbar-burger">
+            <div class="navbar-quick-links" aria-label="Quick navigation">
+                <a href="{{ site.baseurl }}/research/">Research</a>
+                <a href="{{ site.baseurl }}/current-members/">Team</a>
+            </div>
+
+            <button id="navbar-toggler" class="navbar-burger" type="button" aria-label="Open navigation" aria-controls="navbar-menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -36,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navbarToggler.addEventListener("click", function () {
     navbarMenu.classList.toggle("open");
+    navbarToggler.setAttribute("aria-expanded", navbarMenu.classList.contains("open"));
   });
 });
 
