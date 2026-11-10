@@ -1,77 +1,65 @@
 ---
 ---
-{{ reference }}
+{% assign record_key = entry.key | append: '' %}
+{% assign curated_snapshot = site.data.featured_paper_figures[record_key] %}
+{% assign extracted_snapshot = site.data.publication_snapshots[record_key] %}
+{% assign snapshot_summary = curated_snapshot.description | default: extracted_snapshot.summary | strip %}
+<article class="publication-entry" data-publication-type="{{ entry.type | downcase }}">
+  <div class="publication-entry__citation">{{ reference }}</div>
 
-<br>
-{% if link %}
-<a href="{{link}}" target="_blank">
-	<img alt="{{key}}.pdf" src="https://img.shields.io/static/v1?label=&message=PDF&color=orange">
-</a>
-{% elsif entry.pdf%}
-<a href="{{entry.pdf}}" target="_blank">
-	<img alt="{{key}}.pdf" src="https://img.shields.io/static/v1?label=&message=PDF&color=orange">
-</a>
-{% endif %}	
-{% if entry.slides%}
-<a href="{{entry.slides}}" target="_blank">
-	<img alt="{{key}}.slides" src="https://img.shields.io/static/v1?label=&message=slides&color=yellow">
-</a>
-{% endif %}	
-{% if entry.doi %}
-<a href="http://dx.doi.org/{{entry.doi}}" target="_blank">
-	<img alt="DOI: {{entry.doi}}" src="https://img.shields.io/static/v1?label=&message=DOI&color=blue">
-</a>
-{% elsif entry.url %}
-<a href="{{entry.url}}" target="_blank">
-	<img alt="URL: {{entry.url}}" src="https://img.shields.io/static/v1?label=&message=URL&color=blueviolet">
-</a>
-{% endif %}
-{% if entry.arxiv %}
-<a href="{{entry.arxiv}}" target="_blank">
-	<img alt="arXiv: {{entry.arxiv}}" src="https://img.shields.io/static/v1?label=&message=arXiv&color=A42C25">
-</a>
-{% endif %}
-{% if entry.supplementary %}
-<a href="{{entry.supplementary}}" target="_blank">
-	<img alt="{{key}}.supplementary" src="https://img.shields.io/static/v1?label=&message=Supplementary&color=pink">
-</a>
-{% endif %}
-{% if entry.material %}
-<a href="{{entry.material}}" target="_blank">
-	<img alt="supplemental material" src="https://img.shields.io/static/v1?label=&message=material&color=889900">
-</a>
-{% endif %}
-{% if entry.website %}
-<a href="{{entry.website}}" target="_blank">
-	<img alt="further information" src="https://img.shields.io/static/v1?label=&message=website&color=009999">
-</a>
-{% endif %}
-{% if entry.repo %}
-<a href="{{entry.repo}}" target="_blank">
-	<img alt="repo" src="https://img.shields.io/static/v1?label=&message=repo&color=F1BD33">        
-</a>
-{% endif %}
-{% if entry.video%}
-<a href="{{entry.video}}" target="_blank">
-	<img alt="{{key}}.video" src="https://img.shields.io/static/v1?label=&message=video&color=green">
-</a>
-{% endif %}	
-{% if entry.poster%}
-<a href="{{entry.poster}}" target="_blank">
-	<img alt="{{key}}.poster" src="https://img.shields.io/static/v1?label=&message=poster&color=gray">
-</a>
-{% endif %}	
-{% if entry.bibtex %}
-<a href="javascript:void(0);" onclick="toggleBibtex('{{ entry.key }}')">
-    <img alt="{{key}}.bibtex" src="https://img.shields.io/static/v1?label=&message=BibTeX&color=lightgrey">
-</a>
-{% endif %}
-{% if entry.bibtex %}
-<div id="bibtex-{{ entry.key }}"
-    style="display:none; margin-top:0.5rem;">
-    <pre style="font-size:0.8em; background:#f9f9f9; border:1px solid #ddd; padding:0.5rem; white-space:pre; overflow-x:auto;">
-{{ entry.bibtex }}
-    </pre>
-</div>
-{% endif %}
+  <div class="publication-entry__actions" aria-label="Publication links">
+    {% assign paper_link = link | strip %}
+    {% assign paper_pdf = entry.pdf | strip %}
+    {% assign paper_doi = entry.doi | strip %}
+    {% assign paper_url = entry.url | strip %}
+    {% assign paper_arxiv = entry.arxiv | strip %}
+    {% if paper_link != empty %}
+      <a href="{{ paper_link }}" target="_blank" rel="noopener">PDF</a>
+    {% elsif paper_pdf != empty %}
+      <a href="{{ paper_pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>
+    {% endif %}
+    {% if paper_doi != empty %}
+      {% if paper_doi contains 'http' %}<a href="{{ paper_doi }}" target="_blank" rel="noopener">DOI</a>{% else %}<a href="https://doi.org/{{ paper_doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+    {% elsif paper_url != empty %}
+      <a href="{{ paper_url }}" target="_blank" rel="noopener">Publisher</a>
+    {% endif %}
+    {% if paper_arxiv != empty %}<a href="{{ paper_arxiv }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
+    {% assign paper_slides = entry.slides | strip %}{% if paper_slides != empty %}<a href="{{ paper_slides | relative_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+    {% assign paper_supplementary = entry.supplementary | strip %}{% if paper_supplementary != empty %}<a href="{{ paper_supplementary | relative_url }}" target="_blank" rel="noopener">Supplement</a>{% endif %}
+    {% assign paper_material = entry.material | strip %}{% if paper_material != empty %}<a href="{{ paper_material | relative_url }}" target="_blank" rel="noopener">Material</a>{% endif %}
+    {% assign paper_website = entry.website | strip %}{% if paper_website != empty %}<a href="{{ paper_website }}" target="_blank" rel="noopener">Website</a>{% endif %}
+    {% assign paper_repo = entry.repo | strip %}{% if paper_repo != empty %}<a href="{{ paper_repo }}" target="_blank" rel="noopener">Code</a>{% endif %}
+    {% assign paper_video = entry.video | strip %}{% if paper_video != empty %}<a href="{{ paper_video }}" target="_blank" rel="noopener">Video</a>{% endif %}
+    {% assign paper_poster = entry.poster | strip %}{% if paper_poster != empty %}<a href="{{ paper_poster | relative_url }}" target="_blank" rel="noopener">Poster</a>{% endif %}
+    {% if page.url == '/publications/' or page.url == '/publications_by_type/' %}<button class="publication-snapshot-trigger" type="button" onclick="togglePublicationSnapshot('{{ entry.key }}')" aria-controls="snapshot-{{ entry.key }}" aria-expanded="false">Snapshot <span aria-hidden="true">+</span></button>{% endif %}
+    {% if entry.bibtex %}<button type="button" onclick="toggleBibtex('{{ entry.key }}')" aria-controls="bibtex-{{ entry.key }}" aria-expanded="false">BibTeX</button>{% endif %}
+  </div>
 
+  {% if page.url == '/publications/' or page.url == '/publications_by_type/' %}
+    {% assign snapshot_pdf = paper_link | default: paper_pdf | default: extracted_snapshot.pdf | strip %}
+    <div id="snapshot-{{ entry.key }}" class="publication-snapshot" hidden>
+      <div class="publication-snapshot__visual">
+        {% assign snapshot_figure = curated_snapshot.figure | strip %}
+        {% if snapshot_figure != empty %}
+          <img src="{{ curated_snapshot.figure | relative_url }}" alt="{{ curated_snapshot.alt | default: entry.title }}" loading="lazy">
+        {% elsif snapshot_pdf != empty %}
+          <iframe title="First-page preview of {{ entry.title | strip_html }}" data-src="{{ snapshot_pdf | relative_url }}#page=1&view=FitH" loading="lazy"></iframe>
+        {% else %}
+          <div class="publication-snapshot__placeholder" aria-hidden="true"><span>Connect Lab</span><strong>{{ entry.year }}</strong></div>
+        {% endif %}
+      </div>
+      <div class="publication-snapshot__story">
+        <p class="publications-kicker">The story in brief</p>
+        {% if snapshot_summary != empty %}
+          <p>{{ snapshot_summary }}</p>
+        {% else %}
+          <p class="publication-snapshot__unavailable">A reliable abstract is not yet stored for this record. Use the paper link above for the complete work; a curated summary can be added when the publication metadata is updated.</p>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if entry.bibtex %}
+    <div id="bibtex-{{ entry.key }}" class="publication-entry__bibtex" hidden><pre>{{ entry.bibtex | escape }}</pre></div>
+  {% endif %}
+</article>
