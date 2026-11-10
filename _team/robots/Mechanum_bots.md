@@ -9,8 +9,8 @@ image: /img/team/mechanumbot.jpg
 link-new-tab: true
 bio:
 - ROS Heart
-- Rasberry pi4 brain
-- Independant wheel control and measurement module
+- Raspberry Pi 4 computer
+- Independent wheel control and measurement module
 twitter: 
 youtube: 
 github: https://github.com/Connect-Lab-Technion/MecanumRobot

@@ -1,17 +1,13 @@
 ---
 layout: default
+hide_hero: true
+full_width: true
 ---
-<div class="content">
-  {{ content }}
+<div class="gallery-index">
+  <header class="gallery-index__hero">
+    <p class="site-kicker">Life at Connect Lab</p>
+    <h1>The work—and<br>the people around it.</h1>
+    <p>Research is built through experiments, discussions, travel, teaching, and time spent together.</p>
+  </header>
+  <main class="gallery-index__content">{{ content }}</main>
 </div>
-
-<script>
-  $(document).ready(function(){
-$('.slick-slider').slick({
-  autoplay: true,
-  autoplaySpeed: 3000,
-  dots: true,
-  arrows: true
-});
-});
-</script>

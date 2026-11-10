@@ -22,4 +22,4 @@ website: https://www.turtlebot.com/
 
 ##  About Me :
 
-I am the first robotics testbed for the Connect Lab! I am based on the open source turtlebot ROS project. I am equiped with 2-d range mobility through a unicycle model and can be equiped with a camera and rangefinder hardware for bearing and distance formation control algorithm deployment. Can't wait for my successor: [MechanumBot]({{ site.baseurl }}/team/robots/Mechanum_bots/) 
+I am the first robotics testbed for the Connect Lab. I am based on the open-source TurtleBot ROS project. I provide planar mobility through a unicycle model and can be equipped with camera and rangefinder hardware for deploying bearing- and distance-based formation-control algorithms. Meet my successor: [MechanumBot]({{ site.baseurl }}/team/robots/Mechanum_bots/).

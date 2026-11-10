@@ -3,9 +3,15 @@ title: Passivity and Nonlinear Control
 research_code: FDI
 layout: research
 image: /img/home/transversal-passivity-paper.png
-card_alt: Input and output manifolds in a transversal passivity framework
+card_alt: Input and output manifolds with transverse error directions in the 2026 transversal-passivity framework
 card_label: Nonlinear systems
 summary: Energy, interconnection, and geometric dissipativity as tools for analyzing and designing nonlinear and networked systems.
+hero_caption: "From the 2026 transversal-passivity preprint: dissipation is measured in the directions normal to the input and output manifolds, while motion tangent to each manifold remains unconstrained."
+story: Passivity turns local energy inequalities into interconnection guarantees. Our work extends that principle to passive-short systems, network optimization, nonlinear consensus, and objectives defined by manifolds rather than isolated equilibria.
+research_questions:
+  - Which local dissipativity properties survive feedback interconnection?
+  - Can a passive-short system be transformed into a passive one without losing its useful behavior?
+  - How should passivity be defined when the target is a manifold rather than an equilibrium?
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png  
 menubar_toc: true

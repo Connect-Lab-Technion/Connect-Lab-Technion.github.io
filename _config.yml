@@ -5,11 +5,11 @@ theme: bulma-clean-theme
 remote_theme: chrisrhymes/bulma-clean-theme
 
 
-title: Connect-Lab
-tagline: Cooperative Networks and Controls Lab Website
+title: Connect Lab
+tagline: Theory for cooperative, networked, and multi-agent systems
 email: dzelazo@technion.ac.il
 description: >
-  Exploring all aspects related to the control and coordination of multi-agent systems.
+  Theory and methods for cooperative, networked, and multi-agent systems.
 baseurl: ""
 url: "https://connect-lab-technion.github.io"
 default_og_image: "/img/logos/Connect_logo_full.png"
@@ -64,19 +64,25 @@ exclude:
  - vendor/ruby/
  - img/social/connect/
  - gallery_orig.md
+ - gallery_v2.md
+ - homepage-concept-b.md
+ - docs.md
+ - docs/
+ - example-recipe.md
+ - landing.md
+ - showcase.md
+ - blog/
+ - _posts/2018-05-28-why-use-a-static-site-generator.markdown
+ - about.markdown
+ - output/
+ - outputs/
 
 
-
-
-ivereload: true
 
 
 sass:
  style: compressed
  source_dir: _sass
-
-
-google_analytics: UA-code-here
 
 
 defaults:
@@ -91,20 +97,13 @@ defaults:
      path: ""
      type: "posts"
    values:
-     author: "Anpl"
+     author: "Connect Lab"
      layout: post
-     show_sidebar: true
+     show_sidebar: false
 
 
 markdown: kramdown
 highlighter: rouge
-
-
-footer_menu: example_footer_menu
-
-collections:
-  research:
-    output: true
 
 
 excerpt_separator: "<!-- more -->"
@@ -118,8 +117,7 @@ collections:
     show_sidebar: false
   team:
     output: true
-    layout: product
-    image: https://via.placeholder.com/800x600
+    layout: team_member_personal_page
     show_sidebar: false
   student-projects:
     output: true
@@ -127,7 +125,7 @@ collections:
     layout: student_project
   news:
     output: true
-    permalink: /news/:path
+    permalink: /news/:path/
     
 
 

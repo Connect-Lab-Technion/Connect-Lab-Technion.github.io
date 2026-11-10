@@ -1,7 +1,7 @@
 (function () {
   const apiKey = 'aaab877eae3850bf7b5c7f145eb045a0';
-  const COVERFLOW_DESKTOP_SLIDES = 5;
-  const COVERFLOW_TABLET_SLIDES = 3;
+  const DESKTOP_SLIDES = 3;
+  const TABLET_SLIDES = 2;
   let lightboxBound = false;
 
   function ensureLightbox() {
@@ -69,30 +69,6 @@
     });
   }
 
-  function applyCoverflowClasses(track) {
-    const $track = window.jQuery(track);
-    const $slides = $track.find('.slick-slide');
-    $slides.removeClass('is-left-1 is-left-2 is-right-1 is-right-2');
-
-    const $center = $track.find('.slick-slide.slick-center').first();
-    if (!$center.length) {
-      return;
-    }
-
-    $center
-      .prevAll('.slick-active')
-      .slice(0, 2)
-      .each((idx, el) => {
-        window.jQuery(el).addClass(idx === 0 ? 'is-left-1' : 'is-left-2');
-      });
-
-    $center
-      .nextAll('.slick-active')
-      .slice(0, 2)
-      .each((idx, el) => {
-        window.jQuery(el).addClass(idx === 0 ? 'is-right-1' : 'is-right-2');
-      });
-  }
   async function fetchPhotos(photosetId) {
     const url = `https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${apiKey}&photoset_id=${photosetId}&format=json&nojsoncallback=1`;
     const res = await fetch(url);
@@ -141,7 +117,7 @@
 
     const header = document.createElement('div');
     header.className = 'flickr-carousel-header';
-    header.textContent = title;
+    header.innerHTML = `<span>${title}</span><small>Loading photographs…</small>`;
     container.appendChild(header);
 
     const track = document.createElement('div');
@@ -150,6 +126,7 @@
 
     try {
       const photos = await fetchPhotos(photosetId);
+      header.querySelector('small').textContent = `${photos.length} photographs · select an image to enlarge`;
       photos.forEach((photo) => track.appendChild(buildSlide(photo)));
 
       track.querySelectorAll('img').forEach((img) => {
@@ -166,63 +143,47 @@
       }
 
       const hasMultiplePhotos = photos.length > 1;
-      const desktopSlidesToShow = Math.min(COVERFLOW_DESKTOP_SLIDES, photos.length);
-      const tabletSlidesToShow = Math.min(COVERFLOW_TABLET_SLIDES, photos.length);
+      const desktopSlidesToShow = Math.min(DESKTOP_SLIDES, photos.length);
+      const tabletSlidesToShow = Math.min(TABLET_SLIDES, photos.length);
 
       window.jQuery(track).slick({
         slidesToShow: desktopSlidesToShow,
         slidesToScroll: 1,
-        centerMode: hasMultiplePhotos,
-        centerPadding: hasMultiplePhotos ? '2%' : '0px',
-        focusOnSelect: hasMultiplePhotos,
+        centerMode: false,
+        focusOnSelect: false,
         infinite: photos.length > desktopSlidesToShow,
-        dots: true,
+        dots: false,
         arrows: true,
         adaptiveHeight: false,
         lazyLoad: 'ondemand',
-        autoplay: true,
-        autoplaySpeed: 4500,
+        autoplay: false,
         responsive: [
           {
             breakpoint: 1024,
             settings: {
               slidesToShow: tabletSlidesToShow,
-              centerMode: hasMultiplePhotos,
-              centerPadding: hasMultiplePhotos ? '10%' : '0px',
+              centerMode: false,
               infinite: photos.length > tabletSlidesToShow
             }
           },
           {
             breakpoint: 640,
             settings: {
-              slidesToShow: 1,
-              centerMode: hasMultiplePhotos,
-              centerPadding: hasMultiplePhotos ? '18%' : '0px',
+              slidesToShow: 1.08,
+              centerMode: false,
               infinite: hasMultiplePhotos
             }
           }
         ]
       });
 
-      applyCoverflowClasses(track);
-
       window.jQuery(track).on('lazyLoaded', () => {
         window.jQuery(track).slick('setPosition');
-        applyCoverflowClasses(track);
-      });
-
-      window.jQuery(track).on('afterChange', () => {
-        applyCoverflowClasses(track);
       });
 
       track.addEventListener('click', (event) => {
         const image = event.target.closest('img');
         if (!image) {
-          return;
-        }
-
-        const slide = image.closest('.slick-slide');
-        if (!slide || !slide.classList.contains('slick-center')) {
           return;
         }
 

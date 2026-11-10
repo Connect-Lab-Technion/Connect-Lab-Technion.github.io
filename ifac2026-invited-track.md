@@ -1,13 +1,15 @@
 ---
-layout: page
+layout: editorial_page
 title: Advances in Rigidity Theory, Multi-Agent Formations, and Distributed Localization
 subtitle: IFAC World Congress 2026 Open Invited Track Session MoA07
 description: IFAC 2026 invited session on rigidity theory, multi-agent formations, and distributed localization.
 permalink: /ifac2026-invited-track/
 show_sidebar: false
 hide_footer: false
-hero_height: is-small
-hero_color: is-black
+hide_hero: true
+kicker: IFAC World Congress 2026 · Open invited track MoA07
+heading: Rigidity, formations, and distributed localization.
+intro: A focused session bringing together new geometric and combinatorial foundations for coordinated autonomous systems.
 ---
 
 ## Session Overview

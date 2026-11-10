@@ -6,6 +6,12 @@ image: /img/home/connect-lab-robots.webp
 card_alt: Mobile robots arranged as a multi-agent formation in the lab
 card_label: Experimental validation
 summary: Experimental platforms for testing how theoretical guarantees survive real sensing, communication, computation, and actuation constraints.
+hero_caption: Connect Lab ground robots provide a reusable testbed for formation control, network inference, and distributed coordination.
+story: Experiments are where modeling assumptions become visible. Our platforms let us test how sensing limits, computation, actuator dynamics, and communication constraints reshape theoretically sound controllers.
+research_questions:
+  - Which theoretical guarantees remain meaningful on physical robots?
+  - How should a platform expose sensing and actuation limits without hiding them behind proprietary control layers?
+  - Can one testbed support research, rapid prototyping, and control education?
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true
@@ -22,26 +28,13 @@ Our robotic work provides experimental platforms for formation control, rigidity
 
 <p>We are developing ground and aerial robots for validating multi-agent control ideas and for involving students in hands-on systems research. The current platforms maintained by the group are listed below.</p>
 
-<div class="columns is-multiline">
+<div class="research-platform-grid">
   {% assign sorted_products = site.team | where:"category","robots" | sort: "deployment" | reverse %}
   {% for product in sorted_products %}
-    <div class="column is-one-fifth-desktop is-6-tablet">
-      <a href="{{ product.url | prepend: site.baseurl }}">
-        <div class="card">
-          {% if product.image %}
-            <div class="card-image">
-              <figure class="image is-3by3" style="display: flex; align-items: center; justify-content: center; max-width: 250px; max-height: 250px; overflow: hidden;">
-                <img src="{{ product.image }}" alt="{{ product.title }}" style="width: 250px; height: 250px; object-fit: cover; display: block; margin: auto;">
-              </figure>
-            </div>
-          {% endif %}
-          <div class="card-content">
-            <p class="title is-6">{{ product.title }}</p>
-            <p class="subtitle is-6">{{ product.subtitle }}</p>
-          </div>
-        </div>
-      </a>
-    </div>
+    <a class="research-platform-card" href="{{ product.url | prepend: site.baseurl }}">
+      {% if product.image %}<figure><img src="{{ product.image }}" alt="{{ product.title }}"></figure>{% endif %}
+      <div><p>{{ product.title }}</p><span>{{ product.subtitle }}</span></div>
+    </a>
   {% endfor %}
 </div>
 

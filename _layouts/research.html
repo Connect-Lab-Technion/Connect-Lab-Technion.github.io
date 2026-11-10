@@ -1,23 +1,53 @@
 ---
-layout: default_for_research
+layout: default
+hide_hero: true
 show_sidebar: false
-
+full_width: true
 ---
-
-<div class="columns is-multiline">
-
-    <div class="column is-6 has-text-centered has-vertical-center">
-        <img src="{{ page.image }}" style="max-height: 80%; width: auto; object-fit: contain;">
-            <!--<img src="{{ page.image }}" style="width: 50%; height:auto; object-fit: fill;">-->
+<article class="research-detail">
+  <header class="research-detail__hero">
+    <div class="research-detail__heading">
+      <a class="research-detail__back" href="{{ '/research/' | relative_url }}">← All research directions</a>
+      <p class="site-kicker">{{ page.card_label | default: 'Research direction' }}{% if page.research_code %} · {{ page.research_code }}{% endif %}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.summary %}<p>{{ page.summary }}</p>{% elsif page.subtitle %}<p>{{ page.subtitle }}</p>{% endif %}
     </div>
+    {% if page.image %}
+    <figure class="research-detail__hero-figure">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.card_alt | default: page.title }}">
+      {% if page.hero_caption %}<figcaption>{{ page.hero_caption }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+  </header>
 
-    <div class="column is-6 has-text-centered has-vertical-center">
-        <p class="title is-3" style="text-align: center; margin-bottom: 1cm; ">{{ page.title }}</p>
-        <p class="subtitle is-3" style="text-align: center;">{{ page.subtitle }}</p>
+  {% if page.research_questions %}
+  <section class="research-detail__questions" aria-labelledby="research-questions-title">
+    <div>
+      <p class="site-kicker">The questions behind the work</p>
+      <h2 id="research-questions-title">What we are trying to understand.</h2>
+      {% if page.story %}<p>{{ page.story }}</p>{% endif %}
     </div>
-</div>
+    <ol>
+      {% for question in page.research_questions %}
+      <li><span>0{{ forloop.index }}</span><p>{{ question }}</p></li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
 
-<hr>
-<div class="content">
-    {{ content }}
-</div>
+  <div class="research-detail__shell">
+    {% if page.menubar_toc %}
+    <aside class="research-detail__toc" aria-label="On this page">
+      <p class="site-kicker">{{ page.toc_title | default: 'On this page' }}</p>
+      {% include toc.html html=content class='menu-list' h_min=2 h_max=2 %}
+    </aside>
+    {% endif %}
+    <main class="research-detail__content">{{ content }}</main>
+  </div>
+
+  <footer class="research-detail__footer">
+    <p class="site-kicker">Explore the full programme</p>
+    <h2>Eight connected directions, one systems view.</h2>
+    <a href="{{ '/research/' | relative_url }}">Browse all research <span aria-hidden="true">→</span></a>
+  </footer>
+</article>

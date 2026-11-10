@@ -1,10 +1,12 @@
 ---
-layout: page
+layout: editorial_page
 title: Control Conference Dates
 show_sidebar: false
 hide_footer: false
-hero_height: is-small
-hero_image: /img/Connect_head_bkg.png
+hide_hero: true
+kicker: Internal planning · Connect Lab
+heading: Control conference dates.
+intro: A lightweight planning board for submission deadlines and upcoming systems-and-control meetings.
 sitemap: false
 ---
 

@@ -1,12 +1,15 @@
 ---
 layout: default
-show_sidebar: false
+hide_hero: true
+full_width: true
 ---
-<article class="news-post">
-  <!--<h2>{{ page.title }}</h2>-->
-  <p><time datetime="{{ page.date }}"><strong>{{ page.date | date: "%B %-d, %Y" }}</strong></time></p>
-  <div class="news-content">
-    {{ content | markdownify }}
-  </div>
+<article class="news-story">
+  <header class="news-story__hero">
+    <a href="{{ '/news_archive/' | relative_url }}">← All news</a>
+    <p class="site-kicker">From the lab · {{ page.date | date: "%B %-d, %Y" }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+  </header>
+  <div class="news-story__body">{{ content }}</div>
+  <footer class="news-story__footer"><a href="{{ '/news_archive/' | relative_url }}">Browse all lab news <span aria-hidden="true">→</span></a></footer>
 </article>
-

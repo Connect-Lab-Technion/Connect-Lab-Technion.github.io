@@ -1,14 +1,14 @@
 ---
 title: Funding
 # subtitle: We gratefully acknowledge our funding sources
-layout: page
+layout: editorial_page
 show_sidebar: false
 hide_footer: false
-hero_height: is-medium
-hero_image: 
+hide_hero: true
+kicker: Support for our research
+heading: Funding partners.
+intro: We gratefully acknowledge the organizations and programmes that make our theoretical and experimental research possible.
 ---
-
-## We gratefully acknowledge our funding sources
 
 - Israel Science Foundation (ISF)
 - United States – Israel Binational Science Foundation (BSF), a joint program with National Science Foundation (NSF)

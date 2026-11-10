@@ -18,7 +18,7 @@ github: https://github.com/henriquemarlon
 email: 
 bitbucket: 
 facebook: 
-linkedin: http://linkedin.com/in/henriquemarlon
+linkedin: https://linkedin.com/in/henriquemarlon
 ---
 
 <!-- ## Connect Lab Publications:

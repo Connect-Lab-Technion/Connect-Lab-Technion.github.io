@@ -1,0 +1,15 @@
+---
+layout: default
+hide_hero: true
+full_width: true
+---
+<div class="site-editorial{% if page.editorial_class %} {{ page.editorial_class }}{% endif %}">
+  <header class="site-editorial__hero">
+    <p class="site-kicker">{{ page.kicker | default: 'Connect Lab · Technion' }}</p>
+    <h1>{{ page.heading | default: page.title }}</h1>
+    {% if page.intro %}<p>{{ page.intro }}</p>{% endif %}
+  </header>
+  <main class="site-editorial__content">
+    {{ content }}
+  </main>
+</div>

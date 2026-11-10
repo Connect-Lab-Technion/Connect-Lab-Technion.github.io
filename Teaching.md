@@ -1,66 +1,93 @@
 ---
-layout: page
+layout: editorial_page
 title: Teaching
-hero_image: /img/Positions.png
-hero_height: is-medium
 show_sidebar: false
 hide_footer: false
-hero_height: is-small
-hero_image: /img/Connect_head_bkg.png
+hide_hero: true
+editorial_class: teaching-page
+kicker: Teaching at the Technion
+heading: Courses in systems and control.
+intro: Our courses connect mathematical ideas in dynamics, control, optimization, and networks with the practice of designing autonomous systems.
 ---
 
-I teach a number of courses within the Faculty of Aerospace Engineering.  The flagship courses I offer are:
+<nav class="editorial-jump-links" aria-label="Flagship courses">
+  <a href="#NDS"><strong>0860730</strong> Multi-agent systems</a>
+  <a href="#RoCon"><strong>0880792</strong> Robust control</a>
+  <a href="#DroneLab"><strong>0850705</strong> Control laboratory</a>
+</nav>
 
-* [Coordination and Control of Multi-Agent Systems (0860730)](#NDS)
-* [Robust Control (0880792)](#RoCon)
-* [Control Lab (0850705)](#DroneLab)
+<section class="teaching-overview">
+  <p class="site-kicker">From abstraction to implementation</p>
+  <h2>Three views of a control problem.</h2>
+  <div>
+    <p><strong>Networks</strong><span>How local interactions create collective dynamics.</span></p>
+    <p><strong>Uncertainty</strong><span>How guarantees survive imperfect models.</span></p>
+    <p><strong>Experiments</strong><span>How estimation and feedback behave on real hardware.</span></p>
+  </div>
+</section>
 
-In addition, I have also taught Control Theory (0840738), Dynamic Systems (0840737), Undergraduate Seminar in Controls (0850802), and Control of Multi-Input Multi-Output Systems (0860289). 
+<article class="course-feature" id="NDS" markdown="1">
+<header><span>0860730</span><p>Graduate course</p><h2>Coordination and Control of Multi-Agent Systems</h2></header>
+<div class="course-feature__body" markdown="1">
 
-# Coordination and Control of Multi-Agent Systems (0860730)
-<div id="NDS"></div>
-Multi-agent systems, or networked dynamic systems (NDS), are systems composed of dynamic units that interact with each other over an information exchange network. These systems can be used to perform team objectives with applications ranging from formation flying to distributed computation. Challenges associated with these systems are their analysis and synthesis, arising due to their decoupled, distributed, large-scale nature, and due to limited inter-agent sensing and communication capabilities. This course provides an introduction to these systems via tools from graph theory, dynamic systems theory, and optimization. The course will cover a variety of modeling techniques for different types of networked systems and proceed to show how their properties, such as stability and performance, can be analyzed. The course will also explore techniques for designing these systems, including distributed control strategies, and optimization methods for network design. The course will also cover real-world applications by presenting recent results obtained in the distributed formation control of multi-robot systems.
+Multi-agent systems are composed of dynamic units that interact through sensing, communication, or physical coupling. The course develops graph-theoretic and systems tools for understanding how those local connections determine stability, performance, and collective behavior.
 
+### The arc of the course
 
-We encourage student participation from multiple faculties/departments at the Technion.
+- graph models for networked dynamical systems
+- consensus, synchronization, and formation control
+- stability and performance of distributed feedback
+- network design and optimization methods
+- examples from multi-robot coordination and distributed computation
 
-- The course syllabus and more information can be found [here](https://www.graduate.technion.ac.il/Subjects.Eng/?Sub=86730).
-- Let me know (by [email](mailto:dzelazo@technion.ac.il)) if you do not have a Technion email.
+Students from multiple Technion faculties are welcome. See the [official course listing](https://www.graduate.technion.ac.il/Subjects.Eng/?Sub=86730), or [contact Daniel](mailto:dzelazo@technion.ac.il) if you do not have a Technion email address.
 
----
-
-# Robust Control (0880792)
-<div id="RoCon"></div>
-Classical “model-based control” techniques for the analysis and design of control systems are based on an implicit assumption that the available mathematical model describing the system process is accurate. In practice, however, mathematical models are inherently uncertain - these uncertainties can range from the numerical values of parameters in a system to uncertainties in the system dynamics itself. The central goal of this course, therefore, is to present a general framework for analyzing uncertain systems and designing controllers that are robust to these uncertainties.
-
-This course, in a broad sense, covers analysis and design techniques for the control of uncertain sys- tems. Along the way, we exploit results from linear operator theory and semi-definite programming to analyze, formulate, and solve a variety of multi-variable control problems. The analysis includes the formulation and verification of stability and performance criteria in the form of function norms that allow the representation of structured and unstructured model uncertainties.
-
-We encourage student participation from multiple faculties/departments at the Technion.
-
-- The course syllabus and more information can be found [here](https://www.graduate.technion.ac.il/Subjects.Eng/?Sub=88792).
-- Let me know (by [email](mailto:dzelazo@technion.ac.il)) if you do not have a Technion email.
-
-
----
-
-# Control Lab (0850705)
-<div id="DroneLab"></div>
-
-This laboratory course focuses on the control and estimation of a quadcopter drone. The lab builds on materials covered in dynamic systems (084737) and control theory (084738) with the ultimate goal of designing from the ground up a complete control system for the autonomous flight of a quadcopter drone. Modeling of a quadcopter is performed using basic principles. The capabilities and limitations of the quadcopter sensors and actuators are explored, and tools related to sensor fusion and state estimation are introduced to enable good control design. The complete control problem for the quadcopter is broken down into simple single-input single-output control loops, and students close each loop individually. All control laws and estimators are tested in simulation and also with physical experiments using a quadcopter and a specially designed testing rig. The culmination of the course is the autonomous free flight of the quadcopter.
-
-<div style="display: flex; justify-content: center;">
-    <img src="/img/Teaching/rolling_spider.png" alt="Rolling Spider Drone">
 </div>
+<figure><img src="/img/home/network-dynamics.webp" alt="Network dynamics and graph structure"><figcaption>Graph structure and agent dynamics are studied as one interconnected system.</figcaption></figure>
+</article>
 
-<div style="position:relative;padding-top:56.25%;">
-  <iframe 
-    src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTechnionAero%2Fvideos%2F351288040361759&show_text=0&width=560"
-    width="280" 
-    height="158" 
-    style="border:none;overflow:hidden;position:absolute;top:0;left:0;width:100%;height:100%;" 
-    scrolling="no" 
-    frameborder="0" 
-    allowfullscreen="true" 
-    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-  </iframe>
+<article class="course-feature course-feature--reverse" id="RoCon" markdown="1">
+<header><span>0880792</span><p>Graduate course</p><h2>Robust Control</h2></header>
+<div class="course-feature__body" markdown="1">
+
+Model-based design is useful only when we understand what happens as the model becomes wrong. Robust control provides a language for representing uncertainty and for certifying stability and performance across a family of possible systems.
+
+### The arc of the course
+
+- structured and unstructured uncertainty
+- induced norms and input-output performance
+- linear operator and small-gain viewpoints
+- semidefinite programming for analysis and synthesis
+- multivariable control design under model uncertainty
+
+See the [official course listing](https://www.graduate.technion.ac.il/Subjects.Eng/?Sub=88792), or [contact Daniel](mailto:dzelazo@technion.ac.il) for access questions.
+
 </div>
+<figure><img src="/img/research/NDSRobust/uncertain_graph.jpg" alt="Network graph with uncertain interactions"><figcaption>Robust analysis asks which guarantees persist when dynamics and connections are uncertain.</figcaption></figure>
+</article>
+
+<article class="course-feature" id="DroneLab" markdown="1">
+<header><span>0850705</span><p>Laboratory course</p><h2>Control Laboratory</h2></header>
+<div class="course-feature__body" markdown="1">
+
+Students build a complete estimation and control system for autonomous quadcopter flight. The vehicle is modeled from first principles, sensors and actuators are characterized, and the full problem is divided into feedback loops that can be designed, simulated, and tested safely.
+
+### The arc of the laboratory
+
+- quadcopter modeling and actuator characterization
+- sensor fusion and state estimation
+- single-loop and multivariable controller design
+- simulation, test-rig experiments, and free flight
+- analysis of the gap between the model and the vehicle
+
+</div>
+<figure class="course-feature__media"><img src="/img/Teaching/rolling_spider.png" alt="Rolling Spider quadcopter used in the Control Laboratory"><figcaption>The course progresses from modeling to autonomous free flight.</figcaption></figure>
+<div class="course-video">
+  <iframe title="Control Lab quadcopter flight demonstration" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTechnionAero%2Fvideos%2F351288040361759&show_text=0&width=560" loading="lazy" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</div>
+</article>
+
+<aside class="teaching-more">
+  <p class="site-kicker">Additional teaching</p>
+  <p>Control Theory (0840738) · Dynamic Systems (0840737) · Undergraduate Seminar in Controls (0850802) · Control of Multi-Input Multi-Output Systems (0860289)</p>
+</aside>

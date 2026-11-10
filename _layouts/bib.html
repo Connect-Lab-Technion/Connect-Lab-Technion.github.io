@@ -4,8 +4,22 @@
 {% assign curated_snapshot = site.data.featured_paper_figures[record_key] %}
 {% assign extracted_snapshot = site.data.publication_snapshots[record_key] %}
 {% assign snapshot_summary = curated_snapshot.description | default: extracted_snapshot.summary | strip %}
+{% assign extracted_figure = extracted_snapshot.figure | strip %}
+{% assign is_research_detail = false %}
+{% if page.url contains '/research/research-' %}{% assign is_research_detail = true %}{% endif %}
 <article class="publication-entry" data-publication-type="{{ entry.type | downcase }}">
-  <div class="publication-entry__citation">{{ reference }}</div>
+  {% assign reference_id_attr = 'id="' | append: entry.key | append: '"' %}
+  <div class="publication-entry__citation">{% if is_research_detail %}{{ reference | replace: reference_id_attr, '' }}{% else %}{{ reference }}{% endif %}</div>
+  {% if entry.type contains 'Patent' %}
+    <div class="publication-entry__patent-meta">
+      <strong>{% if entry.number contains 'A1' %}U.S. patent application publication{% else %}U.S. patent{% endif %} {{ entry.number }}</strong>
+      {% if entry.assignee %}<span>{{ entry.assignee }}</span>{% endif %}
+      {% if entry.filing_num %}<span>Application {{ entry.filing_num }}</span>{% endif %}
+      {% if entry.yearfiled %}<span>Filed {{ entry.yearfiled }}-{{ entry.monthfiled }}-{{ entry.dayfiled }}</span>{% endif %}
+      <span>{% if entry.number contains 'A1' %}Published{% else %}Granted{% endif %} {{ entry.month | capitalize }} {{ entry.day }}, {{ entry.year }}</span>
+      {% if entry.status %}<span class="publication-entry__patent-status">{{ entry.status }}</span>{% endif %}
+    </div>
+  {% endif %}
 
   <div class="publication-entry__actions" aria-label="Publication links">
     {% assign paper_link = link | strip %}
@@ -21,7 +35,7 @@
     {% if paper_doi != empty %}
       {% if paper_doi contains 'http' %}<a href="{{ paper_doi }}" target="_blank" rel="noopener">DOI</a>{% else %}<a href="https://doi.org/{{ paper_doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
     {% elsif paper_url != empty %}
-      <a href="{{ paper_url }}" target="_blank" rel="noopener">Publisher</a>
+      <a href="{{ paper_url }}" target="_blank" rel="noopener">{% if entry.type contains 'Patent' %}Patent record{% else %}Publisher{% endif %}</a>
     {% endif %}
     {% if paper_arxiv != empty %}<a href="{{ paper_arxiv }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
     {% assign paper_slides = entry.slides | strip %}{% if paper_slides != empty %}<a href="{{ paper_slides | relative_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}
@@ -32,7 +46,7 @@
     {% assign paper_video = entry.video | strip %}{% if paper_video != empty %}<a href="{{ paper_video }}" target="_blank" rel="noopener">Video</a>{% endif %}
     {% assign paper_poster = entry.poster | strip %}{% if paper_poster != empty %}<a href="{{ paper_poster | relative_url }}" target="_blank" rel="noopener">Poster</a>{% endif %}
     {% if page.url == '/publications/' or page.url == '/publications_by_type/' %}<button class="publication-snapshot-trigger" type="button" onclick="togglePublicationSnapshot('{{ entry.key }}')" aria-controls="snapshot-{{ entry.key }}" aria-expanded="false">Snapshot <span aria-hidden="true">+</span></button>{% endif %}
-    {% if entry.bibtex %}<button type="button" onclick="toggleBibtex('{{ entry.key }}')" aria-controls="bibtex-{{ entry.key }}" aria-expanded="false">BibTeX</button>{% endif %}
+    {% unless page.url == '/talks/' or is_research_detail %}{% if entry.bibtex %}<button type="button" onclick="toggleBibtex('{{ entry.key }}')" aria-controls="bibtex-{{ entry.key }}" aria-expanded="false">BibTeX</button>{% endif %}{% endunless %}
   </div>
 
   {% if page.url == '/publications/' or page.url == '/publications_by_type/' %}
@@ -42,8 +56,8 @@
         {% assign snapshot_figure = curated_snapshot.figure | strip %}
         {% if snapshot_figure != empty %}
           <img src="{{ curated_snapshot.figure | relative_url }}" alt="{{ curated_snapshot.alt | default: entry.title }}" loading="lazy">
-        {% elsif snapshot_pdf != empty %}
-          <iframe title="First-page preview of {{ entry.title | strip_html }}" data-src="{{ snapshot_pdf | relative_url }}#page=1&view=FitH" loading="lazy"></iframe>
+        {% elsif extracted_figure != empty %}
+          <img src="{{ extracted_figure | relative_url }}" alt="Figure extracted from {{ entry.title | strip_html }}" loading="lazy">
         {% else %}
           <div class="publication-snapshot__placeholder" aria-hidden="true"><span>Connect Lab</span><strong>{{ entry.year }}</strong></div>
         {% endif %}
@@ -59,7 +73,7 @@
     </div>
   {% endif %}
 
-  {% if entry.bibtex %}
+  {% unless page.url == '/talks/' or is_research_detail %}{% if entry.bibtex %}
     <div id="bibtex-{{ entry.key }}" class="publication-entry__bibtex" hidden><pre>{{ entry.bibtex | escape }}</pre></div>
-  {% endif %}
+  {% endif %}{% endunless %}
 </article>

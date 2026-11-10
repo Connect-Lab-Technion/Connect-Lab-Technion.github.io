@@ -14,6 +14,7 @@ Theran_TAC26:
 Barkai2026_ECC:
   summary: We propose a distributed two-degrees-of-freedom (2DOF) architecture for driving autonomous, possibly heterogeneous, agents to agreement.  The scheme mirrors classical servo structures, separating local feedback from network filtering.  This separation enables independent network-filter design for prescribed noise attenuation and allows controller heterogeneity to reject local disturbances, including disturbances exciting unstable agreement poles – which is known to be impossible via standard diffusive couplings.
   pdf: "/Publications/Barkai_MTNS2026.pdf"
+  figure: "/img/publications/snapshots/Barkai2026_ECC.jpg"
 Zelazo_LCSS26:
   summary: We study synchronization of heterogeneous control-affine nonlinear agents interconnected through diffusive (relative-output) measurements.  We separate the design into an edge-space step—specifying a stabilizing model evolution for relative outputs—and a lift step—realizing the prescribed edge motion using the agents’ allowable input directions, constrained by the control-affine geometry of the agents.  We introduce an admissibility notion that characterizes when an edgedriven diffusive design is feasible.
   pdf: "/Publications/Zelazo_LCSS26.pdf"
@@ -26,81 +27,105 @@ Theran_IFAC26:
 Martinzez_IFAC26:
   summary: This work develops a symmetry-based framework for formation control on cycle graphs using Dihedral point-group constraints.  We show that enforcing inter-agent reflection symmetries, together with anchoring a single designated agent to its prescribed mirror axis, is sufficient to realize every Cnv-symmetric configuration using only n−1 communication links.  The resulting control laws have a matrix-weighted Laplacian structure and guarantee exponential convergence to the desired symmetric configuration.
   pdf: "/Publications/Martinez_IFAC26.pdf"
+  figure: "/img/publications/snapshots/Martinzez_IFAC26.jpg"
 GoldgraberCasspi_IFAC26:
   summary: This paper presents a geometric input-output analysis of hidden modes in distancebased formation control.  We study the linearized dynamics under a gradient control law to characterize the system’s structural limitations and their dynamic consequences.  Our main contribution is a unified geometric framework for uncontrollable modes.
   pdf: "/Publications/GoldgraberCasspi_IFAC26.pdf"
+  figure: "/img/publications/snapshots/GoldgraberCasspi_IFAC26.jpg"
 Barkai2026_ECD:
   summary: We propose a distributed two-degrees-of-freedom (2DOF) architecture for driving autonomous, possibly heterogeneous, agents to agreement.  The scheme mirrors classical servo structures, separating local feedback from network filtering.  This separation enables independent network-filter design for prescribed noise attenuation and allows controller heterogeneity to reject local disturbances, including disturbances exciting unstable agreement poles – which is known to be impossible via standard diffusive couplings.
   pdf: "/Publications/Barkai_ECC26.pdf"
+  figure: "/img/publications/snapshots/Barkai2026_ECD.jpg"
 Matmon2026_ECC:
   summary: This paper addresses the problem of identifying leader nodes in semi-autonomous consensus networks from observed agent dynamics.  Using the grounded Laplacian formulation, we derive graph-theoretic conditions that ensure the components of the Fiedler vector associated with leader and follower nodes are distinct.  Building on this foundation, we employ the notion of relative tempo from [1] as an observable quantity that relates agents’ steady-state velocities to the Fiedler vector.
   pdf: "/Publications/Matmon_ECC26.pdf"
 Martinez2026_ACC:
   summary: This work introduces a distributed formation control strategy for multi-agent systems based solely on rotation symmetry constraints.  We propose a potential function that enforces inter-agent rotational symmetries, whose gradient defines a control law that drives the agents toward a desired planar symmetric configuration.  We show that only n − 1 edges (the minimal connectivity requirement) are sufficient to implement the strategy, where n is the number of agents.
   pdf: "/Publications/Martinez_ACC26.pdf"
+  figure: "/img/publications/snapshots/Martinez2026_ACC.jpg"
 Yue2025_CDC:
   summary: This work presents a passivity-based analysis for the nonlinear output agreement problem in network systems over directed graphs.  We reformulate the problem as a convergence analysis on the agreement submanifold.  First, we establish how passivity properties of individual agents and controllers determine the passivity of their associated system relations.
   pdf: "/Publications/YUE_CDC25.pdf"
+  figure: "/img/publications/snapshots/Yue2025_CDC.jpg"
 Shi2025_TCNS:
   summary: This work introduces a generalization of the leader–first follower (LFF) graph structure for solving the bearing-only formation control problem on directed graphs.  The first contribution provides an equilibrium, stability, and convergence analysis for a one-follower, multileader system (which is not an LFF graph).  We then propose an extension to the LFF structure, termed ordered LFF graphs, that allows for additional forward-directed edges to be included.
   pdf: "/Publications/Shi_TCNS2025.pdf"
+  figure: "/img/publications/snapshots/Shi2025_TCNS.jpg"
 Sharf2024_J:
   summary: "This letter provides a characterization of linear passivizing input-output transformations for MIMO systems with known passivity indices.  Building on recent results for SISO systems, we show that any transformation mapping an I/O (ρ, ν)-passive MIMO system to an I/O (ρ∗, ν\x04)-passive system can be expressed as the product of three matrices - two depending on the original and desired passivity indices, and a matrix satisfying a matrix inequality.  This parameterization enables formulation of optimal passivation problems that we explore as an application example."
   pdf: "/Publications/Sharf_LCSS2024.pdf"
+  figure: "/img/publications/snapshots/Sharf2024_J.jpg"
 Barkai2024_ECC:
   summary: This paper studies state synchronization of homogeneous LTI agents to a trajectory generated by a given exosystem under both spatial and temporal communication constraints.  In particular, communication between the agents is assumed to be intermittent and asynchronous, i.e. effectively acting on a time-varying graph at irregular sampling instances.  The paper extends our previous state-feedback result to the output feedback setting.
   pdf: "/Publications/Barkai_ECC24.pdf"
+  figure: "/img/publications/snapshots/Barkai2024_ECC.jpg"
 Barkai2024_CDC:
   summary: This study investigates the state synchronization of linear time-invariant (LTI) agents within a networked environment characterized by intermittent and asynchronous communication, alongside heterogeneous time-varying transmission delays.  These delays are not assumed to be known a-priori but only time-stamped.  A hybrid controller, augmented with a special kind of predictor, is proposed to compensate for the delays and guarantee synchronization.
   pdf: "/Publications/Barkai_CDC24.pdf"
+  figure: "/img/publications/snapshots/Barkai2024_CDC.jpg"
 Barkai2022a:
   summary: We study internal stability in the context of diffusively-coupled control architecture, common in multi-agent systems (e.g. the celebrated consensus protocol).  We derive a condition under which the system can be stabilized by no controller from that class.  The condition says effectively that diffusivelycoupled controllers cannot stabilize agents that share common unstable dynamics, directions included.
   pdf: "/Publications/Barkai_MTNS2022.pdf"
+  figure: "/img/publications/snapshots/Barkai2022a.jpg"
 Barkai2022a_J:
   summary: This note studies the consensus problem for integrator agents under intermittent information exchange between connected neighbours at asynchronous sampling time instances.  It proposes a novel sampled-data protocol, based on emulating suitable global analog consensus dynamics at each agent and using sampled centroids of these emulators to convey information between agents.  We show that the closed-loop dynamics can be divided into centroid and disagreement parts.
   pdf: "/Publications/Barkai_LCSS2022.pdf"
 Barkai2023a:
   summary: This work presents a novel approach for achieving state synchronization of homogeneous LTI agents to a trajectory generated by a prescribed reference generator under intermittent and asynchronous communication.  The proposed protocol involves emulating “ideal” global analog dynamics at each agent to generate the control signal between samples.  Each agent transmits the centroid state of its local emulator rather than its own state vector, which is used to update the emulators at the receiving end.
   pdf: "/Publications/Barkai_CDC2023.pdf"
+  figure: "/img/publications/snapshots/Barkai2023a.jpg"
 Barkai2023a_J:
   summary: We study internal stability in the context of diffusively-coupled control architectures, common in multi-agent systems (i.e. the celebrated consensus protocol), for linear time-invariant agents.  We derive a condition under which the system cannot be stabilized by any controller from that class.  In the finite-dimensional case the condition states that diffusive controllers cannot stabilize agents that share common unstable dynamics, directions included.
   pdf: "/Publications/Barkai_AUT2023.pdf"
+  figure: "/img/publications/snapshots/Barkai2023a_J.jpg"
 Belabbas2021a_J:
   summary: "A sparsity pattern in Rn×m , for m ≥ n, is a vector subspace of matrices admitting a basis consisting of canonical basis vectors in Rn×m .  We represent a sparsity pattern by a matrix with 0/\x02-entries, where \x02-entries are arbitrary real numbers and 0-entries are equal to 0.  We say that a sparsity pattern has full structural rank if the maximal rank of matrices contained in it is n."
   pdf: "/Publications/Belabbas_TAC2023.pdf"
+  figure: "/img/publications/snapshots/Belabbas2021a_J.jpg"
 Briegel2011:
   summary: In this paper, we focus on the signal transfer between any two agents in a consensus network and provide an analysis of the resulting transfer function and transmission zeros.  Our contributions include relating the distance between the input and output node to the relative degree of the system and showing that the gain factor of the transfer function is equal to the number of shortest paths between the two nodes.  We show that for certain input-output configurations, the zeros interlace with the poles.
   pdf: "/Publications/Briegel_CDC11.pdf"
+  figure: "/img/publications/snapshots/Briegel2011.jpg"
 Burger2011_J:
   summary: This paper studies cluster synchronization in dynamical networks.  A class of cooperative dynamical networks that exhibit clustering in their asymptotic behavior is analyzed.  The network nodes are equipped with heterogeneous dynamics and interact with a nonlinear and saturated interaction rule.
   pdf: "/Publications/Burger_TAC2013.pdf"
+  figure: "/img/publications/snapshots/Burger2011_J.jpg"
 Burger2012:
   summary: This paper studies a clustering phenomena that emerges from a dynamic network with bounded and non-linear interactions.  Necessary and sufficient conditions are given describing when the network exhibits clustering.  We introduce a synchronization coefficient to quantify whether a network is synchronizing or clustering and provide a robustness margin for clustering.
   pdf: "/Publications/Burger_ACC12.pdf"
+  figure: "/img/publications/snapshots/Burger2012.jpg"
 Chen2018a_J:
   summary: This paper analyzes the convergence properties of signed networks with nonlinear edge functions.  We consider diffusively coupled networks comprised of maximal equilibrium-independent passive (MEIP) dynamics on the nodes, and a general class of nonlinear coupling functions on the edges.  The first contribution of this paper is to generalize the classical notion of signed networks for graphs with scalar weights to graphs with nonlinear edge functions using notions from the passivity theory.
   pdf: "/Publications/Chen_TCNS2020.pdf"
+  figure: "/img/publications/snapshots/Chen2018a_J.jpg"
 Fabris2021b_J:
   summary: This article investigates the problem of communication relay establishment for multiple agent-based mobile units using a relay vehicle.  The objective is to drive autonomously the relay vehicle to attain a position for communication relay establishment while maintaining the other vehicles inside of its field-of-view.  A bearing-based control law is proposed for the relay drone and designed for both single and multiple agents.
   pdf: "/Publications/Fabris_ACA2022.pdf"
+  figure: "/img/publications/snapshots/Fabris2021b_J.jpg"
 Fabris2022a_J:
   summary: This work mainly addresses continuous-time multiagent consensus networks where an adverse attacker affects the convergence performances of said protocol.  In particular, we develop a novel secure-by-design approach in which the presence of a network manager monitors the system and broadcasts encrypted tasks (i.e., hidden edge weight assignments) to the agents involved.  Each agent is then expected to decode the received codeword containing data on the task through appropriate decoding functions by leveraging advanced security principles, such as objective coding and information localization.
   pdf: "/Publications/Fabris_SMCS2022.pdf"
+  figure: "/img/publications/snapshots/Fabris2022a_J.jpg"
 Fabris2023_J:
   summary: This letter addresses multi-agent consensus networks where adverse attackers affect the convergence performances of the protocol by manipulating the edge weights.  We generalize (Fabris and Zelazo, 2022) and provide guarantees on the agents’ agreement in the presence of attacks on multiple links in the network.  A stability analysis is conducted to show the robustness to channel tampering in the scenario where part of the codeword, corresponding to the value of the edge weights, is corrupted.
   pdf: "/Publications/Fabris_LCSS2023.pdf"
+  figure: "/img/publications/snapshots/Fabris2023_J.jpg"
 Frank2018:
   summary: This work solves the bearing-only formation control problem for two agents with limited field-of-view sensing.  We propose a bearing-only control strategy for both the position and heading of each agent that guarantees the desired formation is obtained from almost all initial conditions, and ensures that the agents always remain inside the field-of-view of the sensor.  We support our analysis with simulations and explore an extension for the 3- and 4-agent case.
   pdf: "/Publications/Frank_NecSys18.pdf"
+  figure: "/img/publications/snapshots/Frank2018.jpg"
 Hoang2016a_J:
   summary: This paper studies bearing-based formation control of a group of autonomous agents with the leaderfirst follower (LFF) structure in an arbitrary dimensional space.  First, the bearing-based Henneberg construction and some properties of the LFF formation are introduced.  Then, we propose and analyze bearing-only control laws that almost globally stabilize LFF formations to a desired formation.
   pdf: "/Publications/Trinh_TAC2019.pdf"
+  figure: "/img/publications/snapshots/Hoang2016a_J.jpg"
 Ikeda2019a:
   summary: This paper investigates a distributed bearingconstrained formation control of continuous-time multi-agent systems based on sampled bearing information.  The problem is considered in arbitrary dimensional spaces.  Our proposed method penalizes the control effort by L0 control cost, and hence the obtained distributed control is enhanced to take exactly zero value.
   pdf: "/Publications/Ikeda_CDC19.pdf"
+  figure: "/img/publications/snapshots/Ikeda2019a.jpg"
 Jain2019a:
   summary: This paper studies circular formation control of multi-vehicle systems, modeled with unicycle dynamics, in a uniform flowfield with different temporal phase arrangements, while assuring that the trajectories of the vehicles remains bounded within a region.  Using the idea of Barrier Lyapunov function in conjunction with temporal phase potential functions, we derive control laws that achieves our objectives, under a mild assumption on the initial states of the vehicles.  We further obtain bounds on the various signals in the post-design analysis and show that these depends on the initial conditions and controller gains.
   pdf: "/Publications/Jain_MED19.pdf"
+  figure: "/img/publications/snapshots/Jain2019a.jpg"
 Leiter2017a:
   summary: We present a general framework for graph-based model reduction of the controlled consensus protocol, and derive a class of edge-based graph contractions as a constructive solution approach.  These contractions are utilized in a sub-optimal tree-based greedy-edge reduction method and are demonstrated on the H2 reduction of the controlled consensus protocol.
   pdf: "/Publications/Leiter_IFAC17.pdf"
@@ -110,123 +135,161 @@ Leiter2021_J:
 Mathias2013:
   summary: We consider a passivity based cooperative control problem, and show that the steadystate behavior of the networked system is intimately related to a family convex network optimization problems.  This result provides a duality interpretation between the different signals in the cooperative control system.  In particular, we show that the input and output signals as well as the dynamic controller state and controller output are pairs of dual variables.
   pdf: "/Publications/Burger_NecSys13.pdf"
+  figure: "/img/publications/snapshots/Mathias2013.jpg"
 Michael2020a:
   summary: In this paper, we consider the optimisation of time varying functions by a network of agents with no gradient information.  We propose a novel method to estimate the gradient at each agent’s position using only neighbour information.  The gradient estimation is coupled with a formation controller, to minimise gradient estimation error and prevent agent collisions.
   pdf: "/Publications/Michael_CDC2020.pdf"
+  figure: "/img/publications/snapshots/Michael2020a.jpg"
 Michieletto2021_J:
   summary: This work focuses on bearing rigidity theory, namely, the branch of knowledge investigating the structural properties necessary for multielement systems to preserve the interunit bearings under deformations.  The contributions of this work are two-fold.  The first one consists in the development of a general framework for the statement of the principal definitions and properties of bearing rigidity.
   pdf: "/Publications/Michieletto_TCNS2021.pdf"
+  figure: "/img/publications/snapshots/Michieletto2021_J.jpg"
 Montenbruck2015:
   summary: We consider a formation control problem in which a collection of systems is ought to attain a balanced configuration on a submanifold of their state space.  The submanifold thus determines the shape and position of the desired formation.  We solve the formation control problem by simultaneously balancing the retractions of the systems onto the submanifold and asymptotically stabilizing the submanifold.
   pdf: "/Publications/Montenbruck_CDC15.pdf"
+  figure: "/img/publications/snapshots/Montenbruck2015.jpg"
 Montenbruck2016a_J:
   summary: We study formation control problems.  Our approach is to let a group of systems maximize their pairwise distances while bringing them all to a given submanifold, determining the shape of the formation.  The algorithm we propose allows us to initialize the positions of the individual systems in the ambient space of the given submanifold but brings them to the desired formation asymptotically in a stable fashion.
   pdf: "/Publications/Montenbruck_TAC2017.pdf"
+  figure: "/img/publications/snapshots/Montenbruck2016a_J.jpg"
 Muhkerjee2017a_J:
   summary: This paper investigates the robustness of consensus protocols over weighted directed graphs using the Nyquist criterion and small gain theorem for agents with single and double integrator dynamics.  For single integrators, the linear consensus protocol, described by the weighted Laplacian, is considered, while for double integrators a new consensus protocol is presented which also uses the weighted Laplacian.  For both single and double integrators, the allowable bound on a single edge weight perturbation, while consensus among the agents can be achieved, is derived.
   pdf: "/Publications/Muhkerejee_TNSE2017.pdf"
+  figure: "/img/publications/snapshots/Muhkerjee2017a_J.jpg"
 Muhkerjee2017b_J:
   summary: This paper explores the use of Kharitonov’s Theorem on a class of linear multiagent systems.  First, we study a network of the mth order (m ≥ 2) linear uncertain interval plants and provide conditions for achieving fullstate consensus, which relate the stability margins of each agent to the spectrum of the graph Laplacian.  Then, a robustness analysis for such systems is presented when an edge weight in the underlying graph is perturbed.
   pdf: "/Publications/Mukherjee_TCNS2019.pdf"
+  figure: "/img/publications/snapshots/Muhkerjee2017b_J.jpg"
 Mukherjee2016b:
   summary: The present paper investigates the robustness of the consensus protocol over weighted directed graphs using the Nyquist criterion.  The limit to which a single weight can vary, while consensus among the agents can be achieved, is explicitly derived.  It is shown that even with a negative weight on one of the edges, consensus may be achieved.
   pdf: "/Publications/Mukherjee_CDC16.pdf"
+  figure: "/img/publications/snapshots/Mukherjee2016b.jpg"
 Pozzan2021a:
   summary: This work proposes a formation control law for multi-agent systems whose components are heterogeneous in terms of actuation capabilities, but at the same time are all able to retrieve bearing information w.r.t. some neighbors in the group.  The designed controller exploits the results of the bearing rigidity theory deriving from the modeling of heterogeneous formations as generalized frameworks.  The outlined solution is compared with a leader-follower combination of existing rigidity based homogeneous formation controllers in order to highlight the easy tuning, the flexibility w.r.t. the formation composition, and the increased efficiency of the new proposed control…
   pdf: "/Publications/Pozzan_CDC2021.pdf"
+  figure: "/img/publications/snapshots/Pozzan2021a.jpg"
 Priel2021a:
   summary: This paper proposes an improved design approach for distributed consensus Kalman filtering (DCKF).  We provide an improved consensus gain factor compared to the suboptimal design proposed in [1].  This factor is derived from an LMI appearing in the stability analysis of the DCKF and can be computed using semi-definite programming.
   pdf: "/Publications/Priel_CDC21.pdf"
+  figure: "/img/publications/snapshots/Priel2021a.jpg"
 Priel2023_J:
   summary: Abstract This work introduces an improved design approach for distributed event-triggering consensus Kalman filtering (DETCKF).  We consider a network of sensors that are able to observe a linear discrete-time stochastic process with known dynamics.  The sensors cooperate through information exchange over a possibly time-varying communication network to obtain an estimate of the process state.
   pdf: "/Publications/Priel_IJRNC2023.pdf"
+  figure: "/img/publications/snapshots/Priel2023_J.jpg"
 Priel2023a_C:
   summary: This paper proposes an improved method for distributed consensus Kalman filtering (DCKF).  We introduce a minor modification to the consensus kalman filter proposed in (Olfati-Saber (2009)).  Namely an extra averaging term is introduced into the filter update equations.
   pdf: "/Publications/Priel_IFACWC2023.pdf"
+  figure: "/img/publications/snapshots/Priel2023a_C.jpg"
 Rozenheck2014b:
   summary: This work considers a multi-agent formation control problem where a designated leader is subjected to an additional velocity reference command.  The entire formation should follow the leader while maintaining the inter-agent distance constraints.  By augmenting a standard gradient formation controller with a proportional-integral control on the formation error, we are able to prove the stability of the formation error dynamics with velocity input while ensuring zero steady-state formation error.
   pdf: "/Publications/Rozenheck_ECC15.pdf"
+  figure: "/img/publications/snapshots/Rozenheck2014b.jpg"
 Schiano2016a:
   summary: 'This paper considers the problem of controlling a formation of quadrotor UAVs equipped with onboard cameras able to measure relative bearings in their local body frames w.r.t. neighboring UAVs.  The control goal is twofold: (i) steering the agent group towards a formation defined in terms of desired bearings, and (ii) actuating the group motions in the ‘nullspace’ of the current bearing formation.  The proposed control strategy relies on an extension of the rigidity theory to the case of directed bearing frameworks in R3 ×S1 .'
   pdf: "/Publications/Schiano_IROS16.pdf"
 Schuler2012:
   summary: This paper considers the problem of designing sparse relative sensing networks (RSN) subject to a given H∞-performance constraint.  The topology design considers homogeneous and heterogeneous agents over weighted graphs.  We develop a computationally efficient formulation of the sparse topology design via a convex ℓ1-relaxation.
   pdf: "/Publications/Schuler_CDC12.pdf"
+  figure: "/img/publications/snapshots/Schuler2012.jpg"
 Schuler2013:
   summary: This paper considers the robust design of sparse relative sensing networks subject to a given H∞-performance constraint.  The topology design considers heterogenous agents over weighted graphs.  We develop a robust counterpart to the uncertain optimization problem and formulate the sparsity constraint via a convex ℓ1-relaxation.
   pdf: "/Publications/Schuler_ECC13.pdf"
+  figure: "/img/publications/snapshots/Schuler2013.jpg"
 Sewlia2019a:
   summary: In this paper, we propose a state dependent event triggering condition to achieve consensus for a team of agents modeled with second order integrator dynamics.  We study two event-based consensus algorithms.  In the first algorithm we guarantee that the agents reach position consensus with a constant final velocity while the second algorithm guarantees that the agents reach position consensus with a zero final velocity.
   pdf: "/Publications/Sewlia_MED19.pdf"
+  figure: "/img/publications/snapshots/Sewlia2019a.jpg"
 Sewlia2023a_J:
   summary: This article studies two distributed bearing-based event-triggered schemes to achieve formation stabilization.  We focus on systems with double-integrator dynamics with bearings sensing capabilities.  Firstly, we propose a bearing-only event-triggered condition (ETC) that is edge-dependent which drives the control updates of the agents using only information dependent on relative sensed quantities.
   pdf: "/Publications/Sewlia_IJRNC2022.pdf"
+  figure: "/img/publications/snapshots/Sewlia2023a_J.jpg"
 Sharf2017a_J:
   summary: The mathematical theory of nonlinear cooperative control relies heavily on notions from graph theory and passivity theory.  A general analysis result is known about cooperative control of maximally equilibriumindependent systems, relating steady-states of the closedloop system to network optimization theory.  However, until now only analysis results have been proven, and there is no known synthesis result.
   pdf: "/Publications/Sharf_LCSS2017.pdf"
+  figure: "/img/publications/snapshots/Sharf2017a_J.jpg"
 Sharf2017b_J:
   summary: This paper studies analysis and synthesis problems for diffusively coupled multi-agent systems.  We focus on networks comprised of multi-input multi-output nonlinear systems that possess a property we term maximal equilibrium-independent cyclically monotone passivity (MEICMP), which is an extension of recent passivity results.  We demonstrate that networks comprised of MEICMP systems are related to a pair of dual network optimization problems.
   pdf: "/Publications/Sharf_TAC2019.pdf"
+  figure: "/img/publications/snapshots/Sharf2017b_J.jpg"
 Liu_IEEETRo2019:
   summary: In this paper, we propose and experimentally verify a distributed formation control algorithm for a group of multirotor unmanned aerial vehicles (UAVs).  The algorithm brings the whole group of UAVs simultaneously to a prescribed submanifold that determines the formation shape in an asymptotically stable fashion in two- and three-dimensional environments.  The complete distributed control framework is implemented with the combination of a fast model predictive control method executed at 50 Hz on low-power computers onboard multirotor UAVs and validated via a series of hardware-in-the-loop simulations and real-robot experiments.
   pdf: "/Publications/Liu_IEEETOR2018.pdf"
+  figure: "/img/publications/snapshots/Liu_IEEETRo2019.jpg"
 Sharf2018a:
   summary: The theory of network identification, namely identifying the interaction topology among a known number of agents, has been widely developed for linear agents over recent years.  However, the theory for nonlinear agents remains less extensive.  We use the notion maximal equilibrium-independent passivity (MEIP) and network optimization theory to present a network identification method for nonlinear agents.
   pdf: "/Publications/Sharf_CDC18.pdf"
+  figure: "/img/publications/snapshots/Sharf2018a.jpg"
 Sharf2019a:
   summary: This work studies the effects of a weak notion of symmetry on diffusively-coupled multi-agent systems.  We focus on networks comprised of agents and controllers which are maximally equilibrium independent passive, and show that these converge to a clustered steady-state, with clusters corresponding to certain symmetries of the system.  Namely, clusters are computed using the notion of the exchangeability graph.
   pdf: "/Publications/Sharf_MED19.pdf"
+  figure: "/img/publications/snapshots/Sharf2019a.jpg"
 Sharf2019a_J:
   summary: In this letter, we propose a networkoptimization framework for the analysis of multi-agent systems with passive-short agents.  We consider the known connection between diffusively coupled maximally equilibrium-independent passive systems, and network optimization, culminating in a pair of dual convex network optimization problems, whose minimizers are exactly the steady-states of the closed-loop system.  We propose a network-based regularization term to the network optimization problem and show that it results in a networkbased feedback using only relative outputs.
   pdf: "/Publications/Sharf_LCSS2019.pdf"
+  figure: "/img/publications/snapshots/Sharf2019a_J.jpg"
 Sharf2019c_J:
   summary: Equilibrium-independent passive-short (EIPS) systems are a class of systems that satisfy a passivity-like dissipation inequality with respect to any forced equilibria with nonpositive passivity indices.  This article presents a geometric approach for finding a passivizing transformation for such systems, relying on their steady-state input– output relation and the notion of projective quadratic inequalities (PQIs).  We show that PQIs arise naturally from passivity-shortage characteristics of an EIPS system, and the set of their solutions can be explicitly expressed.
   pdf: "/Publications/Sharf_TAC2021.pdf"
+  figure: "/img/publications/snapshots/Sharf2019c_J.jpg"
 Sharf2019d_J:
   summary: Fault detection and isolation is an area of engineering dealing with designing online protocols for systems that allow one to identify the existence of faults, pinpoint their exact location, and overcome them.  We consider multi-agent systems, where faults correspond to the disappearance of links in the underlying graph, simulating communication failures between agents.  We study the case in which the agents and controllers are maximal equilibriumindependent passive, and use the known connection between steady states of these multi-agent systems and network optimization theory.
   pdf: "/Publications/Sharf_TAC2022.pdf"
+  figure: "/img/publications/snapshots/Sharf2019d_J.jpg"
 Sharf2019e_J:
   summary: "In this article, we develop a data-based controller design framework for diffusively coupled systems with guaranteed convergence to an \x02-neighborhood of the desired formation.  The controller is composed of a fixed controller with an adjustable gain on each edge.  Via passivity theory and network optimization, we not only prove that there exists a gain attaining the desired formation control goal, but we present a data-based method to find an upper bound on this gain."
   pdf: "/Publications/Sharf_TAC2022b.pdf"
+  figure: "/img/publications/snapshots/Sharf2019e_J.jpg"
 Sharf2021c_J:
   summary: Passivity theory is one of the cornerstones of control theory providing a systematic way to study the stability of interconnected systems.  It is well known that many systems are not passive, and must be passivized in order to be included in the framework of passivity theory.  Input-output (loop) transformations are the most general tool for passivizing systems.
   pdf: "/Publications/Sharf_LCSS2024b.pdf"
+  figure: "/img/publications/snapshots/Sharf2021c_J.jpg"
 Sharf2022a:
   summary: We study cluster assignment in multi-agent networks.  We consider homogeneous diffusive networks, and focus on design of the graph that ensures the system will converge to a prescribed cluster configuration, i.e., specifying the number of clusters and agents within each cluster.  Leveraging recent results from cluster synthesis, we show that it is possible to design an oriented graph such that the action of the automorphism group of the graph has orbits of predetermined sizes, guaranteeing that the network will converge to the prescribed cluster configuration.
   pdf: "/Publications/Sharf_ASCC2022.pdf"
+  figure: "/img/publications/snapshots/Sharf2022a.jpg"
 Sharf2023a_J:
   summary: The theory of network identification, namely, identifying the (weighted) interaction topology among a known number of agents, has been widely developed for linear agents.  However, the theory for nonlinear agents using probing inputs is far less developed, relying on dynamics linearization and, thus, cannot be applied to networks with nonsmooth or discontinuous dynamics.  In this article, we use global convergence properties of the network, which can be ensured using passivity theory, to present a network identification method for nonlinear agents.
   pdf: "/Publications/Sharf_TCNS2023.pdf"
+  figure: "/img/publications/snapshots/Sharf2023a_J.jpg"
 Sharf2025a_J:
   summary: We study cluster assignment in homogeneous diffusive multi-agent networks.  Given the number of clusters and agents within each cluster, we design the network graph ensuring the system will converge to the prescribed cluster configuration.  Using recent results linking clustering and symmetries, we show that it is possible to design an oriented graph for which the action of the automorphism group of the graph has orbits of predetermined sizes, guaranteeing the network will converge to the prescribed cluster configuration.
   pdf: "/Publications/Sharf_AJC2025.pdf"
+  figure: "/img/publications/snapshots/Sharf2025a_J.jpg"
 Sun2023a_C:
   summary: In this paper, we study bearing equivalence in directed graphs.  We first give a strengthened definition of bearing equivalence based on the kernel equivalence relationship between bearing rigidity matrix and bearing Laplacian matrix.  We then present several conditions to characterize bearing equivalence for both directed acyclic and cyclic graphs.
   pdf: "/Publications/Sun_IFACWC2023.pdf"
 Trinh2017b:
   summary: This paper investigates the stability of formations around a target using bearingonly measurements for agents in cyclic pursuit.  A control law is proposed for every agent that uses bearing information of its leader and the target.  It is shown that this control law is locally asymptotically stable with respect to a desired arbitrary formation around the target.
   pdf: "/Publications/Trinh_IFAC17.pdf"
+  figure: "/img/publications/snapshots/Trinh2017b.jpg"
 Trinh2017c:
   summary: This paper presents two bearing-only control laws that guarantee almost global convergence of the desired formation in ﬁnite time.  For each control law, the equilibrium set is ﬁrstly studied.  Then, we provide rigorous analysis on asymptotic convergence as well as ﬁnite time convergence of the system to the desired equilibrium.
   pdf: "/Publications/Trinh_CDC17.pdf"
+  figure: "/img/publications/snapshots/Trinh2017c.jpg"
 Trinh_TAC2020:
   summary: 'The pointing consensus problem asks each agent in a multiagent system to agree on their headings toward a common target.  This paper proposes a decentralized approach to the pointing consensus problem by simultaneously solving three smaller problems: bearing-only measurement based network localization, target decision, and heading coordination.  The proposed solution guarantees that all agents’ headings almost globally asymptotically target any weighted centroid of the agents’ positions.'
   pdf: "/Publications/Trinh_TAC2020.pdf"
+  figure: "/img/publications/snapshots/Trinh_TAC2020.jpg"
 Trinh2018a:
   summary: Given a network of multiple agents, the pointing consensus problem asks all agents to point toward a common target.  This paper proposes a simple method to solve the pointing consensus problem in the plane.  In our formulation, each agent does not know its own position, but has information about its own heading vector expressed in a common coordinate frame and some desired relative angles to the neighbors.
   pdf: "/Publications/Trinh_ACC18.pdf"
+  figure: "/img/publications/snapshots/Trinh2018a.jpg"
 Verginis2023_J:
   summary: This article considers the integration of rigid cooperative manipulation with rigidity theory.  Motivated by rigid models of cooperative manipulation systems, i.e., where the grasping contacts are rigid, we introduce, first, the notion of bearing and distance rigidity for graph frameworks in SE(3).  Next, we associate the nodes of these frameworks to the robotic agents of rigid cooperative manipulation schemes and we express the object-agent internal forces by using the graph rigidity matrix, which encodes the infinitesimal rigid body motions of the system.
   pdf: "/Publications/Verginis_TCNS2023.pdf"
+  figure: "/img/publications/snapshots/Verginis2023_J.jpg"
 Xu2023a_J:
   summary: 'This article investigates the bearing-based formation control problem for second-order multiagent systems (SMS) in the presence of the bounded disturbances in their models.  The main contributions of this article are listed as follows: (1) We extend the bearing formation control to SMS. (2) We propose two novel robust distributed bearing formation control laws.  In the first control law, the bearing measurement in the global inertial frame is required.'
   pdf: "/Publications/Xu_IJRNC2024.pdf"
+  figure: "/img/publications/snapshots/Xu2023a_J.jpg"
 Xu2023b_J:
   summary: This paper studies the prescribed-time relative motion control problem of spacecraft formation ﬂying under input saturation.  Using prescribed-time theory, a prescribed-time sliding mode is designed such that the states on the sliding mode converge to the equilibrium in the prescribed time.  Based on the prescribed-time sliding mode, a prescribed-time relative motion tracking controller is developed, which guarantees fast formation maneuvers with feasible fuel consumption and strong robustness under input saturation.
   pdf: "/Publications/Xu_ASR2024.pdf"
+  figure: "/img/publications/snapshots/Xu2023b_J.jpg"
 Zelaxo2015c1:
   summary: This paper considers a formation control problem for a team of agents that are only able to sense the relative bearings from their local body frame to neighboring agents.  It is further assumed that the sensing graph is inherently directed and a common reference frame is not known to all of the agents.  Each agent is tasked with maintaining predetermined bearings with their neighbors.
   pdf: "/Publications/Zelazo_CDC15.pdf"
+  figure: "/img/publications/snapshots/Zelaxo2015c1.jpg"
 Zelazo2002:
   summary: In order for filter banks to be able to process finite length input signals, appropriate modifications must be made to either the input signal (via signal extension techniques) or to the filter bank itself (boundary filters).  This paper shows how to choose appropriate boundary filters for the analysis portion of any filter bank.  The boundary filters can be chosen to satisfy any number of criteria, such as frequency selectivity or number of vanishing moments, and are only required to be linearly independent of the'original filter bank filters. .The synthesis filter bank is found by calculatingthe dual of the analysis bank, which is the same as finding the inverse.
   pdf: "/Publications/Zelazo_ICSP02.pdf"
@@ -242,27 +305,35 @@ Zelazo2008a:
 Zelazo2009:
   summary: This work provides a general framework for the analysis and synthesis of a class of linear networked dynamic systems (NDS).  We focus our attention on NDS where the underlying connection topology couples the agents at their outputs.  A distinction is made between NDS with homogeneous agent dynamics and NDS with heterogeneous agent dynamics.
   pdf: "/Publications/Zelazo_ACC09.pdf"
+  figure: "/img/publications/snapshots/Zelazo2009.jpg"
 Zelazo2009b:
   summary: This work presents an H2 performance analysis of the agreement protocol in the presence of noise.  The agreement protocol is first transformed into an equivalent system induced by the dynamics of the relative, or edge, system states.  The edge based representation is used to perform an H2 analysis of the system highlighting the roles of cycles in this context.
   pdf: "/Publications/Zelazo_CDC09.pdf"
+  figure: "/img/publications/snapshots/Zelazo2009b.jpg"
 Zelazo2009b_J:
   summary: This work explores the properties of the edge variant of the graph Laplacian in the context of the edge agreement problem.  We show that the edge Laplacian, and its corresponding agreement protocol, provides a useful perspective on the well-known node agreement, or the consensus algorithm.  Specifically, the dynamics induced by the edge Laplacian facilitates a better understanding of the role of certain subgraphs, e.g., cycles and spanning trees, in the original agreement problem.
   pdf: "/Publications/Zelazo_TAC2011.pdf"
+  figure: "/img/publications/snapshots/Zelazo2009b_J.jpg"
 Zelazo2010_J:
   summary: This work provides a general framework for the analysis and synthesis of a class of relative sensing networks (RSNs) in the context of its 2 and performance.  We consider RSNs with homogeneous and heterogeneous agent dynamics.  In both cases, explicit graph theoretic expressions and bounds for the 2 and performance are derived.
   pdf: "/Publications/Zelazo_TAC2011b.pdf"
+  figure: "/img/publications/snapshots/Zelazo2010_J.jpg"
 Zelazo2010b:
   summary: This work provides a general framework for the analysis and synthesis of a class of relative sensing networks (RSN) in the context of its H∞ performance.  In an RSN, the underlying connection topology couples each agent at their outputs.  A distinction is made between RSN with homogeneous agent dynamics and RSN with heterogeneous dynamics.
   pdf: "/Publications/Zelazo_ACC10.pdf"
+  figure: "/img/publications/snapshots/Zelazo2010b.jpg"
 Zelazo2011:
   summary: This paper studies a real-time distributed dual sub-gradient algorithm for multi-agent coordination.  A finite-time optimal control problem with a terminal coupling consensus constraint is considered.  The algorithm is shown to be equivalent to a linear time-varying (LTV) dynamical system with a distributed structure.
   pdf: "/Publications/Zelazo_IFAC11.pdf"
+  figure: "/img/publications/snapshots/Zelazo2011.jpg"
 Zelazo2011a_J:
   summary: Next generation power management at all scales will rely on the efficient scheduling and operation of both generating units and loads to maximize efficiency and utility.  The ability to schedule and modulate the demand levels of a subset of loads within a power system can lead to more efficient use of the generating units.  These methods become increasingly important for systems that operate independently of the main utility, such as microgrid and off-grid systems.
   pdf: "/Publications/Zelazo_ESys2012.pdf"
+  figure: "/img/publications/snapshots/Zelazo2011a_J.jpg"
 Zelazo2011b:
   summary: This paper studies a class of cooperative networks that exhibit clustering in their steady-state behavior.  We consider a collection of agents with heterogeneous dynamics and a bounded interaction rule between neighboring systems.  We relate the steady state-behavior of the dynamical network to a static saddle-point problem.
   pdf: "/Publications/Burger_CDC11.pdf"
+  figure: "/img/publications/snapshots/Zelazo2011b.jpg"
 Zelazo2012:
   summary: This work extends the theory on rigid frameworks for formation keeping in multi-agent systems.  We introduce the H2 performance measure for relative sensing networks where the underlying sensing graph is rigid.  The first contribution shows that the optimal H2 sensing graph must be a minimally rigid graph.
   pdf: "/Publications/Zelazo_ACC12.pdf"
@@ -272,54 +343,147 @@ Zelazo2012a:
 Zelazo2012c:
   summary: Rigidity of formations in multi-robot systems is important for formation control, localization, and sensor fusion.  This work proposes a rigidity maintenance gradient controller for a multi-agent robot team.  To develop such a controller, we first provide an alternative characterization of the rigidity matrix and use that to introduce the novel concept of the rigidity eigenvalue.
   pdf: "/Publications/Zelazo_RSS12.pdf"
+  figure: "/img/publications/snapshots/Zelazo2012c.jpg"
 Zelazo2012d:
   summary: This work considers the role that cycles play in consensus networks.  We show how the presence of cycles improve the H2 performance of the consensus network.  In particular, we provide an explicit combinatorial characterization relating the length of cycles to the improvement in the performance of the network.
   pdf: "/Publications/Zelazo_CDC12_b.pdf"
+  figure: "/img/publications/snapshots/Zelazo2012d.jpg"
 Zelazo2013_J:
   summary: This work presents a distributed algorithm for online negotiations of an optimal control policy between dynamical systems.  We consider a network of self-interested agents that must agree upon a common state within a speciﬁed ﬁnite time.  The proposed algorithm exploits the distributed structure of the corresponding dual problem and uses a “shrinking horizon” property to enforce the ﬁnite-time constraint.
   pdf: "/Publications/Zelazo_SIAMJCO2013.pdf"
+  figure: "/img/publications/snapshots/Zelazo2013_J.jpg"
 Zelazo2013a_J:
   summary: This work proposes a fully decentralized strategy for maintaining the formation rigidity of a multi-robot system using only range measurements, while still allowing the graph topology to change freely over time.  In this direction, a first contribution of this work is an extension of rigidity theory to weighted frameworks and the rigidity eigenvalue, which when positive ensures the infinitesimal rigidity of the framework.  We then propose a distributed algorithm for estimating a common relative position reference frame amongst a team of robots with only range measurements in addition to one agent endowed with the capability of measuring the bearing to two other agents.
   pdf: "/Publications/Zelazo_IJRR2015.pdf"
+  figure: "/img/publications/snapshots/Zelazo2013a_J.jpg"
 Zelazo2014:
   summary: This work considers the problem of estimating the unscaled relative positions of a multi-robot team in a common reference frame from bearing-only measurements.  Each robot has access to a relative bearing measurement taken from the local body frame of the robot, and the robots have no knowledge of a common reference frame.  An extension of rigidity theory is made for frameworks embedded in the special Euclidean group SE(2) = R2 × S1 .
   pdf: "/Publications/Zelazo_ECC14.pdf"
 Zelazo2014a_J:
   summary: This work considers the robustness of uncertain consensus networks.  The stability properties of consensus networks with negative edge weights are also examined.  We show that the network is unstable if either the negative weight edges form a cut in the graph or any single negative edge weight has a magnitude less than the inverse of the effective resistance between the two incident nodes.
   pdf: "/Publications/Zelazo_TCNS2014.pdf"
+  figure: "/img/publications/snapshots/Zelazo2014a_J.jpg"
 Zelazo2014f:
   summary: This work explores the definiteness of the weighted graph Laplacian matrix with negative edge weights.  The definiteness of the weighted Laplacian is studied in terms of certain matrices that are related via congruent and similarity transformations.  For a graph with a single negative weight edge, we show that the weighted Laplacian becomes indefinite if the magnitude of the negative weight is less than the inverse of the effective resistance between the two incident nodes.
   pdf: "/Publications/Zelazo_CDC14.pdf"
+  figure: "/img/publications/snapshots/Zelazo2014f.jpg"
 Zelazo2018a:
   summary: This tutorial paper aims to explore the role of graph theory for studying networked and multi-agent systems.  The session will cover basic concepts from graph theory along with surveying its role in problems related to cooperative control and distributed decision-making.  Finally, we will also introduce some advanced topics from graph theory in the hope of encouraging further discussion and explore new research opportunities in system and control theory.
   pdf: "/Publications/Zelazo_CDC2018.pdf"
+  figure: "/img/publications/snapshots/Zelazo2018a.jpg"
 VanTran2019:
   summary: This paper presents a finite-time bearing-only formation control scheme via finite-time estimation of agents’ global orientations.  For the orientation estimation, we propose a distributed estimation law and establish almost global finite-time convergence.  We provide analysis for undirected and a class of directed sensing and communication graphs.
   pdf: "/Publications/Tran_TCNS2019.pdf"
 Zelazo2023a_C:
   summary: This work proposes a solution to the distance-constrained formation control problem to attain symmetric formations.  Utilizing recent results from rigidity theory for symmetric frameworks, we design a gradient-based control strategy that simultaneously drives the agents to the desired inter-agent distances and also a special position characterizing additional symmetry constraints on the graph.  We show that for graphs where there exist edges between agents in the same vertex orbit induced by the automorphism group, no additional information exchange links are required.
   pdf: "/Publications/Zelazo_IFACWC2023.pdf"
+  figure: "/img/publications/snapshots/Zelazo2023a_C.jpg"
 zelazo2025TCNS:
   summary: This work considers the distance constrained formation control problem with an additional constraint requiring that the formation exhibits a specified spatial symmetry.  We employ recent results from the theory of symmetry-forced rigidity to construct an appropriate potential function that leads to a gradient dynamical system driving the agents to the desired formation.  We show that only (1 + 1/|Γ|)n edges are sufficient to implement the control strategy when there are n agents and the underlying symmetry group is Γ.
   pdf: "/Publications/Zelazo_TCNS2015.pdf"
+  figure: "/img/publications/snapshots/zelazo2025TCNS.jpg"
 Zhao2014a:
   summary: 'This paper studies the distributed control and estimation of multi-agent systems based on bearing information.  In particular, we consider two problems: (i) the distributed control of bearing-constrained formations using relative position measurements and (ii) the distributed localization of sensor networks using bearing measurements.  Both of the two problems are considered in arbitrary dimensional spaces.'
   pdf: "/Publications/Zhao_ECC15.pdf"
+  figure: "/img/publications/snapshots/Zhao2014a.jpg"
 Zhao2014a_J:
   summary: A fundamental problem that the bearing rigidity theory studies is to determine when a framework can be uniquely determined up to a translation and a scaling factor by its interneighbor bearings.  While many previous works focused on the bearing rigidity of two-dimensional frameworks, a first contribution of this paper is to extend these results to arbitrary dimensions.  It is shown that a framework in an arbitrary dimension can be uniquely determined up to a translation and a scaling factor by the bearings if and only if the framework is infinitesimally bearing rigid.
   pdf: "/Publications/Zhao_TAC2016.pdf"
+  figure: "/img/publications/snapshots/Zhao2014a_J.jpg"
 Zhao2015b_J:
   summary: This paper studies distributed maneuver control of multiagent formations in arbitrary dimensions.  The objective is to control the translation and scale of the formation while maintaining the desired formation pattern.  Unlike conventional approaches where the target formation is defined by relative positions or distances, we propose a novel bearing-based approach where the target formation is defined by inter-neighbor bearings.
   pdf: "/Publications/Zhao_TCNS2017.pdf"
+  figure: "/img/publications/snapshots/Zhao2015b_J.jpg"
 Zhao2015c1:
   summary: This paper studies the problem of stabilizing target formations specified by inter-neighbor bearings with relative position measurements.  While the undirected case has been studied in the existing works, this paper focuses on the case where the interaction topology is directed.  It is shown that a linear distributed control law, which was proposed previously for undirected cases, can still be applied to the directed case.
   pdf: "/Publications/Zhao_CDC15.pdf"
+  figure: "/img/publications/snapshots/Zhao2015c1.jpg"
 Zhao2015c2:
   summary: This paper studies the problem of multi-agent formation maneuver control where both of the centroid and scale of a formation are required to track given velocity references while maintaining the formation shape.  Unlike the conventional approaches where the target formation is defined by inter-neighbor relative positions or distances, we propose a bearing-based approach where the target formation is defined by inter-neighbor bearings.  Due to the invariance of the bearings, the bearing-based approach provides a natural solution to formation scale control.
   pdf: "/Publications/Zhao_ISIC15.pdf"
+  figure: "/img/publications/snapshots/Zhao2015c2.jpg"
 Zhao2017a:
   summary: This paper addresses the problem of constructing bearing rigid networks in arbitrary dimensions.  We ﬁrst show that the bearing rigidity of a network is a generic property that is critically determined by the underlying graph of the network.  A new notion termed generic bearing rigidity is deﬁned for graphs.
   pdf: "/Publications/Zhao_CDC17.pdf"
+  figure: "/img/publications/snapshots/Zhao2017a.jpg"
 Sharf2017arxiv:
   summary: This note deals with certain properties of convex functions.  We provide results on the convexity of the set of minima of these functions, the behaviour of their subgradient set under restriction, and optimization of these functions over an affine subspace.
   pdf: "/Publications/Sharf_2017arxiv.pdf"
+Martinez2025_IACAS:
+  figure: "/img/publications/snapshots/Martinez2025_IACAS.jpg"
+Yue2025_EJC:
+  figure: "/img/publications/snapshots/Yue2025_EJC.jpg"
+Burger2014_J:
+  figure: "/img/publications/snapshots/Burger2014_J.jpg"
+Hoang2016b_J: {}
+Leiter2018a:
+  figure: "/img/publications/snapshots/Leiter2018a.jpg"
+Michael2022a_J: {}
+Mukherjee2016a:
+  figure: "/img/publications/snapshots/Mukherjee2016a.jpg"
+Mukherjee2017a:
+  figure: "/img/publications/snapshots/Mukherjee2017a.jpg"
+Mukherjee2016IACAS:
+  figure: "/img/publications/snapshots/Mukherjee2016IACAS.jpg"
+Palti2019a:
+  figure: "/img/publications/snapshots/Palti2019a.jpg"
+Rist2016_J: {}
+Rist2017:
+  figure: "/img/publications/snapshots/Rist2017.jpg"
+Sharf2021b_J:
+  figure: "/img/publications/snapshots/Sharf2021b_J.jpg"
+Shoushan2017:
+  figure: "/img/publications/snapshots/Shoushan2017.jpg"
+Zelazo2009a:
+  figure: "/img/publications/snapshots/Zelazo2009a.jpg"
+Zelazo2011_J:
+  figure: "/img/publications/snapshots/Zelazo2011_J.jpg"
+Zelazo2019a_J:
+  figure: "/img/publications/snapshots/Zelazo2019a_J.jpg"
+Zelazo2023b_C:
+  figure: "/img/publications/snapshots/Zelazo2023b_C.jpg"
+Zhao2015a_J:
+  figure: "/img/publications/snapshots/Zhao2015a_J.jpg"
+Zhao2017_J:
+  figure: "/img/publications/snapshots/Zhao2017_J.jpg"
+Barkai_IACAS2024:
+  figure: "/img/publications/snapshots/Barkai_IACAS2024.jpg"
+Zelazo2010: {}
+Zelazo2001: {}
+Leiter2022: {}
+Sharf2020: {}
+Barkai2025: {}
+Peleg2022: {}
+Priel2022: {}
+Drellich2021: {}
+Sewlia2020:
+  figure: "/img/publications/snapshots/Sewlia2020.jpg"
+Palti2020: {}
+Goldenberg2019: {}
+BenShoushan2017:
+  figure: "/img/publications/snapshots/BenShoushan2017.jpg"
+Rozenheck2016: {}
+Frank2019: {}
+Ulmer2021: {}
+Shi2024: {}
+Matmon2025: {}
+ZELAZO:2011:biblatex:
+  figure: "/img/publications/snapshots/ZELAZO-2011-biblatex.jpg"
+  summary: The invention compresses related signals by finding wavelet-coefficient sets they can share. A shared component is stored once and reused when each signal is reconstructed, reducing duplicate encoded data.
+Zelazo2006a:
+  figure: "/img/publications/snapshots/Zelazo2006a.jpg"
+  summary: This patent gives a systematic construction of boundary filters for biorthogonal filter banks. The design preserves the desired analysis and synthesis behavior when a signal is finite and its left and right boundaries must be handled explicitly.
+Zelazo2006b:
+  summary: The method reconstructs only a requested range of a discrete signal from multirate subband coefficients. By translating the output interval into the smallest required coefficient ranges, it reduces both computation and memory access.
+Sakurai2006:
+  summary: The method stretches or compresses music in time by processing separate polyphase-filter-bank bands and then recombining them. Constraining the alignment of bands relative to the dominant-energy band suppresses aliasing and phase mismatch while retaining low computational cost.
+Sheauwei:20130297089:
+  figure: "/img/publications/snapshots/Sheauwei-20130297089.jpg"
+  summary: A central controller allocates power across subsystems, while local device controllers predict demand from operating requests, allocated power, and cost–utility models. Those forecasts return to the system controller so power can be coordinated before overload or inefficient load shedding occurs.
+patent:20050137730:
+  summary: The application separates audio into multiple frequency bands, changes the duration of each band independently, and recombines the results. The goal is higher-quality time scaling than treating the entire audio signal as one broadband waveform.
+patent:20070081663:
+  summary: This application divides audio into two bands with a power-complementary IIR filter bank, applies time-scale modification to each band, and recombines them. The two-band structure targets efficient duration changes with controlled reconstruction behavior.
+patent:20070083377:
+  figure: "/img/publications/snapshots/patent-20070083377.jpg"
+  summary: The application partitions audio according to Bark bands, whose widths follow human frequency perception. Each perceptual band is time-scaled separately before synthesis, so the processing better reflects how listeners resolve sound across frequency.

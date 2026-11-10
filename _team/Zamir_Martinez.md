@@ -2,6 +2,11 @@
 title: Zamir Martinez
 subtitle: Ph.D. Student
 field : Formation Control
+research_summary: Zamir studies formation control through symmetry constraints. His work uses cyclic and dihedral group structure to encode target shapes with fewer constraints and to understand when rotation-symmetric formations can be stabilized by distributed feedback.
+research_topics:
+    - Symmetry-constrained formations
+    - Rotation and dihedral group actions
+    - Rigidity and distributed control
 faculty : Aerospace Engineering
 category: phd_students
 layout: team_member_personal_page

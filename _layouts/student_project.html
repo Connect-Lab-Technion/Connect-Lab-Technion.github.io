@@ -1,26 +1,26 @@
 ---
 layout: default
-hero_height: is-small
-hero_image: /img/ANPL_quantum_field.jpg 
+hide_hero: true
+full_width: true
 ---
-
-<div class="columns is-multiline">
-
-    <div class="column is-6">
-            <img src="{{ page.image }}" style="width: 80%; height:auto; object-fit: fill;">
+<article class="project-detail">
+  <header class="project-detail__hero">
+    <div>
+      <a href="{{ '/student_projects/' | relative_url }}">← Student projects</a>
+      <p class="site-kicker">Research project</p>
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.abstract }}</p>
     </div>
-
-    <div class="column is-6">
-        <p class="title is-3" style="text-align: center; margin-bottom: 1cm;">{{ page.title }}</p>
-        <p class="subtitle is-3" style="text-align: center;">{{ page.subtitle }}</p>
-        <div class="abstract">
-            {{ page.abstract }}
-        </div>
-    </div>
-
-    
-    <div class="content">
-        <hr>
-        {{ content }}
-    </div>
-</div>
+    {% if page.image %}<figure><img src="{{ page.image | relative_url }}" alt="Illustration for {{ page.title }}"></figure>{% endif %}
+  </header>
+  <div class="project-detail__shell">
+    <main class="project-detail__body">{{ content }}</main>
+    <aside class="project-detail__brief" aria-label="Project brief">
+      <p class="site-kicker">Project brief</p>
+      {% if page.skills %}<div><h2>Useful background</h2><ul>{% for skill in page.skills %}<li>{{ skill }}</li>{% endfor %}</ul></div>{% endif %}
+      {% if page.duration %}<div><h2>Typical duration</h2><p>{{ page.duration }}</p></div>{% endif %}
+      {% if page.supervisor %}<div><h2>Supervisor</h2><p>{{ page.supervisor }}</p></div>{% endif %}
+      <a href="mailto:{{ page.contact_email | default: 'dzelazo@technion.ac.il' }}">Ask about this project <span aria-hidden="true">→</span></a>
+    </aside>
+  </div>
+</article>

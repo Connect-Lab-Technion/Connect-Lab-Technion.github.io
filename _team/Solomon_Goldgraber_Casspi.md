@@ -2,6 +2,11 @@
 title: Solomon Goldgraber Casspi
 subtitle: Ph.D. Student
 field : Multi-agent Control
+research_summary: Solomon studies hidden dynamics in distance-based formations. His recent papers connect the geometry of a framework to transmission zeros and internal modes, explaining how a formation can contain motions that are invisible from its regulated edge errors.
+research_topics:
+  - Distance-based formation control
+  - Transmission zeros and hidden modes
+  - Geometric systems theory
 faculty : Aerospace Engineering
 category: phd_students
 layout: team_member_personal_page

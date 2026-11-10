@@ -3,9 +3,15 @@ title: Event Triggered Control and Estimation
 research_code: Event Trigger
 layout: research
 image: /img/research/EventTrigger/Kalman_ETC.png
-card_alt: Event-triggered consensus Kalman filtering architecture
+card_alt: Event-triggered consensus Kalman filtering architecture showing local measurement and neighbor-information paths
 card_label: Information-aware control
 summary: Control and estimation strategies that communicate or update only when new information is sufficiently useful.
+hero_caption: "A figure from our event-triggered filtering work: each agent decides independently when its measurement or neighbor estimate is informative enough to transmit."
+story: Communication is a control resource. Event-triggered methods decide when information is valuable enough to transmit, while sampled-data analysis explains what stability and accuracy survive between updates.
+research_questions:
+  - When is a new measurement informative enough to justify communication?
+  - How much sampling, delay, and asynchrony can a distributed controller tolerate?
+  - Can communication be reduced without sacrificing formation or estimation accuracy?
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true
@@ -27,8 +33,8 @@ This page focuses on event-triggered control, event-triggered estimation, and as
   </div>
   <div class="column">
     <figure class="research-figure">
-      <img src="/img/research/EventTrigger/Kalman_ETC.png" alt="Event-triggered consensus Kalman filtering architecture">
-      <figcaption>Event-triggered information exchange in distributed consensus Kalman filtering.</figcaption>
+      <img src="/img/publications/snapshots/Priel2023_J.jpg" alt="Event-triggered consensus Kalman filtering architecture from the publication">
+      <figcaption>The estimator architecture as presented in the consensus Kalman filtering paper.</figcaption>
     </figure>
   </div>
 </div>
@@ -45,8 +51,8 @@ This page focuses on event-triggered control, event-triggered estimation, and as
   </div>
   <div class="column">
     <figure class="research-figure">
-      <img src="/img/research/EventTrigger/formation_etc.png" alt="Event-triggered bearing formation control response">
-      <figcaption>Event-triggered updates for bearing-based formation stabilization.</figcaption>
+      <img src="/img/publications/snapshots/Sewlia2023a_J.jpg" alt="Event-triggered bearing formation geometry from the publication">
+      <figcaption>A paper figure linking local bearing error, triggering, and formation geometry.</figcaption>
     </figure>
   </div>
 </div>
@@ -63,8 +69,8 @@ This page focuses on event-triggered control, event-triggered estimation, and as
   </div>
   <div class="column">
     <figure class="research-figure">
-      <img src="/img/research/EventTrigger/emulation_sync.png" alt="Asynchronous sampled-data synchronization response">
-      <figcaption>Sampled-data synchronization under asynchronous communication.</figcaption>
+      <img src="/img/publications/snapshots/Barkai2024_CDC.jpg" alt="Sampled-data agent trajectories and update instants from the publication">
+      <figcaption>Agent trajectories and asynchronous update times from the sampled-data synchronization study.</figcaption>
     </figure>
   </div>
 </div>

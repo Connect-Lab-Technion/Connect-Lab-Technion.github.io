@@ -2,10 +2,16 @@
 title: Secure and Resilient Networked Systems
 research_code: FDI
 layout: research
-image: /img/research/NDSRobust/secure_nds1.png
-card_alt: Secure-by-design consensus architecture under structured channel tampering
+image: /img/research/NDSRobust/secure_nds2.png
+card_alt: Secure-by-design network in which encrypted task information reveals a channel attack
 card_label: Resilience
 summary: Analysis and design for networks that must operate through uncertainty, faults, communication failures, and malicious interference.
+hero_caption: A representative figure from our secure-by-design consensus work, where the task encoding allows the network manager to expose structured channel tampering.
+story: Resilience is a property of the architecture, not only of an anomaly detector. We study how graph structure, coding, uncertainty, and redundancy can make coordinated dynamics withstand faults and attacks.
+research_questions:
+  - How can the control objective itself be encoded against channel tampering?
+  - Which graph structures retain rank, agreement, or performance after faults?
+  - How do uncertainty and heterogeneous dynamics change consensus robustness?
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true
@@ -27,8 +33,8 @@ Our work studies secure-by-design consensus, robustness of networked dynamics, s
   </div>
   <div class="column">
     <figure class="research-figure">
-      <img src="/img/research/NDSRobust/secure_nds1.png" alt="Secure consensus architecture">
-      <figcaption>Secure-by-design consensus architecture for detecting structured channel tampering.</figcaption>
+      <img src="/img/publications/snapshots/Fabris2022a_J.jpg" alt="Secure-by-design consensus architecture from the publication">
+      <figcaption>The objective-coding architecture used to analyze structured channel tampering.</figcaption>
     </figure>
   </div>
 </div>
@@ -63,8 +69,8 @@ Our work studies secure-by-design consensus, robustness of networked dynamics, s
   </div>
   <div class="column">
     <figure class="research-figure">
-      <img src="/img/research/NDSRobust/structure_rank.png" alt="Structural rank and resilience of sparsity patterns">
-      <figcaption>Structural-rank tools for certifying resilience of network sparsity patterns.</figcaption>
+      <img src="/img/publications/snapshots/Belabbas2021a_J.jpg" alt="Graph used to characterize structural rank and resilience">
+      <figcaption>A representative graph construction from the structural-rank and resilience study.</figcaption>
     </figure>
   </div>
 </div>

@@ -6,6 +6,12 @@ image: /img/research/NDSOptimization/network_design.png
 card_alt: Network structures produced by alternative topology design objectives
 card_label: Distributed methods
 summary: Distributed algorithms, network design, and decision-making methods that turn local information into collective objectives.
+hero_caption: Alternative network-design objectives produce different sparse interconnection structures and performance trade-offs.
+story: Optimization is both a computational tool and a way of understanding network dynamics. It lets us design the interaction graph, distribute a global decision, and expose the dual structure hidden inside feedback systems.
+research_questions:
+  - How can agents solve a shared problem using only neighbor information?
+  - Which links are truly needed to achieve a desired performance or resilience level?
+  - How can control design, network inference, and optimization be solved together?
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true
@@ -63,8 +69,8 @@ This page focuses on the optimization layer itself. Energy dispatch, passivity, 
   </div>
   <div class="column">
     <figure class="research-figure">
-      <img src="/img/research/NDSOptimization/netid.png" alt="Optimization structure for network inference and control synthesis">
-      <figcaption>Optimization structure arising in network inference and cooperative control synthesis.</figcaption>
+      <img src="/img/publications/snapshots/Michael2020a.jpg" alt="Multiple agent trajectories cooperatively seeking a moving source">
+      <figcaption>Cooperative source-seeking trajectories from a paper that couples optimization with formation control.</figcaption>
     </figure>
   </div>
 </div>

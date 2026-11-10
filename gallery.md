@@ -6,14 +6,18 @@ hero_image: /img/Connect_head_bkg.png
 show_sidebar: false
 ---
 
-Welcome to the CONNECT Lab photo gallery!
+Research life extends beyond the page. Browse experiments, seminars, group events, and the everyday work behind the lab's theory.
 
-## [Work at CONNECT Lab](https://www.flickr.com/photos/1yen/albums/72177720325960052/)
+## [Research and lab life](https://www.flickr.com/photos/1yen/albums/72177720325960052/)
 
-<div class="flickr-carousel" data-photoset-id="72177720325960052" data-title="Work at CONNECT Lab"></div>
+Experiments, talks, visitors, and moments from our work together.
+
+<div class="flickr-carousel" data-photoset-id="72177720325960052" data-title="Research and lab life"></div>
 
 
 ## [Social Moments](https://www.flickr.com/photos/1yen/albums/72177720325957766)
+
+Celebrations, outings, and the people who make the lab a community.
 
 <div class="flickr-carousel" data-photoset-id="72177720325957766" data-title="Social Moments"></div>
 

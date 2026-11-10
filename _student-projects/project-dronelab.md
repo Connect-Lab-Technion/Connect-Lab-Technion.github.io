@@ -5,29 +5,25 @@ image: /img/student_project/Lab_TestBench2.jpeg
 hero_height: is-small
 hero_image: /img/connect_globe.jpeg  
 price: 1 # for sorting 
-abstract: Integration of new drone platform for Advanced Control Lab
+abstract: Build an open, maintainable quadcopter platform for teaching flight estimation and feedback control.
+skills:
+  - Control theory and MATLAB/Simulink
+  - Embedded C++ or ArduPilot
+  - Mechanical design, CAD, or interface design
+duration: One or two semesters
+supervisor: Ruslan Archipov and Prof. Daniel Zelazo
+contact_email: sarchi@technion.ac.il
 ---
 
-The Advanced Control Lab (085705) is structured around the Parrot Simulink Hardware Support Toolbox. Recently, the Parrot drones and their components were taken off the market. The objective of this project is to design a new drone platform with open source materials that could be substituted directly into the course. 
-The new platform can act as an improvement from the Parrot drone, in response to student and instructor feedback.  
+The Advanced Control Lab was built around Parrot minidrones and their Simulink support package. Because that hardware is no longer available, the course needs a replacement that students can understand, repair, and program at a low level.
 
-So far, an Ardupilot toolchain for Simulink has been developed to replace the Parrot Simulink Toolbox.  A proof of concept drone is developed and is being tested for completeness with the course syllubus. 
-Once the proof of concept is well tested, drones will be designed for production and integrated into the course. 
+## The platform
 
-Possible student involvement includes the design and integration of hardware for the new frame, designing the user inteface for the students, and testing of the proof of concept with the course syllubus.  
+An ArduPilot-to-Simulink toolchain and a proof-of-concept vehicle are already under development. The goal is a reproducible open platform that exposes the estimation and control loops needed by the course while remaining safe and practical for repeated laboratory use.
 
+## What the project can include
 
-### Prerequisites:
-- control theory 
-- Matlab and simulink 
-- Mechanical design and CAD for integrating hardware
-- Programming in c++ for work with the toolchain
-- UI/UX for frontend development 
-
-### Main Supervisor: 
-- Ruslan Archipov [mail](mailto:sarchi@technion.ac.il)
-
-### Academic supervisor:
-- Prof. Daniel Zelazo [mail](mailto:dzelazo@technion.ac.il)
-
-Duration: 1 or 2 semesters. 
+- Integrate sensors, flight hardware, and protective structure into the frame.
+- Extend and test the Simulink/ArduPilot interface.
+- Design a clear student-facing workflow for experiments.
+- Validate the platform against the course syllabus and prepare it for production.

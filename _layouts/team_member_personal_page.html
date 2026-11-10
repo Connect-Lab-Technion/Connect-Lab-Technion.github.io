@@ -1,112 +1,71 @@
 ---
-layout: team_member_base
+layout: default
+hide_hero: true
+show_sidebar: false
+full_width: true
 ---
-
-<div class="columns is-multiline">
-
-    <div class="column is-4-desktop is-4-tablet">
-        <img src="{{ page.image }}" style="width: 85%; height:auto; object-fit: fill;">
-
-        <div class="buttons" style="text-align: center;">
-            {% if page.twitter %}
-            <a class="button" itemprop="twitter" href="{{ page.twitter }}" target="_blank">
-                <i class="fab fa-twitter fa-lg"></i>
-            </a>
-            {% endif %}
-            {% if page.youtube %}
-            <a class="button" itemprop="youtube" href="{{ page.youtube }}" target="_blank">
-                <i class="fab fa-youtube fa-lg"></i>
-            </a>
-            {% endif %}
-            {% if page.github %}
-            <a class="button" itemprop="github" href="{{ page.github }}" target="_blank">
-                <i class="fab fa-github fa-lg"></i>
-            </a>
-            {% endif %}
-            {% if page.email %}
-            <a class="button" itemprop="email" href="mailto:{{ page.email }}" target="_blank">
-                <i class="fas fa-envelope fa-lg"></i>      
-            </a>
-            {% endif %}
-            {% if page.facebook %}
-            <a class="button" itemprop="facebook" href="{{ page.facebook }}" target="_blank">
-                <i class="fab fa-facebook fa-lg"></i>
-            </a>
-            {% endif %}
-            {% if page.bitbucket %}
-            <a class="button" itemprop="bitbucket" href="{{ page.bitbucket }}" target="_blank">
-                <i class="fab fa-bitbucket fa-lg"></i>
-            </a>
-            {% endif %}
-            {% if page.linkedin %}
-            <a class="button" itemprop="linkedin" href="{{ page.linkedin }}" target="_blank">
-                <i class="fab fa-linkedin fa-lg"></i>
-            </a>
-            {% endif %}
-            {% if page.website %}
-            <a class="button" itemprop="website" href="{{ page.website }}" target="_blank">
-                <i class="fas fa-globe fa-lg"></i>
-            </a>
-            {% endif %}
-            {% if page.cv %}
-            <a class="button" itemprop="cv" href="{{ site.baseurl }}{{ page.cv }}" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <text x="12" y="18" font-size="16" text-anchor="middle" fill="black" font-family="sans-serif" font-weight="bold">CV</text>
-                  </svg>
-            </a>
-            {% endif %}
-        </div>
+{% assign is_robot = false %}{% if page.category == 'robots' %}{% assign is_robot = true %}{% endif %}
+<article class="profile-detail{% if is_robot %} profile-detail--robot{% endif %}">
+  <header class="profile-detail__hero">
+    <div class="profile-detail__portrait">
+      {% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.title }}">{% else %}<span aria-hidden="true">{{ page.title | slice: 0 }}</span>{% endif %}
     </div>
-
-    <div class="column is-8-desktop is-4-tablet">
-        <p class="title is-3">{{ page.title }}</p>
-        <p class="subtitle is-3">{{ page.subtitle }}</p>
-
-        {% if page.deployment %}
-            <p class="subtitle is-3">{{ page.deployment }} - {{ page.last-contact }}</p>
-        {% endif %}
-
-        {% if page.graduation %}
-            <p class="subtitle is-3">{{ page.graduation }}</p>
-        {% endif %}
-
-        {% if page.university %}
-        <p class="subtitle is-4">{{ page.university }}</p>
-        {% endif %}
-
-        {% if page.country %}
-        <p class="subtitle is-4">{{ page.country }}</p>
-        {% endif %}
-
-        {% if page.faculty %}
-            <p class="subtitle is-4">{{ page.faculty }}</p>
-        {% endif %}
-
-        {% if page.next-position %}
-            <p class="subtitle is-4">{{ page.next-position }}</p>
-        {% endif %}
-
-        {% if page.bio %}
-        {% if page.category == "Principal Investigator" %}
-        {% for line in page.bio %}
-        <p class="subtitle is-6">{{ line }}<br></p>
-        {% endfor %}
-        {% else %}
-        {% for line in page.bio %}
-        <p class="subtitle is-4">{{ line }}<br></p>
-        {% endfor %}
-        {% endif %}
-        {% endif %}
-
+    <div class="profile-detail__heading">
+      <a class="profile-detail__back" href="{{ '/current-members/' | relative_url }}">← The Connect Lab team</a>
+      <p class="site-kicker">{% if is_robot %}Experimental platform{% elsif page.category contains 'alumni' %}Connect Lab alumnus{% else %}Connect Lab member{% endif %}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}<p class="profile-detail__role">{{ page.subtitle }}</p>{% endif %}
+      {% if page.field %}<p class="profile-detail__field">{{ page.field }}</p>{% endif %}
+      <dl class="profile-detail__facts">
+        {% if page.faculty %}<div><dt>Faculty</dt><dd>{{ page.faculty }}</dd></div>{% endif %}
+        {% if page.university %}<div><dt>University</dt><dd>{{ page.university }}</dd></div>{% endif %}
+        {% if page.country %}<div><dt>Country</dt><dd>{{ page.country }}</dd></div>{% endif %}
+        {% if page.graduation %}<div><dt>Graduation</dt><dd>{{ page.graduation }}</dd></div>{% endif %}
+        {% if page.next-position %}<div><dt>Next position</dt><dd>{{ page.next-position }}</dd></div>{% endif %}
+        {% if page.deployment %}<div><dt>Introduced</dt><dd>{{ page.deployment }}{% if page.last-contact %} · {{ page.last-contact }}{% endif %}</dd></div>{% endif %}
+      </dl>
+      <nav class="profile-detail__links" aria-label="Profile links">
+        {% if page.email %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
+        {% if page.website %}<a href="{{ page.website }}" target="_blank" rel="noopener">Website</a>{% endif %}
+        {% if page.github %}<a href="{{ page.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+        {% if page.linkedin %}<a href="{{ page.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+        {% if page.youtube %}<a href="{{ page.youtube }}" target="_blank" rel="noopener">YouTube</a>{% endif %}
+        {% if page.twitter %}<a href="{{ page.twitter }}" target="_blank" rel="noopener">X / Twitter</a>{% endif %}
+        {% if page.cv %}<a href="{{ page.cv | relative_url }}" target="_blank" rel="noopener">CV</a>{% endif %}
+      </nav>
     </div>
+  </header>
 
+  {% if page.research_summary or page.field %}
+  <section class="profile-detail__research">
     <div>
-        <hr>
-        <div class="content">
-            {{ content }}
-        </div>
+      <p class="site-kicker">{% if is_robot %}Role in the lab{% else %}Research focus{% endif %}</p>
+      <h2>{% if is_robot %}What this platform enables.{% else %}The questions behind the work.{% endif %}</h2>
     </div>
-    
-</div>
+    <div>
+      {% if page.research_summary %}<p class="profile-detail__research-lead">{{ page.research_summary }}</p>{% elsif page.field %}<p class="profile-detail__research-lead">{{ page.field }}</p>{% endif %}
+      {% if page.research_topics %}
+      <ul>{% for topic in page.research_topics %}<li>{{ topic }}</li>{% endfor %}</ul>
+      {% endif %}
+    </div>
+  </section>
+  {% endif %}
 
+  {% if page.bio %}
+  <section class="profile-detail__bio">
+    <p class="site-kicker">{% if is_robot %}Platform notes{% else %}Background{% endif %}</p>
+    {% if page.bio.first %}
+      <ul>{% for line in page.bio %}<li>{{ line }}</li>{% endfor %}</ul>
+    {% else %}
+      <div class="profile-detail__bio-copy">{{ page.bio }}</div>
+    {% endif %}
+  </section>
+  {% endif %}
 
+  {% assign body_copy = content | strip %}
+  {% if body_copy != empty %}<main class="profile-detail__content">{{ content }}</main>{% endif %}
+
+  <footer class="profile-detail__footer">
+    <a href="{{ '/current-members/' | relative_url }}">Back to the team <span aria-hidden="true">→</span></a>
+  </footer>
+</article>

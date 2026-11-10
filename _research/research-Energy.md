@@ -6,6 +6,12 @@ image: /img/research/Energy/ScheduleFigure_50x30_1.png
 card_alt: Robust operating schedule for distributed energy resources
 card_label: Energy networks
 summary: Network optimization and control for distributed generation, storage, uncertain demand, and coupled heat-power systems.
+hero_caption: A scheduling diagram from our work on robust operation of distributed generation and combined heat-and-power systems.
+story: Energy networks couple decisions across time, devices, and physical domains. We build models that keep those couplings visible so that distributed schedules remain feasible when demand and operating conditions change.
+research_questions:
+  - How should heterogeneous generators share electrical and thermal demand?
+  - Which device dynamics must be retained in a tractable dispatch model?
+  - How can a schedule remain reliable under uncertainty and off-grid operation?
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true

@@ -18,7 +18,7 @@ github:
 email: 
 bitbucket: 
 facebook: 
-linkedin: linkedin.com/in/evyatar-matmon-a4a7bb129
+linkedin: https://www.linkedin.com/in/evyatar-matmon-a4a7bb129
 ---
 
 ## Connect Lab Publications: 

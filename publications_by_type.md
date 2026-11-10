@@ -105,26 +105,33 @@ hide_hero: true
   filterPublications();
 })();
 
+function setPublicationPanel(panel, open) {
+  if (!panel) return;
+  panel.hidden = !open;
+  var entry = panel.closest('.publication-entry');
+  var button = entry && entry.querySelector('[aria-controls="' + panel.id + '"]');
+  if (button) {
+    button.setAttribute('aria-expanded', String(open));
+    if (panel.id.indexOf('snapshot-') === 0) {
+      var symbol = button.querySelector('span');
+      if (symbol) symbol.textContent = open ? '−' : '+';
+    }
+  }
+}
+
 function toggleBibtex(key) {
   var panel = document.getElementById('bibtex-' + key);
   if (!panel) return;
-  panel.hidden = !panel.hidden;
-  var button = document.querySelector('[aria-controls="bibtex-' + key + '"]');
-  if (button) button.setAttribute('aria-expanded', String(!panel.hidden));
+  var willOpen = panel.hidden;
+  if (willOpen) setPublicationPanel(document.getElementById('snapshot-' + key), false);
+  setPublicationPanel(panel, willOpen);
 }
-
 
 function togglePublicationSnapshot(key) {
   var panel = document.getElementById('snapshot-' + key);
   if (!panel) return;
-  panel.hidden = !panel.hidden;
-  var button = document.querySelector('[aria-controls="snapshot-' + key + '"]');
-  if (button) {
-    button.setAttribute('aria-expanded', String(!panel.hidden));
-    var symbol = button.querySelector('span');
-    if (symbol) symbol.textContent = panel.hidden ? '+' : '−';
-  }
-  var frame = panel.querySelector('iframe[data-src]');
-  if (frame && !frame.getAttribute('src')) frame.src = frame.getAttribute('data-src');
+  var willOpen = panel.hidden;
+  if (willOpen) setPublicationPanel(document.getElementById('bibtex-' + key), false);
+  setPublicationPanel(panel, willOpen);
 }
 </script>

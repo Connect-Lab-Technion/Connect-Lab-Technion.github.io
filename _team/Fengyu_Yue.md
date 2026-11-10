@@ -2,6 +2,11 @@
 title: Fengyu Yue
 subtitle: Ph.D. Student
 field : Multi-agent Control
+research_summary: Fengyu studies passivity and nonlinear coordination in multi-agent systems. His recent work develops transversal passivity for objectives described by input-output manifolds and analyzes consensus on directed graphs, asking how dissipation and equilibrium forces organize collective motion.
+research_topics:
+    - Transversal and geometric passivity
+    - Nonlinear consensus on directed graphs
+    - Formation forces and manifold objectives
 faculty : Aerospace Engineering
 category: phd_students
 layout: team_member_personal_page

@@ -400,22 +400,6 @@
               <text variable="authority" form="short"/>
               <text variable="number"/>
             </group>
-            <group delimiter=" ">
-              <text value="filed"/>
-              <date variable="submitted">
-                <date-part name="month" form="numeric"/>
-                <date-part name="day" prefix="-"/>
-                <date-part name="year" prefix="-"/>
-              </date>
-            </group>
-            <group delimiter=" ">
-              <text value="issued"/>
-              <date variable="issued">
-                <date-part name="month" form="numeric"/>
-                <date-part name="day" prefix="-"/>
-                <date-part name="year" prefix="-"/>
-              </date>
-            </group>
           </group>
         </else-if>
 <!--        <else-if type="patent">-->

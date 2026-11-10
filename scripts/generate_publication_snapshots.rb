@@ -25,6 +25,7 @@ def brief_story(abstract)
   story[0, 680].sub(/\s+\S*\z/, '') + '…'
 end
 
+existing = File.file?(destination) ? YAML.load_file(destination) : {}
 snapshots = {}
 
 BibTeX.open(source).entries.each_value do |entry|
@@ -46,7 +47,8 @@ BibTeX.open(source).entries.each_value do |entry|
 
   snapshots[entry.key.to_s] = {
     'summary' => brief_story(clean_abstract(abstract)),
-    'pdf' => pdf
+    'pdf' => pdf,
+    'figure' => existing.dig(entry.key.to_s, 'figure')
   }.reject { |_key, value| value.to_s.empty? }
 end
 

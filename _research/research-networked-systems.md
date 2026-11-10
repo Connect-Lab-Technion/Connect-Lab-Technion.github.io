@@ -6,6 +6,12 @@ image: /img/home/paper-interface-reduction.png
 card_alt: Network and its reduced control and observation interface structure
 card_label: Network dynamics
 summary: Dynamics and graph structure jointly determine coordination, identifiability, disturbance propagation, and performance in multi-agent systems.
+hero_caption: Interface-preserving reduction shows how a large network can retain its control and observation structure at a smaller scale.
+story: We treat the graph as part of the dynamical system—not merely a communication diagram. Its structure determines what the network can coordinate, reveal, reject, and preserve.
+research_questions:
+  - Which graph structures make collective dynamics stable, observable, and controllable?
+  - How do local interactions shape global performance as the network grows?
+  - What can the trajectories of the agents reveal about a hidden interaction graph?
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true
@@ -50,8 +56,8 @@ Some publications tagged as networked dynamic systems also belong to other first
   </div>
   <div class="column">
     <figure class="research-figure">
-      <img src="/img/research/NDS/consensus_traj.png" alt="Consensus trajectories converging to agreement">
-      <figcaption>Agent trajectories converging toward a common agreement value.</figcaption>
+      <img src="/img/publications/snapshots/Barkai2022a.jpg" alt="Consensus trajectories from the Divide and Concur sampled-data consensus study">
+      <figcaption>A paper figure showing how sampled network trajectories converge while communication is intermittent.</figcaption>
     </figure>
   </div>
 </div>
@@ -68,8 +74,8 @@ Some publications tagged as networked dynamic systems also belong to other first
   </div>
   <div class="column">
     <figure class="research-figure">
-      <img src="/img/research/NDS/network_identification_sparse_matrix.png" alt="Sparse matrix pattern used in network identification">
-      <figcaption>Sparse interaction patterns arising in network-identification problems.</figcaption>
+      <img src="/img/publications/snapshots/Sharf2023a_J.jpg" alt="Network-identification architecture from a Connect Lab publication">
+      <figcaption>A representative figure from our work on identifying diffusively coupled networks.</figcaption>
     </figure>
   </div>
 </div>

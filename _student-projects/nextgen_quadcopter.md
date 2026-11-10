@@ -5,19 +5,27 @@ image: /img/student_project/nextgen_quad.png
 hero_height: is-small
 hero_image: /img/connect_globe.jpeg  
 price: 1 # for sorting 
-abstract: MGT powered drones
+abstract: Develop stabilizing control laws for a quadcopter whose micro-gas turbine contributes both power and thrust.
+skills:
+  - Flight dynamics and control theory
+  - MATLAB and Simulink
+  - Quadcopter modeling or experimentation is helpful
+duration: One or two semesters
+supervisor: Prof. Daniel Zelazo, with the Turbomachinery and Heat Transfer Laboratory
+contact_email: dzelazo@technion.ac.il
 ---
 
-We are considering new actuation and power delivery approaches to quadcopters. In this project we explore the control laws for a quadcopter equiped with a micro-gas turbine that can be used for power delivery and thrust. The first phase of the project is to design stabilizing controllers, with the goal of building a quad with an MGT.  The project is in collaboration with the [Turbomachinery and Heat Transfer Laboratory
-](https://bcukurel.net.technion.ac.il/).
+Conventional quadcopters use electrically driven rotors for both control and lift. This project asks what changes when a micro-gas turbine becomes part of the vehicle's power and thrust architecture. The additional actuator introduces new dynamics, couplings, and operating constraints that must be reflected in the flight controller.
 
+## The question
 
-### Prerequisites:
-- control theory
-- Matlab and simulink 
-- quadcopter experience a plus
+Can a stabilizing flight-control architecture use turbine thrust without losing the agility and disturbance rejection expected from a multirotor platform?
 
-### Academic supervisor:
-- Prof. Daniel Zelazo [mail](mailto:dzelazo@technion.ac.il)
+## What the project can include
 
-Duration: 1 or 2 semesters. 
+- Derive a control-oriented model of the coupled turbine–quadcopter dynamics.
+- Identify relevant actuator time scales and operating constraints.
+- Design and compare stabilizing controllers in simulation.
+- Prepare a controller for later validation on a physical platform.
+
+This project is conducted with the [Turbomachinery and Heat Transfer Laboratory](https://bcukurel.net.technion.ac.il/).
