@@ -37,6 +37,8 @@ module ConnectLab
 
       topics = value(entry, :researchtopic).to_s.downcase.split(',').map(&:strip)
       key = entry.key.to_s
+      description = clean_description(first_present(figure_data['description'], value(entry, :abstract)))
+      return if description.empty?
 
       {
         'key' => key,
@@ -45,7 +47,7 @@ module ConnectLab
         'year' => year,
         'month' => value(entry, :month_numeric).to_i,
         'topics' => topics,
-        'description' => clean_description(value(entry, :abstract)),
+        'description' => description,
         'link' => link,
         'figure' => figure_data['figure'],
         'figure_alt' => figure_data['alt']

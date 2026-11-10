@@ -3,39 +3,66 @@ layout: default
 show_sidebar: false
 ---
 
-<div class="columns is-multiline">
+<div class="research-index">
+  <section class="research-index-hero" aria-labelledby="research-index-title">
+    <div class="research-index-hero__copy">
+      <p class="research-index-kicker">Research at Connect Lab</p>
+      <h1 id="research-index-title">{{ page.heading | default: page.title }}</h1>
+      <p>{{ page.intro }}</p>
+      <a href="#research-themes">Explore the research themes <span aria-hidden="true">↓</span></a>
+    </div>
+    <figure class="research-index-hero__figure">
+      <img src="{{ '/img/home/paper-interface-reduction.png' | relative_url }}" alt="Network with designated control and output nodes, together with its reduced interface model">
+      <figcaption><span>Structure at the interface</span>Preserving the behavior that matters while reducing a network to its essential control and observation structure.</figcaption>
+    </figure>
+  </section>
 
-  <div class="column is-12">
-    {{ page.content }}
-  </div>
+  <section class="research-index-lenses" aria-labelledby="research-lenses-title">
+    <div class="research-index-lenses__intro">
+      <p class="research-index-kicker">A common language</p>
+      <h2 id="research-lenses-title">Four lenses, one systems view.</h2>
+    </div>
+    <ol>
+      <li><span>01</span><h3>Dynamics</h3><p>How individual systems evolve and exchange energy or information.</p></li>
+      <li><span>02</span><h3>Graph structure</h3><p>How interaction topology shapes collective modes and performance.</p></li>
+      <li><span>03</span><h3>Geometry</h3><p>How measurements, constraints, and symmetries define achievable behavior.</p></li>
+      <li><span>04</span><h3>Optimization</h3><p>How distributed decisions turn local information into global objectives.</p></li>
+    </ol>
+  </section>
 
-  {% assign sorted_researchs = site.research | sort:page.sort %}
-
-  {% for research in sorted_researchs %}
-  <div class="column is-one-quarter-desktop is-6-tablet">
-
-    <a href="{{ research.url | relative_url }}">
-
-      <div class="card">
-
-        {% if research.image %}
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="{{ research.image }}" alt="{{ research.title }}" style="object-fit:contain;"/>
-          </figure>
-        </div>
-        {% endif %}
-        <div class="card-content">
-
-          <p class="title is-6">{{ research.title }}</h2>
-          <p class="subtitle is-6">{{ research.subtitle }}</p>  
-
-        </div>
+  <section class="research-index-themes" id="research-themes" aria-labelledby="research-themes-title">
+    <header>
+      <div>
+        <p class="research-index-kicker">Research themes</p>
+        <h2 id="research-themes-title">Eight connected directions.</h2>
       </div>
+      <p>Each theme is a different view of the same central problem: understanding and designing systems whose behavior depends on their interactions.</p>
+    </header>
 
-    </a>
+    <div class="research-theme-grid">
+      {% assign sorted_researchs = site.research | sort:page.sort %}
+      {% for research in sorted_researchs %}
+      <a class="research-theme-card" href="{{ research.url | relative_url }}">
+        {% if research.image %}
+        <figure class="research-theme-card__figure{% if research.research_code == 'Robotics' %} research-theme-card__figure--photo{% endif %}">
+          <img src="{{ research.image | relative_url }}" alt="{{ research.card_alt | default: research.title }}" loading="lazy">
+        </figure>
+        {% endif %}
+        <div class="research-theme-card__copy">
+          <div class="research-theme-card__meta"><span>{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span><span>{{ research.card_label | default: research.research_code }}</span></div>
+          <h3>{{ research.title }}</h3>
+          <p>{{ research.summary | default: research.subtitle }}</p>
+          <strong>Explore this theme <span aria-hidden="true">→</span></strong>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
 
-  </div>
-{% endfor %}
+  <section class="research-index-footer">
+    <p>Research output</p>
+    <h2>See how these ideas develop across papers, talks, and ongoing projects.</h2>
+    <a href="{{ '/publications/' | relative_url }}">Browse publications <span aria-hidden="true">→</span></a>
+  </section>
 </div>
 

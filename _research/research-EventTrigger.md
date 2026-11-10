@@ -2,7 +2,10 @@
 title: Event Triggered Control and Estimation
 research_code: Event Trigger
 layout: research
-image: /img/research/EventTrigger/EventTrigger.png
+image: /img/research/EventTrigger/Kalman_ETC.png
+card_alt: Event-triggered consensus Kalman filtering architecture
+card_label: Information-aware control
+summary: Control and estimation strategies that communicate or update only when new information is sufficiently useful.
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true

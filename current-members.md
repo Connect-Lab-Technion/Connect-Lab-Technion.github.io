@@ -6,7 +6,7 @@ layout: team_members
 show_sidebar: false
 hide_footer: false
 sort: subtitle
-hero_image: /img/Connect_head_bkg.png
-hero_height: is-small
+hide_hero: true
+heading: People behind the theory.
+intro: We are a group of researchers, students, and engineers working together on the mathematical foundations—and experimental realities—of interconnected systems.
 ---
- 

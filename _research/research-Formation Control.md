@@ -3,6 +3,9 @@ title: Formation Control
 research_code: Formation
 layout: research
 image: /img/research/FormationControl/formation_maneuver3D.png
+card_alt: Three-dimensional formation trajectories maneuvering around an obstacle
+card_label: Geometry
+summary: Rigidity theory and distributed feedback for formations defined by distances, bearings, orientations, and mixed sensing constraints.
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true

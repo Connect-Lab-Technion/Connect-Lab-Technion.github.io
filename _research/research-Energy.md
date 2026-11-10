@@ -2,7 +2,10 @@
 title: Distributed Energy Systems
 research_code: NRG
 layout: research
-image: /img/research/Energy/solar_community.jpg
+image: /img/research/Energy/ScheduleFigure_50x30_1.png
+card_alt: Robust operating schedule for distributed energy resources
+card_label: Energy networks
+summary: Network optimization and control for distributed generation, storage, uncertain demand, and coupled heat-power systems.
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true

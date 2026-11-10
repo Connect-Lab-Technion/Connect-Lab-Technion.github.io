@@ -2,7 +2,10 @@
 title: Optimization Over Networks
 research_code: OPT  
 layout: research
-image: /img/research/NDSOptimization/x_n20_T70.jpg
+image: /img/research/NDSOptimization/network_design.png
+card_alt: Network structures produced by alternative topology design objectives
+card_label: Distributed methods
+summary: Distributed algorithms, network design, and decision-making methods that turn local information into collective objectives.
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true

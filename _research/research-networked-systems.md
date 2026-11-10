@@ -2,7 +2,10 @@
 title: Control of Multi-Agent Systems
 research_code: NDS
 layout: research
-image: /img/research/NDS/dynamic_network.jpg
+image: /img/home/paper-interface-reduction.png
+card_alt: Network and its reduced control and observation interface structure
+card_label: Network dynamics
+summary: Dynamics and graph structure jointly determine coordination, identifiability, disturbance propagation, and performance in multi-agent systems.
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true

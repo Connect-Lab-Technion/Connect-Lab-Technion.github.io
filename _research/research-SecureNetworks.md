@@ -1,8 +1,11 @@
 ---
-title: Secure and Resillient Networked Systems
+title: Secure and Resilient Networked Systems
 research_code: FDI
 layout: research
-image: /img/research/NDSRobust/secure_nds2.png
+image: /img/research/NDSRobust/secure_nds1.png
+card_alt: Secure-by-design consensus architecture under structured channel tampering
+card_label: Resilience
+summary: Analysis and design for networks that must operate through uncertainty, faults, communication failures, and malicious interference.
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true

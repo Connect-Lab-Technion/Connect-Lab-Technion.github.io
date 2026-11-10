@@ -2,7 +2,10 @@
 title: Robotic Testbed and Validation
 research_code: Robotics
 layout: research
-image: /img/research/Robotics/turtlebots1.png
+image: /img/home/connect-lab-robots.webp
+card_alt: Mobile robots arranged as a multi-agent formation in the lab
+card_label: Experimental validation
+summary: Experimental platforms for testing how theoretical guarantees survive real sensing, communication, computation, and actuation constraints.
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png 
 menubar_toc: true

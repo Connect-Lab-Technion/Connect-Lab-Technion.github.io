@@ -1,23 +1,35 @@
 Yue_TAC26:
   figure: /img/home/transversal-passivity-paper.png
   alt: Input and output manifolds used to define the transversal supply rate
+  description: >-
+    Classical passivity measures dissipation relative to an equilibrium. This paper introduces transversal passivity for input and output manifolds: it penalizes only error across the target while allowing motion along it, and identifies the geometric compatibility conditions needed when such systems are interconnected.
 
 Zelazo_ECC27:
   figure: /img/home/flatness-consensus.png
   alt: Five nonlinear agents following a common reference under an open-loop flatness input
+  description: >-
+    Can an entire nonlinear consensus network be steered through a single agent? The paper connects differential flatness to graph structure, showing that a measured node is a flat output precisely when the interaction graph is a path with actuation and measurement at opposite ends, enabling finite-time transitions between consensus states.
 
 Leiter_TCNS26:
   figure: /img/home/paper-interface-reduction.png
   alt: Network system with preserved control and output interface nodes
+  description: >-
+    Large network models are useful only if reduction preserves the physical nodes where control and measurement occur. This work characterizes all projections that retain those interfaces, derives stability and H-infinity error guarantees, and demonstrates sparse, accurate coarse models on a 65,566-state chip thermal network.
 
 Theran_TAC26:
   figure: /img/home/paper-edge-dynamics.png
   alt: Geometric relationship between formation configurations and edge measurements
+  description: >-
+    The paper moves distance-based formation stability from agent coordinates into edge space. It shows that directed-sensing stability depends jointly on graph orientation and target geometry, that persistence is neither necessary nor sufficient for convergence, and develops spectral tests and an optimization method for stabilizing edge gains.
 
 GoldgraberCasspi_LCSS26:
   figure: /img/home/paper-transmission-polygon.png
   alt: Global transmission polygon and zero-transmission loci for a four-agent formation
+  description: >-
+    A formation's geometry can make a disturbance applied at one agent invisible at another. For rigid formations, this paper turns those signal-blocking configurations into explicit geometric boundaries and introduces a global transmission polygon—a practical sensor-placement rule that avoids steady-state blind spots.
 
 Matmon2026_ECC:
   figure: /img/home/paper-leader-identification.png
   alt: Sensing graph with identified leader nodes highlighted in green
+  description: >-
+    This work asks whether hidden leaders in a consensus network can be found from motion alone. By relating steady-state agent velocities to the Fiedler vector, it develops a data-driven method that identifies the leader set without knowing the network topology.

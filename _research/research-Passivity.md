@@ -2,7 +2,10 @@
 title: Passivity and Nonlinear Control
 research_code: FDI
 layout: research
-image: /img/research/Passivity/PSGBlockDiagram.png
+image: /img/home/transversal-passivity-paper.png
+card_alt: Input and output manifolds in a transversal passivity framework
+card_label: Nonlinear systems
+summary: Energy, interconnection, and geometric dissipativity as tools for analyzing and designing nonlinear and networked systems.
 hero_height: is-small
 hero_image: /img/Connect_head_bkg.png  
 menubar_toc: true

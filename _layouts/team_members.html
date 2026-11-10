@@ -3,265 +3,154 @@ layout: default
 show_sidebar: false
 ---
 
+<div class="team-index">
+  <section class="team-index-hero" aria-labelledby="team-index-title">
+    <p class="team-index-kicker">Connect Lab · Technion</p>
+    <h1 id="team-index-title">{{ page.heading | default: page.title }}</h1>
+    <p>{{ page.intro }}</p>
+    <a href="#current-team">Meet the group <span aria-hidden="true">↓</span></a>
+  </section>
 
-<! -- Principal Investigator
-Research Team
- -Staff
- -Graduate Students (phd , master)
- -Undergraduate Students
- -Visiting Students
-Robots
-Alumni 
--->
-
-<div class="columns is-multiline">
-  <div class="column is-11">
-    {{ page.content }}
-  </div>
-</div>
-
-<h1 style="font-size:35px;">Principal Investigator</h1>
-
-{% assign sorted_products = site.team | where:"category","Principal Investigator" %}
-  {% for product in sorted_products %}
-  <div class="container" style="display: flex; flex-wrap: nowrap;">
-    <div class="columns">
-      <div class="column is-4-desktop is-4-tablet">
-        <div class="PI_card" style="display: block; width: max-content; margin-top: 1cm;">
-          <a href="{{ product.url | prepend: site.baseurl }}">
-          {% if product.image %}
-            <div class="card-image" style="width: 200px; height: 200px; object-fit: cover;">
-              <img src="{{ product.image }}" alt="{{ product.title }}">
-            </div>
-          {% endif %}
-          </a>
-        </div>
-      </div>
-<br>
-  <div class="column is-8-desktop is-4-tablet" style="margin-left: 50px ;">
-    <div class="content" style="display: block; margin-top: 1cm; width:fit-content; flex: 1;">
-      <a href="{{ product.url | prepend: site.baseurl }}">
-
-        <div style="display: block; margin-bottom: 10px;">
-          <p class="title is-4">{{ product.title }}</p>
-        </div>
-      
-        <div style="display: block; margin-bottom: 10px;">
-          <p class="title is-5">{{ product.subtitle }}</p>
-        </div>
+  <section class="team-index-pi" aria-labelledby="pi-title">
+    <header>
+      <p class="team-index-kicker">Leadership</p>
+      <h2 id="pi-title">Principal investigator</h2>
+    </header>
+    {% assign principal_investigators = site.team | where: "category", "Principal Investigator" %}
+    {% for member in principal_investigators %}
+    <article class="team-pi-card">
+      <a class="team-pi-card__portrait" href="{{ member.url | relative_url }}">
+        <img src="{{ member.image | relative_url }}" alt="{{ member.title }}" loading="lazy">
       </a>
-
-      <div style="display: block;">
-        <p class="subtitle is-5">{{ product.connect }}</p>
-      </div>
-      
-      <div style="display: block;">
-          <a href="{{ product.pfcl_link }}" class="custom-link"> <p class="subtitle is-5">{{ product.pfcl }}</p>
-          </a>
-      </div>
-
-      <div style="display: block; margin-top: 0.5cm; line-height: 1.5;">
-
-        <a href="{{ product.technion_link | prepend: site.baseurl }}" class="custom-link">
-          <p class="subtitle is-6" style="margin-bottom: 0.5cm;">{{ product.technion }}</p>
-        </a>
-
-        <a href="{{ product.ae_link | prepend: site.baseurl }}" class="custom-link">
-          <p class="subtitle is-6" style="margin-bottom: 0.5cm;">{{ product.ae }}</p>
-        </a>
-      
-      <!--  <a href="{{ product.tasp_link | prepend: site.baseurl }}" class="custom-link">
-          <p class="subtitle is-6" style="margin-bottom: 0.5cm;">{{ product.tasp }}</p>
-        </a>
-        
-        <a href="{{ product.math_link | prepend: site.baseurl }}" class="custom-link">
-          <p class="subtitle is-6" style="margin-bottom: 0.5cm;">{{ product.math }}</p>
-        </a>
-        
-        <a href="{{ product.gtep_link | prepend: site.baseurl }}" class="custom-link">
-          <p class="subtitle is-6" style="margin-bottom: 0.5cm;">{{ product.gtep }}</p>
-        </a>
-      
-        <a href="{{ product.tech-ai_link | prepend: site.baseurl }}" class="custom-link">
-          <p class="subtitle is-6" style="margin-bottom: 0.5cm;">{{ product.tech-ai }}</p>
-        </a>
-    -->
-      </div>
-      
-      <div style="display: block; margin-top: 0.5cm;">
-        {% for line in product.contact %}
-        <p class="subtitle is-6">{{ line }}<br></p>
-        {% endfor %}
-      </div>
-      
-    </div>
-  </div>
-</div>
-</div>
-{% endfor %}  
-
-<hr>
-<h1 style="font-size:35px;">Research Team</h1>
-<br>
-<div class="columns is-multiline">
-{% assign categories_order = site.categories_order %}
-{% assign sorted_products = site.team | sort: "category" %}
-{% for category in categories_order %}
-  {% for product in sorted_products %}
-    {% if product.category == category %}
-    <div class="column is-one-fifth-desktop is-6-tablet">
-      <a href="{{ product.url | prepend: site.baseurl }}">
-        <div class="card">
-          {% if product.image %}
-          <div class="card-image">
-            <figure class="image is-3by3">
-            <img src="{{ product.image }}" alt="{{ product.title }}" style="width: 250px; height: 250px; object-fit: cover; display: block; margin: auto;">
-            </figure>
-          </div>
-          {% endif %}
-          <div class="card-content">
-            <p class="title is-5">{{ product.title }}</h2>
-            <p class="subtitle is-5">{{ product.subtitle }}</p>
-          </div>
+      <div class="team-pi-card__copy">
+        <p class="team-person-role">{{ member.subtitle }}</p>
+        <h3><a href="{{ member.url | relative_url }}">{{ member.title }}</a></h3>
+        {% if member.connect %}<p class="team-pi-card__lead">{{ member.connect }}</p>{% endif %}
+        <div class="team-pi-card__affiliations">
+          {% if member.ae %}<a href="{{ member.ae_link }}">{{ member.ae }}</a>{% endif %}
+          {% if member.technion %}<a href="{{ member.technion_link }}">{{ member.technion }}</a>{% endif %}
         </div>
-      </a>
-    </div>
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-</div>
-
-<hr>
-<h1 style="font-size:35px;">Robots</h1>
-<br>
-<div class="columns is-multiline">
-{% assign sorted_products = site.team | where:"category","robots" | sort: "deployment" | reverse %}
-{% for product in sorted_products %}
-<div class="column is-one-fifth-desktop is-6-tablet">
-  <a href="{{ product.url | prepend: site.baseurl }}">
-    <div class="card">
-      {% if product.image %}
-      <div class="card-image">
-        <figure class="image is-3by3" style="display: flex; align-items: center; justify-content: center; max-width: 250px; max-height: 250px; overflow: hidden;">  
-        <img src="{{ product.image }}" alt="{{ product.title }}" style="width: 250px; height: 250px; object-fit: cover; display: block; margin: auto;">
-        </figure>
+        {% if member.contact %}
+        <ul>
+          {% for line in member.contact %}<li>{{ line }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+        <a class="team-person-link" href="{{ member.url | relative_url }}">Profile and publications <span aria-hidden="true">→</span></a>
       </div>
-      {% endif %}
-      <div class="card-content">
-        <p class="title is-6">{{ product.title }}</h2>
-        <p class="subtitle is-6">{{ product.subtitle }}</p>
-      </div>
-    </div>
-  </a>
-</div>
-{% endfor %}
-</div>
-
-<hr>
-<h1 style="font-size:35px;">Alumni</h1>
-<br>
-<hr>
-<h1 style="font-size:20px;">Postdocs and Researchers</h1>
-<br>
-<div class="columns is-multiline">
-  {% assign sorted_alumni = site.team | where: "category", "alumni_researcher_and_postdoctoral" | sort: "graduation" | reverse %}
-    {% for alumni in sorted_alumni %}
-  
-      <div class="column is-one-fifth-desktop is-6-tablet">
-          <div class="card">
-            <div class="card-content">
-              <a href="{{ alumni.url | prepend: site.baseurl }}">
-                <p class="title is-5">{{ alumni.title }}</p>
-                <hr>
-                <p class="subtitle is-6">{{ alumni.subtitle }}</p>
-              </a>
-            </div>
-          </div>
-      </div>
+    </article>
     {% endfor %}
-  </div>
-<hr>
-<h1 style="font-size:20px;">Ph.D.</h1>
-<br>
-<div class="columns is-multiline">
-{% assign sorted_alumni = site.team | where: "category", "alumni" | sort: "graduation" | reverse %}
-  {% for alumni in sorted_alumni %}
-    {% if alumni.subtitle == "Ph.D." %}
-    <div class="column is-one-fifth-desktop is-6-tablet">
-        <div class="card">
-          <div class="card-content">
-            <a href="{{ alumni.url | prepend: site.baseurl }}">
-              <p class="title is-5">{{ alumni.title }}</p>
-              <p class="subtitle is-6" style="margin-bottom: 0;">{{ alumni.graduation}} {{ alumni.faculty }}</p>
-              <hr>
-              <p class="subtitle is-6">{{ alumni.next-position}}</p>
-            </a>
-          </div>
-        </div>
+  </section>
+
+  <section class="team-index-current" id="current-team" aria-labelledby="current-team-title">
+    <header class="team-index-section-heading">
+      <div><p class="team-index-kicker">Current members</p><h2 id="current-team-title">The research team</h2></div>
+      <p>Our backgrounds span systems and control, graph theory, geometry, robotics, and aerospace engineering.</p>
+    </header>
+    <div class="team-people-grid">
+      {% assign sorted_members = site.team | sort: "title" %}
+      {% for category in site.categories_order %}
+        {% for member in sorted_members %}
+          {% if member.category == category %}
+          <a class="team-person-card" href="{{ member.url | relative_url }}">
+            <figure>
+              {% if member.image %}
+              <img src="{{ member.image | relative_url }}" alt="{{ member.title }}" loading="lazy">
+              {% else %}
+              <span aria-hidden="true">{{ member.title | slice: 0 }}</span>
+              {% endif %}
+            </figure>
+            <div>
+              <p class="team-person-role">{{ member.subtitle }}</p>
+              <h3>{{ member.title }}</h3>
+              {% if member.field %}<p>{{ member.field }}</p>{% endif %}
+              <strong>View profile <span aria-hidden="true">→</span></strong>
+            </div>
+          </a>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     </div>
-    {% endif %}
-  {% endfor %}
-</div>
+  </section>
 
-<hr>
-<h1 style="font-size:20px;">M.Sc.</h1>
-<br>
-<div class="columns is-multiline">
-{% assign sorted_alumni = site.team | where: "category", "alumni" | sort: "graduation" | reverse %}
-  {% for alumni in sorted_alumni %}
-    {% if alumni.subtitle == "M.Sc." %}
-    <div class="column is-one-fifth-desktop is-6-tablet">
-        <div class="card">
-          <div class="card-content">
-            <a href="{{ alumni.url | prepend: site.baseurl }}">
-              <p class="title is-5">{{ alumni.title }}</p>
-              <p class="subtitle is-6" style="margin-bottom: 0;">{{ alumni.graduation}} {{ alumni.faculty }}</p>
-              <hr>
-              <p class="subtitle is-6">{{ alumni.next-position}}</p>
-            </a>
-          </div>
+  <section class="team-index-robots" aria-labelledby="robots-title">
+    <header class="team-index-section-heading">
+      <div><p class="team-index-kicker">Experimental platforms</p><h2 id="robots-title">The robots in the loop</h2></div>
+      <p>Physical platforms let us test which assumptions survive real sensing, computation, communication, and actuation.</p>
+    </header>
+    <div class="team-robot-grid">
+      {% assign robots = site.team | where: "category", "robots" | sort: "deployment" | reverse %}
+      {% for robot in robots %}
+      <a class="team-robot-card" href="{{ robot.url | relative_url }}">
+        <figure><img src="{{ robot.image | relative_url }}" alt="{{ robot.title }}" loading="lazy"></figure>
+        <div>
+          <span>{{ robot.deployment }}</span>
+          <h3>{{ robot.title }}</h3>
+          <p>{{ robot.subtitle }}</p>
         </div>
+      </a>
+      {% endfor %}
     </div>
-    {% endif %}
-  {% endfor %}
-</div>
+  </section>
 
-<hr>
-<h1 style="font-size:20px;">Visiting Students </h1>
-<br>
-<div class="columns is-multiline">
-{% assign sorted_alumni = site.team | where: "category", "alumni" | sort: "graduation" | reverse %}
-  {% for alumni in sorted_alumni %}
-    {% if alumni.subtitle == "Visiting Student" %}
-    <div class="column is-one-fifth-desktop is-6-tablet">
-        <div class="card">
-          <div class="card-content">
-            <a href="{{ alumni.url | prepend: site.baseurl }}">
-              <p class="title is-5">{{ alumni.title }}</p>
-              <p class="subtitle is-6" style="margin-bottom: 0;">{{ alumni.graduation}} {{ alumni.faculty }}</p>
-              <hr>
-              <p class="subtitle is-6">{{ alumni.next-position}}</p>
-            </a>
-          </div>
-        </div>
+  <section class="team-index-alumni" aria-labelledby="alumni-title">
+    <header class="team-index-section-heading">
+      <div><p class="team-index-kicker">The extended network</p><h2 id="alumni-title">Alumni</h2></div>
+      <p>Former students and researchers remain part of the intellectual life and history of the lab.</p>
+    </header>
+
+    {% assign alumni_sorted = site.team | sort: "graduation" | reverse %}
+    <div class="team-alumni-grid">
+      <section>
+        <h3>Postdocs &amp; researchers</h3>
+        <ul>
+          {% for member in alumni_sorted %}
+            {% if member.category == "alumni_researcher_and_postdoctoral" %}
+            <li><a href="{{ member.url | relative_url }}"><span>{{ member.title }}</span><small>{{ member.subtitle }}</small></a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+      <section>
+        <h3>Ph.D.</h3>
+        <ul>
+          {% for member in alumni_sorted %}
+            {% if member.category == "alumni" and member.subtitle contains "Ph.D." %}
+            <li><a href="{{ member.url | relative_url }}"><span>{{ member.title }}</span><small>{{ member.graduation }}{% if member.next-position %} · {{ member.next-position }}{% endif %}</small></a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+      <section>
+        <h3>M.Sc.</h3>
+        <ul>
+          {% for member in alumni_sorted %}
+            {% if member.category == "alumni" and member.subtitle contains "M.Sc." %}
+            <li><a href="{{ member.url | relative_url }}"><span>{{ member.title }}</span><small>{{ member.graduation }}{% if member.next-position %} · {{ member.next-position }}{% endif %}</small></a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+      <section>
+        <h3>Visiting students</h3>
+        <ul>
+          {% for member in alumni_sorted %}
+            {% if member.category == "alumni" and member.subtitle contains "Visiting" %}
+            <li><a href="{{ member.url | relative_url }}"><span>{{ member.title }}</span><small>{{ member.graduation }}{% if member.faculty %} · {{ member.faculty }}{% endif %}</small></a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+      <section class="team-alumni-undergrads">
+        <h3>Undergraduate students</h3>
+        <p>{% capture undergraduate_content %}{% include_relative _team/alumni/Undergrad_students_alumni.txt %}{% endcapture %}{{ undergraduate_content | newline_to_br }}</p>
+      </section>
     </div>
-    {% endif %}
-  {% endfor %}
+  </section>
+
+  <section class="team-index-footer">
+    <p>Join the lab</p>
+    <h2>Interested in the theory of interconnected systems?</h2>
+    <a href="{{ '/Positions/' | relative_url }}">Open opportunities <span aria-hidden="true">→</span></a>
+  </section>
 </div>
-<hr>
-<h1 style="font-size:20px;">Undergrad Students </h1>
-<br>
-<div class="columns is-multiline">
-  <p>
-    {% capture file_content %}{% include_relative _team/alumni/Undergrad_students_alumni.txt %}{% endcapture %}
-    {% assign lines = file_content | split: "\n" %}
-    {% assign team_members = lines | join: ", " %}
-    {{ team_members }}
-  </p>
-</div>
-
- 
-
-  
-
 
