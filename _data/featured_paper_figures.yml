@@ -1,3 +1,55 @@
+Burger2014_J:
+  description: >-
+    This paper introduces maximal equilibrium-independent passivity and connects the steady states of passive cooperative networks to a dual pair of convex network optimization problems. The correspondence gives physical meaning to potentials, flows, inputs, and outputs and provides a unified framework for network analysis and optimal design.
+
+Palti2019a:
+  description: >-
+    This work develops a projected version of Lloyd's algorithm for coverage-control problems with constrained sensor locations. The projection step respects feasible deployment regions while retaining the centroidal structure that drives a mobile sensor network toward improved coverage.
+
+Rist2016_J:
+  description: >-
+    This paper formulates economic dispatch for a single micro gas turbine operating in combined heat-and-power mode. A detailed turbine model, real heat and electricity demands, utility tariffs, and startup, shutdown, and maintenance costs are combined in a graph-based scheduling problem that identifies economically optimal operating modes.
+
+Zelazo2023b_C:
+  description: >-
+    This work studies how to identify externally actuated leader agents in semi-autonomous consensus networks using distributed observations. It exploits the relationship between the network dynamics and leader-follower structure to infer the hidden leader set without requiring a centralized reconstruction of the full interaction graph.
+
+Zhao2014b:
+  description: >-
+    This work studies formation control when the target shape is specified by inter-agent bearings and only bearing measurements are available. It uses bearing rigidity to characterize the admissible formation shapes and develops distributed control laws that steer the network to the desired bearing-constrained configuration.
+
+Leiter2022:
+  description: >-
+    This thesis develops graph-based model-reduction methods for multi-agent and network systems. It studies graph contractions with spectral interlacing, projection-based reduced-order models and error bounds, and constructive algorithms that retain important network structure while reducing computational complexity.
+
+Sharf2020:
+  description: >-
+    This thesis develops network-optimization methods for analyzing and designing passivity-based cooperative control systems. It connects equilibrium-independent passivity to convex duality, network flow and potential problems, and controller synthesis, including extensions for passivity-short agents, clustering, and network identification.
+
+Barkai2025:
+  description: >-
+    This thesis studies agreement and synchronization when multi-agent communication is constrained in space and time. It develops emulation-based sampled-data protocols for asynchronous and delayed information exchange, analyzes internal-stability limits of diffusive coupling, and introduces filtered architectures that separate local regulation from network coordination.
+
+Peleg2022:
+  description: >-
+    This thesis studies economic dispatch for a network of micro gas turbines operating in combined heat-and-power mode. It models unit commitment, local operating constraints, heat and electricity demands, and network coordination to obtain schedules that balance generation cost, utility exchange, and turbine limitations.
+
+Priel2022:
+  description: >-
+    This thesis develops improved consensus Kalman filters for distributed sensor networks. It derives less conservative consensus gains, studies decentralized tuning from local graph information, and introduces event-triggered communication rules that reduce transmissions while preserving estimation quality and stability.
+
+Drellich2021:
+  description: >-
+    This thesis designs a low-cost aerial research platform for guidance, navigation, and control. It integrates a quadcopter, modular sensors, a variable-degree-of-freedom test bench, and a Simulink-centered workflow so control and estimation algorithms can move efficiently from simulation to repeatable hardware experiments.
+
+Palti2020:
+  description: >-
+    This thesis develops deployment strategies for mobile sensing and coverage-control problems. It combines graph and rigidity tools with projected optimization and Lloyd-type algorithms to coordinate sensor positions under geometric constraints while improving the covered region.
+
+Goldenberg2019:
+  description: >-
+    This thesis develops a rigidity-based framework for cooperative manipulation by multiple robots. It models the coupled object-agent dynamics, relates feasible coordinated motions and internal forces to graph rigidity, and uses that structure to design distributed manipulation and force-allocation strategies.
+
 Zelazo_TCNS26:
   figure: /img/home/merging-agents-assembly.png
   alt: Nineteen mobile modules progressively docking into a single hexagonal assembly at their initial centroid

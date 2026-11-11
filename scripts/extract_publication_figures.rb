@@ -33,6 +33,26 @@ def attributes(tag)
   tag.scan(/([A-Za-z]+)="([\d.]+)"/).to_h.transform_values(&:to_f)
 end
 
+def source_asset(entry, site_root)
+  %i[pdf slides poster supplementary material].each do |field|
+    value = entry[field].to_s.strip
+    next if value.empty?
+
+    path = File.join(site_root, value.sub(%r{\A/}, ''))
+    return [path, field] if File.file?(path)
+  end
+  nil
+end
+
+def caption_pages(pdf, page_limit: 60, candidate_limit: 14)
+  text, _error, process = run('pdftotext', '-f', '1', '-l', page_limit.to_s, '-layout', pdf, '-')
+  return [] unless process.success?
+
+  text.split("\f").each_with_index.filter_map do |page, index|
+    index + 1 if page.match?(/^\s*(?:Fig(?:ure)?\.?|FIG(?:URE)?\.?)\s*\d+/m)
+  end.first(candidate_limit)
+end
+
 def figure_candidate(pdf, page_number, workdir, title:, dpi:)
   prefix = File.join(workdir, 'page')
   _out, _error, render = run('pdftocairo', '-f', page_number.to_s, '-l', page_number.to_s, '-png', '-r', dpi.to_s, '-singlefile', pdf, prefix)
@@ -165,10 +185,9 @@ generated = 0
 entries.each_with_index do |entry, index|
   key = entry.key.to_s
   next if featured.dig(key, 'figure')
-  pdf = entry[:pdf].to_s.strip
-  next if pdf.empty?
-  source_pdf = File.join(site_root, pdf.sub(%r{\A/}, ''))
-  next unless File.file?(source_pdf)
+  asset = source_asset(entry, site_root)
+  next unless asset
+  source_pdf, source_kind = asset
 
   safe_key = key.gsub(/[^A-Za-z0-9_.-]/, '-')
   destination = File.join(output_dir, "#{safe_key}.jpg")
@@ -184,7 +203,9 @@ entries.each_with_index do |entry, index|
   FileUtils.rm_f(destination) if force
   best = nil
   Dir.mktmpdir('publication-figure') do |workdir|
-    1.upto(max_pages) do |page|
+    pages = caption_pages(source_pdf)
+    pages = (1..max_pages).to_a if pages.empty?
+    pages.each do |page|
       page_dir = File.join(workdir, page.to_s)
       FileUtils.mkdir_p(page_dir)
       candidate = figure_candidate(source_pdf, page, page_dir, title: entry[:title].to_s, dpi: dpi)
@@ -203,7 +224,7 @@ entries.each_with_index do |entry, index|
   elsif snapshots.dig(key, 'figure') == "/img/publications/snapshots/#{safe_key}.jpg"
     snapshots[key].delete('figure')
   end
-  warn "[#{index + 1}/#{entries.length}] #{key}: #{File.file?(destination) ? 'figure' : 'no candidate'}"
+  warn "[#{index + 1}/#{entries.length}] #{key} (#{source_kind}): #{File.file?(destination) ? 'figure' : 'no candidate'}"
 end
 
 File.write(snapshots_path, snapshots.to_yaml(line_width: -1)) unless no_manifest

@@ -25,28 +25,56 @@ def brief_story(abstract)
   story[0, 680].sub(/\s+\S*\z/, '') + '…'
 end
 
+def extract_abstract(text)
+  normalized = text.gsub("\f", "\n")
+  patterns = [
+    /^\s*(?:Abstract|Summary)\b[\s:—.-]*(.*?)(?=\b(?:Index Terms|Key ?words?|Keywords?)\b|\n\s*(?:I\.?|1\.?)\s*(?:Introduction|INTRODUCTION)\b)/mi,
+    /^\s*(?:Abstract|Summary)\b[\s:—.-]*(.*?)(?=\n\s*(?:Introduction|INTRODUCTION|Contents|Table of Contents|Acknowledg(?:e)?ments?)\b)/mi,
+    /^\s*(?:Abstract|Summary)\b[\s:—.-]*(.*?)(?=\n\s*(?:1|I)\s*[.:-]?\s*[A-Z][A-Za-z ]{3,}\n)/m
+  ]
+
+  patterns.each do |pattern|
+    match = normalized.match(pattern)
+    next unless match
+
+    abstract = clean_abstract(match[1])
+    next if abstract.scan(/\.\s*\.\s*\./).length >= 3
+    return abstract if abstract.length >= 80
+  end
+  nil
+end
+
 existing = File.file?(destination) ? YAML.load_file(destination) : {}
 snapshots = {}
 
 BibTeX.open(source).entries.each_value do |entry|
   pdf = entry[:pdf].to_s.strip
   abstract = entry[:abstract].to_s.strip
+  existing_summary = existing.dig(entry.key.to_s, 'summary').to_s.strip
 
-  if abstract.empty? && !pdf.empty?
-    pdf_path = File.join(site_root, pdf.sub(%r{\A/}, ''))
-    if File.file?(pdf_path)
-      text, _error, process = Open3.capture3('pdftotext', '-f', '1', '-l', '3', '-raw', pdf_path, '-')
+  if abstract.empty? && existing_summary.empty?
+    source_fields = %i[pdf slides poster supplementary material]
+    source_fields.each do |field|
+      asset = entry[field].to_s.strip
+      next if asset.empty?
+
+      asset_path = File.join(site_root, asset.sub(%r{\A/}, ''))
+      next unless File.file?(asset_path)
+
+      text, _error, process = Open3.capture3('pdftotext', '-f', '1', '-l', '30', '-raw', asset_path, '-')
       if process.success?
-        match = text.match(/\bAbstract\b[\s:—.-]*(.*?)(?=\b(?:Index Terms|Key ?words?)\b|\n\s*(?:I\.?|1\.?)\s+(?:Introduction|INTRODUCTION)\b)/mi)
-        abstract = clean_abstract(match[1]) if match
+        abstract = extract_abstract(text).to_s
+        break unless abstract.empty?
       end
     end
   end
 
-  next if abstract.length < 80
+  summary = existing_summary
+  summary = brief_story(clean_abstract(abstract)) if summary.empty? && abstract.length >= 80
+  next if summary.empty? && existing.dig(entry.key.to_s, 'figure').to_s.empty?
 
   snapshots[entry.key.to_s] = {
-    'summary' => brief_story(clean_abstract(abstract)),
+    'summary' => summary,
     'pdf' => pdf,
     'figure' => existing.dig(entry.key.to_s, 'figure')
   }.reject { |_key, value| value.to_s.empty? }
