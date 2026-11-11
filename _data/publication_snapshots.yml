@@ -1,4 +1,8 @@
 ---
+Zelazo_TCNS26:
+  summary: Standard consensus makes agents approach the same point but does not describe what happens when physical robots actually dock. This paper introduces a hybrid aggregating-consensus protocol in which nearby agents merge their states and neighborhoods, turning each growing cluster into a clique while preserving the original sensing structure. The resulting network is a blow-up of a contracted graph, which yields order-independent guarantees that every agent merges at the initial centroid in finite time, with extensions to formation assembly, collision avoidance, and cooperative transport.
+Yue_ECC27:
+  summary: Distance-based formation controllers usually drive every edge force to zero once the target shape is reached. This paper uses transversal passivity to design dynamic edge controllers that instead preserve admissible, internally balanced equilibrium forces. It establishes a closed-loop dissipation margin and local convergence to the target formation and force manifolds, then illustrates how the chosen force subspace determines which edges remain stressed and how sparsely the controller can be implemented.
 Zelazo_ECC27:
   summary: We study the property of differential flatness for networks of identical flat agents coupled through a consensus protocol, where a single exogenous input acts on one agent and the output of another agent is measured.  We distinguish whether the network admits a flat output at all from whether the measured task output is a flat output.  For the former, we show that flatness at a synchronized equilibrium requires controllability of the Laplacian leader–follower pair, which is also sufficient for linear agents but not for nonlinear ones.
   pdf: "/Publications/Zelazo_ECC27.pdf"

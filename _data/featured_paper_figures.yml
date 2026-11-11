@@ -1,3 +1,15 @@
+Zelazo_TCNS26:
+  figure: /img/home/merging-agents-assembly.png
+  alt: Nineteen mobile modules progressively docking into a single hexagonal assembly at their initial centroid
+  description: >-
+    Standard consensus makes agents approach the same point but does not describe what happens when physical robots actually dock. This paper introduces a hybrid aggregating-consensus protocol: nearby agents merge their states and neighborhoods, turning each growing cluster into a clique while preserving the original sensing structure. The resulting network is a blow-up of a contracted graph, which yields order-independent guarantees that every agent merges at the initial centroid in finite time, with extensions to formation assembly, collision avoidance, and cooperative transport.
+
+Yue_ECC27:
+  figure: /img/home/equilibrium-forces-formation.png
+  alt: Two formation-control examples with edges carrying sustained equilibrium stress highlighted in orange
+  description: >-
+    Distance-based formation controllers usually drive every edge force to zero once the target shape is reached. This paper uses transversal passivity to design dynamic edge controllers that instead preserve admissible, internally balanced equilibrium forces. It establishes a closed-loop dissipation margin and local convergence to the target formation and force manifolds, then illustrates how the chosen force subspace determines which edges remain stressed and how sparsely the controller can be implemented.
+
 Yue_TAC26:
   figure: /img/home/transversal-passivity-paper.png
   alt: Input and output manifolds used to define the transversal supply rate
