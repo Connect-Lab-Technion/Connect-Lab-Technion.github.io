@@ -1579,3 +1579,123 @@ div.content.box p {
     height: 96px;
   }
 }
+
+/* Compact page openings. Bulma's `.content h1:not(:first-child)` rule adds a
+   presentation-sized margin whenever a kicker precedes a heading. */
+.home-alt-hero__intro h1,
+.publications-hero h1,
+.site-editorial__hero h1,
+.news-index__hero h1,
+.news-story__hero h1,
+.projects-index__hero h1,
+.student-project__hero h1,
+.gallery-editorial__hero h1,
+.talks-catalogue__hero h1,
+.gallery-index__hero h1,
+.team-index-hero h1,
+.research-index-hero__copy h1,
+.research-detail__heading h1,
+.profile-detail__heading h1,
+.project-detail__hero h1 {
+  margin-top: 0 !important;
+}
+
+.publications-tools h2 {
+  margin-top: 0 !important;
+}
+
+/* These three pages sit inside the theme's padded section wrapper. Pull their
+   designed canvas up by the full wrapper padding so it begins under the nav. */
+.home-alt,
+.research-index {
+  margin-top: -3rem;
+}
+
+.publications-index {
+  margin-top: -3rem;
+}
+
+.home-alt-hero {
+  padding-top: clamp(1rem, 2vw, 2rem);
+}
+
+.publications-hero {
+  padding: clamp(1.75rem, 3vw, 2.75rem) clamp(1.5rem, 4vw, 3.75rem);
+}
+
+.site-editorial__hero,
+.news-index__hero,
+.news-story__hero,
+.projects-index__hero,
+.student-project__hero,
+.gallery-editorial__hero,
+.talks-catalogue__hero,
+.gallery-index__hero,
+.team-index-hero {
+  padding: clamp(2rem, 3.5vw, 3.5rem) clamp(1.5rem, 7vw, 7rem);
+}
+
+.research-index-hero {
+  min-height: 440px;
+  padding: .75rem;
+}
+
+.research-index-hero__copy {
+  padding: clamp(1.75rem, 3vw, 3.25rem);
+}
+
+.research-detail__hero,
+.profile-detail__hero {
+  min-height: 460px;
+}
+
+.research-detail__heading,
+.profile-detail__heading,
+.project-detail__hero > div {
+  padding: clamp(2rem, 4vw, 4rem);
+}
+
+.research-detail__back,
+.profile-detail__back,
+.project-detail__hero > div > a {
+  margin-bottom: clamp(1rem, 2vw, 1.75rem);
+}
+
+.profile-detail__portrait {
+  min-height: 430px;
+}
+
+.project-detail__hero {
+  min-height: 440px;
+}
+
+.positions-intro,
+.teaching-overview {
+  padding: clamp(2rem, 3.5vw, 3.25rem) clamp(1.5rem, 7vw, 7rem);
+}
+
+@media (max-width: 700px) {
+  .home-alt-hero {
+    padding-top: .75rem;
+  }
+
+  .publications-hero,
+  .site-editorial__hero,
+  .news-index__hero,
+  .news-story__hero,
+  .projects-index__hero,
+  .student-project__hero,
+  .gallery-editorial__hero,
+  .talks-catalogue__hero,
+  .gallery-index__hero,
+  .team-index-hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .research-index-hero__copy,
+  .research-detail__heading,
+  .profile-detail__heading,
+  .project-detail__hero > div {
+    padding: 2rem 1.5rem;
+  }
+}
