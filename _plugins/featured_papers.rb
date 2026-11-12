@@ -9,7 +9,7 @@ module ConnectLab
       bibliography = File.join(site.source, '_bibliography', 'DZ_Complete.bib')
       figures = site.data.fetch('featured_paper_figures', {})
       papers = BibTeX.open(bibliography).entries.values.filter_map do |entry|
-        paper_data(entry, figures[entry.key.to_s])
+        paper_data(entry, figures[entry.key.to_s], site.source)
       end
       site.data['featured_papers'] = papers.sort_by { |paper| [-paper['year'], -paper['month'], paper['title']] }
     rescue StandardError => error
@@ -23,10 +23,13 @@ module ConnectLab
       entry[key]&.to_s&.strip
     end
 
-    def paper_data(entry, figure_data)
+    def paper_data(entry, figure_data, site_source)
       year = value(entry, :year).to_i
       title = value(entry, :title)
       return if year.zero? || title.to_s.empty? || figure_data.nil?
+
+      figure = figure_data['figure'].to_s.strip
+      return if figure.empty? || !File.file?(File.join(site_source, figure.sub(%r{\A/}, '')))
 
       link = first_present(
         value(entry, :arxiv),
@@ -49,7 +52,7 @@ module ConnectLab
         'topics' => topics,
         'description' => description,
         'link' => link,
-        'figure' => figure_data['figure'],
+        'figure' => figure,
         'figure_alt' => figure_data['alt']
       }
     end

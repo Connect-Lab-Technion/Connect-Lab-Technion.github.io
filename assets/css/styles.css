@@ -1336,6 +1336,88 @@ div.content.box p {
 @media (max-width:430px){.research-index-lenses ol,.research-theme-grid{grid-template-columns:1fr}.research-theme-card{grid-template-rows:170px auto}}
 @media (prefers-reduced-motion:reduce){.research-index *,.research-index *::before,.research-index *::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
 
+/* Compact editorial rhythm: keep the visual character while bringing useful content above the fold. */
+.home-alt-hero__intro{padding:clamp(2.25rem,4vw,4rem)}
+.home-alt-hero__intro h1{margin-bottom:1.1rem;font-size:clamp(2.8rem,4.8vw,4.7rem)}
+.home-alt-hero__intro>p:not(.home-alt-kicker){line-height:1.55}
+.home-alt-links{margin-top:1.25rem}
+.home-alt-feature{grid-template-rows:auto minmax(200px,.72fr) auto;margin:clamp(.75rem,1.5vw,1.25rem)}
+.home-alt-feature__label{padding:.7rem 1rem}
+.home-alt-feature img{max-height:285px;padding:1rem 1.25rem}
+.home-alt-feature__copy{padding:clamp(1.15rem,2vw,1.7rem)}
+.home-alt-feature h2{margin-bottom:.7rem;font-size:clamp(1.4rem,2.1vw,1.9rem)}
+.home-alt-feature__copy>p:not(.home-alt-tag){line-height:1.5}
+.home-alt-feature__actions{margin-top:.9rem}
+.home-alt-questions,.home-alt-news{padding:clamp(2.75rem,5vw,4.25rem) clamp(1.5rem,6vw,6rem)}
+.home-alt-section-title h2{font-size:clamp(2rem,3.4vw,3.35rem)}
+.home-alt-questions{gap:clamp(2rem,5vw,5rem)}
+.home-alt-questions li{grid-template-columns:2rem 150px minmax(0,1fr);gap:1rem;padding:1rem 0}
+.home-alt-question-figure{width:150px}
+.home-alt-question-figure img{height:82px}
+.home-alt-news__list{margin-top:1.75rem}
+.home-alt-news__list>a{padding:1rem 0}
+.home-alt-footer-cta{padding:2rem clamp(1.5rem,6vw,6rem)}
+
+.publications-hero{padding:clamp(2.25rem,4vw,3.75rem)}
+.publications-hero h1{margin-bottom:1.25rem;font-size:clamp(3rem,6.5vw,5.2rem)}
+.publications-intro{line-height:1.55}
+.publications-view-switch{margin-top:1.5rem}
+.publications-tools{gap:1.5rem;padding:clamp(1.75rem,3.5vw,3rem)}
+.publications-recent,.publications-archive,.publication-types{padding:clamp(2.5rem,4.5vw,4rem) clamp(1rem,5vw,4.5rem)}
+.publications-section-heading{margin-bottom:1.8rem}
+.publication-year+.publication-year{margin-top:3rem}
+.publications-index .bibliography>li{padding:1.05rem 0 1.15rem}
+.publication-type-section+.publication-type-section{margin-top:3rem;padding-top:3rem}
+.publications-cta{margin-top:2.5rem;padding:clamp(2.25rem,4vw,3.5rem)}
+
+.site-editorial__hero,.news-index__hero,.news-story__hero,.projects-index__hero,.student-project__hero,.gallery-editorial__hero,.talks-catalogue__hero,.gallery-index__hero,.team-index-hero{padding:clamp(2.75rem,5vw,5rem) clamp(1.5rem,7vw,7rem)}
+.site-editorial__hero h1,.news-index__hero h1,.news-story__hero h1,.projects-index__hero h1,.student-project__hero h1,.gallery-editorial__hero h1,.talks-catalogue__hero h1,.gallery-index__hero h1,.team-index-hero h1{font-size:clamp(3rem,6vw,5.6rem)}
+.site-editorial__content,.news-story__body,.gallery-index__content{padding:clamp(2.5rem,4.5vw,4.25rem) clamp(1.5rem,5vw,4rem)}
+.news-index__list{padding-bottom:4rem}.news-index__list a{padding:1.4rem 0}
+.talks-catalogue__section{padding:clamp(2.5rem,4vw,3.75rem) clamp(1.5rem,5vw,4rem)}
+.talks-catalogue__section>header{margin-bottom:1.75rem}
+.projects-index__cta{padding:2.75rem clamp(1.5rem,7vw,7rem)}
+.team-index-pi,.team-index-current,.team-index-robots,.team-index-alumni{padding:clamp(3rem,5vw,4.5rem) clamp(1.5rem,6vw,6rem)}
+.team-index-section-heading{margin-bottom:2rem}
+
+.research-index-hero{min-height:500px;padding:1rem}
+.research-index-hero__copy{padding:clamp(2.25rem,4vw,3.75rem)}
+.research-index-hero__copy h1{font-size:clamp(2.8rem,4.8vw,4.65rem)}
+.research-index-hero__copy>a{margin-top:1.25rem}
+.research-index-hero__figure img{max-height:360px;padding:clamp(1.5rem,3vw,3rem)}
+.research-index-lenses,.research-index-themes{padding:clamp(3rem,5vw,4.5rem) clamp(1.5rem,6vw,6rem)}
+.research-index-lenses{gap:clamp(2rem,5vw,5rem)}
+.research-index-themes>header{margin-bottom:2rem}
+.research-index-footer{padding:2rem clamp(1.5rem,6vw,6rem)}
+
+.research-detail__hero{min-height:520px}
+.research-detail__heading{padding:clamp(3rem,5vw,5rem)}
+.research-detail__back,.profile-detail__back{margin-bottom:clamp(1.5rem,3vw,2.5rem)}
+.research-detail__heading h1{font-size:clamp(3rem,5.5vw,5.5rem)}
+.research-detail__hero-figure{padding:clamp(1.5rem,3vw,3.5rem)}
+.research-detail__hero-figure img{max-height:440px}
+.research-detail__shell{padding:clamp(2.75rem,4.5vw,4.5rem) clamp(1.5rem,5vw,5rem)}
+.research-detail__content h2{margin-top:3.25rem}
+.profile-detail__hero{min-height:520px}
+.profile-detail__portrait{min-height:470px}
+.profile-detail__heading{padding:clamp(2.75rem,5vw,5rem)}
+.profile-detail__heading h1{font-size:clamp(3rem,5.8vw,5.6rem)}
+.project-detail__hero{min-height:500px}
+.project-detail__hero>div{padding:clamp(2.75rem,5vw,5rem)}
+.project-detail__hero>div>a{margin-bottom:1.5rem}
+.project-detail__shell{padding:clamp(2.75rem,4.5vw,4.5rem) clamp(1.5rem,5vw,4rem)}
+.gallery-index__content>p:first-child{margin-bottom:2.5rem}
+.flickr-carousel{margin-bottom:4rem}
+
+.positions-intro,.teaching-overview{padding:clamp(3rem,5vw,4.5rem) clamp(1.5rem,7vw,7rem)}
+.positions-track{padding:clamp(2.75rem,4.5vw,4rem) clamp(1.5rem,7vw,7rem)}
+.positions-cta{padding:2.5rem clamp(1.5rem,7vw,7rem)}
+.course-feature{padding:clamp(3rem,5vw,4.5rem) clamp(1.5rem,7vw,7rem)}
+.teaching-more{padding:2.25rem clamp(1.5rem,7vw,7rem)}
+
+@media(max-width:1000px){.home-alt-feature{grid-template-rows:auto 1fr}.research-index-hero{min-height:0}.research-index-hero__figure{min-height:360px}}
+@media(max-width:700px){.home-alt-hero__intro{padding:2.75rem 1.5rem}.home-alt-feature{margin:.75rem}.home-alt-questions li{grid-template-columns:1.75rem 120px minmax(0,1fr)}.home-alt-question-figure{width:120px}.home-alt-question-figure img{height:72px}.research-index-hero__copy{padding:3rem 1.5rem}.research-index-hero__figure{min-height:320px}.site-editorial__hero,.news-index__hero,.news-story__hero,.projects-index__hero,.student-project__hero,.gallery-editorial__hero,.talks-catalogue__hero,.gallery-index__hero,.team-index-hero{padding:3rem 1.5rem}}
+
 
 .home-alt-questions li {
   grid-template-columns: 2.5rem 170px minmax(0, 1fr);
@@ -1442,5 +1524,58 @@ div.content.box p {
 
   .home-alt-questions li p {
     grid-column: 2;
+  }
+}
+
+/* Remove the large presentation-style air above the first useful content. */
+.home-alt-hero {
+  padding: clamp(1.5rem, 3vw, 3rem) 0 clamp(1rem, 2vw, 2rem);
+}
+
+.home-alt-hero__intro {
+  padding: 0 clamp(1.5rem, 6vw, 6rem) clamp(2rem, 4vw, 3.5rem);
+}
+
+/* Keep the illustrated questions easy to scan without restoring tall rows. */
+.home-alt-questions li {
+  grid-template-columns: 2.25rem 170px minmax(0, 1fr);
+  gap: 1.15rem;
+  padding: 1rem 0;
+}
+
+.home-alt-question-figure {
+  width: 170px;
+}
+
+.home-alt-question-figure img {
+  height: 88px;
+}
+
+@media (max-width: 700px) {
+  .home-alt-hero {
+    padding: 1.5rem 0 1.25rem;
+  }
+
+  .home-alt-hero__intro {
+    gap: 1rem;
+    padding: 1rem 1.5rem 2rem;
+  }
+
+  .home-alt-hero__intro h1 {
+    font-size: clamp(2.45rem, 11.5vw, 3.4rem);
+  }
+
+  .home-alt-questions li {
+    grid-template-columns: 1.75rem minmax(0, 1fr);
+    gap: .75rem;
+  }
+
+  .home-alt-question-figure {
+    grid-column: 2;
+    width: min(180px, 100%);
+  }
+
+  .home-alt-question-figure img {
+    height: 96px;
   }
 }

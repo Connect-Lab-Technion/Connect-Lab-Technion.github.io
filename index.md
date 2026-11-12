@@ -164,8 +164,15 @@ hide_footer: false
   document.getElementById('featured-paper-date').textContent = 'Week ' + isoWeek + ' · ' + isoYear;
   document.getElementById('featured-paper-date').setAttribute('datetime', isoYear + '-W' + String(isoWeek).padStart(2, '0'));
   document.getElementById('featured-paper-link').href = paper.link;
-  document.getElementById('featured-paper-figure').src = '{{ site.baseurl }}' + paper.figure;
-  document.getElementById('featured-paper-figure').alt = paper.figure_alt || ('Figure from “' + paper.title + '”');
+  var figure = document.getElementById('featured-paper-figure');
+  figure.onerror = function () {
+    if (figure.dataset.fallbackApplied) return;
+    figure.dataset.fallbackApplied = 'true';
+    figure.src = '{{ site.baseurl }}/img/logos/Connect_logo_full.png';
+    figure.alt = 'Connect Lab';
+  };
+  figure.src = '{{ site.baseurl }}' + paper.figure;
+  figure.alt = paper.figure_alt || ('Figure from “' + paper.title + '”');
 }());
 </script>
 
