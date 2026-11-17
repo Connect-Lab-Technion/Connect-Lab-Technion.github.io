@@ -44,6 +44,8 @@ Multi-agent systems are composed of dynamic units that interact through sensing,
 
 [Directed distance-based formation control](/courses/multi-agent-systems/directed-formation-control/): compare reciprocal and directed correction, observe an unstable formation, and stabilize it by adjusting the edge gains.
 
+[Bearing-based formation control](/courses/multi-agent-systems/bearing-based-formation-control/): explore signed scale and leader placement, compare acceleration feedback, and watch translating and scaling formations in 2D and 3D.
+
 Students from multiple Technion faculties are welcome. See the [official course listing](https://www.graduate.technion.ac.il/Subjects.Eng/?Sub=86730), or [contact Daniel](mailto:dzelazo@technion.ac.il) if you do not have a Technion email address.
 
 </div>

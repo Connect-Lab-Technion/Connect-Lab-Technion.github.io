@@ -1,0 +1,54 @@
+{
+  "first_order": {
+    "nullity": 3,
+    "centroid_drift": 1.6653345369377348e-16,
+    "signed_scale_drift": 4.440892098500626e-16,
+    "final_equilibrium_error": 0.00013735451731428482
+  },
+  "second_order": {
+    "final_deformation_error": 0.0021859607568965023,
+    "centroid_velocity": [
+      0.18,
+      0.07
+    ],
+    "scale_rate": 0.035
+  },
+  "maneuver_2d": {
+    "kp": 0.5,
+    "kv": 2.0,
+    "min_eigenvalue_Bff": 0.1453623202815383,
+    "initial_bearing_error": 4.072611403546293,
+    "final_bearing_error": 3.859069835673112e-05,
+    "final_position_tracking_error": 0.002173493565597614,
+    "final_velocity_error": 0.005459633468282901,
+    "minimum_agent_separation": 7.737915880131768,
+    "halved_step_max_difference": 1.5391199426062485e-10
+  },
+  "acceleration_tracking": {
+    "kp": 1.0,
+    "kv": 2.0,
+    "final_errors": [
+      0.34704959212121095,
+      7.701650984752284e-10
+    ],
+    "late_max_errors": [
+      0.5897985200422049,
+      2.303558986942979e-07
+    ]
+  },
+  "maneuver_3d": {
+    "kp": 1.0,
+    "kv": 2.4,
+    "nullity": 4,
+    "min_eigenvalue_Bff": 0.045724077052279,
+    "final_bearing_error": 4.159299514227995e-06,
+    "final_tracking_error": 2.4885541211836546e-06,
+    "minimum_agent_separation": 0.8002452586571601,
+    "minimum_plane_crossing_clearance": 0.24880537309289774,
+    "minimum_clearance_within_body_radius_of_plane": 0.24853684297547635,
+    "agent_radius": 0.09,
+    "aperture_half_width": 0.65,
+    "minimum_scale": 0.4004024201565598,
+    "note": "Numerical clearance checks for this planned maneuver; no obstacle-avoidance feedback is used."
+  }
+}
