@@ -1,0 +1,19 @@
+{
+  "style_reference": "Directed Formation Control/Beamer/make_movies.py",
+  "resolution": [
+    2560,
+    1440
+  ],
+  "fps": 30,
+  "duration_seconds": 32.53333333333333,
+  "initial_hold_seconds": 1.5,
+  "initial_model_interval": [
+    0,
+    3
+  ],
+  "initial_playback_speed": 0.25,
+  "long_term_playback_seconds": 16,
+  "final_hold_seconds": 3,
+  "coordinate_system": "fixed world coordinates; comparison panels share scales",
+  "simulation_changes": false
+}
