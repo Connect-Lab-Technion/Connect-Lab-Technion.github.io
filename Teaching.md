@@ -40,6 +40,10 @@ Multi-agent systems are composed of dynamic units that interact through sensing,
 - network design and optimization methods
 - examples from multi-robot coordination and distributed computation
 
+### Lecture demonstrations
+
+[Directed distance-based formation control](/courses/multi-agent-systems/directed-formation-control/): compare reciprocal and directed correction, observe an unstable formation, and stabilize it by adjusting the edge gains.
+
 Students from multiple Technion faculties are welcome. See the [official course listing](https://www.graduate.technion.ac.il/Subjects.Eng/?Sub=86730), or [contact Daniel](mailto:dzelazo@technion.ac.il) if you do not have a Technion email address.
 
 </div>
