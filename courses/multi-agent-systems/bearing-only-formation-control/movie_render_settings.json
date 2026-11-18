@@ -14,6 +14,18 @@
   "initial_playback_speed": 0.25,
   "long_term_playback_seconds": 16,
   "final_hold_seconds": 3,
-  "coordinate_system": "fixed world coordinates, common scale for all examples",
-  "simulation_changes": false
+  "coordinate_system": "fixed world axes; common scale within square and large-formation groups; fixed 3D orthographic view",
+  "simulation_changes": true,
+  "examples": [
+    "five-edge square",
+    "100-agent lattice",
+    "144-agent torus",
+    "original satellite animation"
+  ],
+  "square_graph": "perimeter plus diagonal (1,3)",
+  "model_end_time_seconds": {
+    "square": 100,
+    "large": 600
+  },
+  "satellite_clock": "source-clip time, not model time"
 }

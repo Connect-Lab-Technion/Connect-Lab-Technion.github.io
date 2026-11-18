@@ -1,0 +1,16 @@
+{
+  "agents": 144,
+  "dimension": 3,
+  "edges": 432,
+  "bearing_rigidity_rank": 428,
+  "required_rank": 428,
+  "final_position_error": 0.00010076750764514403,
+  "final_bearing_error": 1.2786301225081143e-05,
+  "maximum_centroid_drift": 7.072585148304097e-16,
+  "maximum_scale_drift": 1.2579270958212874e-11,
+  "minimum_sampled_pair_distance": 0.26438170215794243,
+  "independent_endpoint_max_difference": 1.2433609697382053e-11,
+  "graph": "periodic triangulated torus mesh",
+  "controller": "u_i = -sum_j P_gij g*_ij; common reference frame; gain one",
+  "model_end_time": 600.0
+}

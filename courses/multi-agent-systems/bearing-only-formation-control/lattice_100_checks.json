@@ -1,0 +1,16 @@
+{
+  "agents": 100,
+  "dimension": 2,
+  "edges": 261,
+  "bearing_rigidity_rank": 197,
+  "required_rank": 197,
+  "final_position_error": 1.4588018640699763e-07,
+  "final_bearing_error": 2.3286893418536864e-08,
+  "maximum_centroid_drift": 2.8698197892356247e-15,
+  "maximum_scale_drift": 6.443290345714558e-11,
+  "minimum_sampled_pair_distance": 0.11216571951143431,
+  "independent_endpoint_max_difference": 5.865175012331747e-11,
+  "graph": "triangulated square grid",
+  "controller": "u_i = -sum_j P_gij g*_ij; common reference frame; gain one",
+  "model_end_time": 600.0
+}

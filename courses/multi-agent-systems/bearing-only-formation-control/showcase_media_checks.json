@@ -1,0 +1,81 @@
+{
+  "movies": {
+    "typical": {
+      "resolution": [
+        2560,
+        1440
+      ],
+      "fps": 30,
+      "duration_seconds": 32.533333,
+      "sha256": "ebd963a3420e4fc1c799a6aa8c84ba5e15830e660de93b151e62040ba0fd59f2",
+      "full_decode_ok": true,
+      "provenance": "new numerical simulation"
+    },
+    "near_reflection": {
+      "resolution": [
+        2560,
+        1440
+      ],
+      "fps": 30,
+      "duration_seconds": 32.533333,
+      "sha256": "67640ca5721a71a2810b4b36a2009bdd996d5468aaa1aa5e1fe5212b79153c59",
+      "full_decode_ok": true,
+      "provenance": "new numerical simulation"
+    },
+    "reflection": {
+      "resolution": [
+        2560,
+        1440
+      ],
+      "fps": 30,
+      "duration_seconds": 32.533333,
+      "sha256": "e64c203b778c51dc8cdbac8b282c3b5fc79db365f32dbd679d7585b57c3765a6",
+      "full_decode_ok": true,
+      "provenance": "new numerical simulation"
+    },
+    "lattice_100": {
+      "resolution": [
+        2560,
+        1440
+      ],
+      "fps": 30,
+      "duration_seconds": 32.533333,
+      "sha256": "eb7367de503b29a939a4e3a96a51b8a7aeda97e428812eadd98324cb99cb2753",
+      "full_decode_ok": true,
+      "provenance": "new numerical simulation"
+    },
+    "torus_144": {
+      "resolution": [
+        2560,
+        1440
+      ],
+      "fps": 30,
+      "duration_seconds": 32.533333,
+      "sha256": "92eb394c1a9533e3151bee8d4a0bdcd75126e7511962845e981cb38177123109",
+      "full_decode_ok": true,
+      "provenance": "new numerical simulation"
+    },
+    "satellite": {
+      "resolution": [
+        2560,
+        1440
+      ],
+      "fps": 30,
+      "duration_seconds": 32.533333,
+      "sha256": "cb03de08eda49eb4f6f278a682e9260162758ae4be20cd3cab2dc0c63be4dc4f",
+      "full_decode_ok": true,
+      "provenance": "supplied original visualization in lecture layout"
+    }
+  },
+  "satellite_source": {
+    "filename": "video_Fancy_Satellite.mov",
+    "sha256": "2a205c3d97d7e882784e17a563592d2d18c973a1fd09b31be9dafcc924e8f542",
+    "source_resolution": [
+      640,
+      476
+    ],
+    "controller_reference": "Zhao and Zelazo, IEEE TAC 2016, Section IV, Eqs. (19)-(21), Theorem 15",
+    "doi": "10.1109/TAC.2015.2459191",
+    "new_orbital_simulation": false
+  }
+}
