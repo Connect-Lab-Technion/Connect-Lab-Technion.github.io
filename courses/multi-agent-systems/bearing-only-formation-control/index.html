@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bearing-only formation control demonstrations | Connect Lab</title>
+<meta name="description" content="Bearing-only stabilization, escape from near a reflected equilibrium, and the exceptional stationary formation.">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f1f5f4;color:#173b42;font:17px/1.55 system-ui,sans-serif;border-top:6px solid #008b8b}main{max-width:1240px;margin:auto;padding:28px}a{color:#006b70}header p{margin:8px 0}h1{font-size:clamp(26px,4vw,40px);line-height:1.2;margin:18px 0 10px;letter-spacing:-.025em}.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#597078}.instruction{color:#597078;font-size:15px}nav{display:flex;gap:9px;flex-wrap:wrap;margin:24px 0}nav a{border:1px solid #c5d5d2;border-radius:8px;padding:9px 13px;text-decoration:none;background:white;color:#173b42;font-size:15px}nav a[aria-current=true]{background:#173b42;color:white;border-color:#173b42}a:focus-visible,video:focus-visible{outline:3px solid #db7626;outline-offset:3px}.player{background:white;border:1px solid #dce5e3;border-radius:15px;overflow:hidden;box-shadow:0 6px 28px #173b4209}video{display:block;width:100%;max-height:74vh;background:white;aspect-ratio:16/9}.details{padding:22px 26px}h2{font-size:24px;line-height:1.25;margin:0 0 10px}p{margin:8px 0}.download{display:inline-block;margin-top:10px;padding:8px 14px;border:1px solid #bed0cc;border-radius:7px;text-decoration:none}details{margin-top:25px;color:#597078;font-size:14px}summary{cursor:pointer;color:#173b42;font-weight:600}footer{margin:25px 0;font-size:13px;color:#597078}@media(max-width:600px){main{padding:18px 12px}.details{padding:18px}nav a{font-size:14px;padding:8px 10px}}
+</style>
+</head><body><main>
+<header><p class="eyebrow">Connect Lab · Lecture demonstrations</p>
+<p class="instruction"><a href="/Teaching/#NDS">Teaching / Coordination and Control of Multi-Agent Systems</a></p>
+<h1>Bearing-only formation stabilization</h1>
+<p>Three examples connect the equilibrium and convergence proofs with the motion of four agents.</p>
+<p class="instruction">Tap Play, then use full screen. Return to Goodnotes to continue the lecture. Internet is needed; MP4 downloads are available for offline use.</p></header>
+<nav aria-label="Choose a demonstration"><a href="#typical" data-movie="typical">Typical convergence</a><a href="#near_reflection" data-movie="near_reflection">Near the reflection</a><a href="#reflection" data-movie="reflection">Exact reflection</a></nav>
+<section class="player" aria-labelledby="title">
+<video id="video" controls playsinline preload="metadata" poster="typical_poster.png?v=20261118" src="typical.mp4?v=20261118" aria-label="Bearing-only formation simulation"></video>
+<div class="details"><h2 id="title">Convergence from a distorted formation</h2><p id="description"></p>
+<a class="download" id="download" href="typical.mp4?v=20261118" download>Download MP4</a>
+<p class="instruction">Each silent movie runs for about 33 seconds in 1440p at 30 fps. The first three model seconds play at quarter speed, followed by faster playback to model time 35 s and a final hold. The on-screen clock shows model time.</p></div></section>
+<details><summary>About the examples and measurements</summary>
+<p>The nonlinear controller uses only current bearings and fixed desired bearings in a common frame. Four agents interact on the complete undirected graph K4 with gain one. All three initial configurations share the target centroid and RMS scale. The target is obtained by centering the four positions (-1.5, -0.8), (1.2, -0.9), (1.4, 0.9), and (-1.1, 1.2).</p>
+<p>The two moving examples use the original saved adaptive-integration trajectories. No positions are recentered or rescaled during integration. The third example displays the exact stationary reflected solution rather than allowing floating-point perturbations to move an unstable equilibrium. Colored trails show past motion, dashed edges show the target, and all examples use the same fixed world scale.</p>
+<p>The right panel tracks the stacked bearing and position error norms, their base-10 logarithms, and numerical drift in the centroid and RMS scale. For the exact reflection, the bearing error remains 2 sqrt(6), even though the control is zero.</p>
+<p><a href="checks.json">Numerical and media checks</a> · <a href="movie_render_settings.json">Rendering settings</a> · <a href="../bearing-based-formation-control/">Bearing-based demonstrations</a> · <a href="../directed-formation-control/">Directed formation demonstrations</a></p>
+</details><footer>Daniel Zelazo · Connect Lab, Technion</footer></main>
+<script>
+const movies={
+typical:['Convergence from a distorted formation','A distorted initial formation converges to the unique target selected by its initial centroid and scale. The bearing and position errors decay while the conserved quantities remain fixed to integration accuracy.'],
+near_reflection:['Escape from near the reflected equilibrium','The initial target shape is rotated by 177 degrees about its centroid, placing it near the undesired point reflection. The controller first moves slowly near that equilibrium, then converges to the target.'],
+reflection:['The exact reflected equilibrium','Point reflection about the centroid reverses every bearing. Each projected control term is zero, so the exact formation remains stationary with nonzero bearing error. Compare this with the nearby initial condition to see why the convergence result excludes this single equilibrium.']
+};
+function selectMovie(){
+let key=location.hash.slice(1);if(!Object.prototype.hasOwnProperty.call(movies,key))key='typical';
+const v=document.getElementById('video');v.pause();v.src=key+'.mp4?v=20261118';v.poster=key+'_poster.png?v=20261118';v.setAttribute('aria-label',movies[key][0]);v.load();
+document.getElementById('title').textContent=movies[key][0];document.getElementById('description').textContent=movies[key][1];
+document.getElementById('download').href=key+'.mp4?v=20261118';
+document.querySelectorAll('[data-movie]').forEach(a=>a.setAttribute('aria-current',String(a.dataset.movie===key)));
+}
+window.addEventListener('hashchange',selectMovie);selectMovie();
+</script></body></html>
+

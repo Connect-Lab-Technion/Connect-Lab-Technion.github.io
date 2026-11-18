@@ -1,0 +1,53 @@
+{
+  "typical": {
+    "final_bearing_error": 5.4837977107764725e-11,
+    "final_position_error": 1.252534110102228e-10,
+    "minimum_edge_length": 1.8110770277379296,
+    "maximum_centroid_drift": 1.5242840565028428e-15,
+    "maximum_scale_drift": 4.463762692807904e-12,
+    "exact_stationary_solution": false,
+    "media": {
+      "width": 2560,
+      "height": 1440,
+      "codec_name": "h264",
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration_seconds": 32.533333,
+      "sha256": "9c36524eb11ea4e9261921ca30ac57757fe0466e3f8c2809ec4b7529b3603ee5"
+    }
+  },
+  "near_reflection": {
+    "final_bearing_error": 9.021843449907105e-10,
+    "final_position_error": 2.0608283732149497e-09,
+    "minimum_edge_length": 1.8110770276274832,
+    "maximum_centroid_drift": 9.104505742017336e-16,
+    "maximum_scale_drift": 8.28166424327037e-11,
+    "exact_stationary_solution": false,
+    "media": {
+      "width": 2560,
+      "height": 1440,
+      "codec_name": "h264",
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration_seconds": 32.533333,
+      "sha256": "86e0d14c5bbbece21b60b7049169ca7aca01d6a391770031a35469005e036f75"
+    }
+  },
+  "reflection": {
+    "final_bearing_error": 4.898979485566356,
+    "final_position_error": 6.486909896090742,
+    "minimum_edge_length": 1.8110770276274835,
+    "maximum_centroid_drift": 0.0,
+    "maximum_scale_drift": 0.0,
+    "exact_stationary_solution": true,
+    "media": {
+      "width": 2560,
+      "height": 1440,
+      "codec_name": "h264",
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration_seconds": 32.533333,
+      "sha256": "ccd2507bddf05bf29b203abdb4632fe397825b0d8c5020dfe266ee1bd090c4b3"
+    }
+  }
+}

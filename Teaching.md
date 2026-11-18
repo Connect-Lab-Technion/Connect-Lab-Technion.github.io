@@ -46,6 +46,8 @@ Multi-agent systems are composed of dynamic units that interact through sensing,
 
 [Bearing-based formation control](/courses/multi-agent-systems/bearing-based-formation-control/): explore signed scale and leader placement, compare acceleration feedback, and watch translating and scaling formations in 2D and 3D.
 
+[Bearing-only formation stabilization](/courses/multi-agent-systems/bearing-only-formation-control/): observe convergence from a distorted formation, escape from near the reflected equilibrium, and the exceptional stationary reflection.
+
 Students from multiple Technion faculties are welcome. See the [official course listing](https://www.graduate.technion.ac.il/Subjects.Eng/?Sub=86730), or [contact Daniel](mailto:dzelazo@technion.ac.il) if you do not have a Technion email address.
 
 </div>
