@@ -9,8 +9,7 @@ hide_hero: true
 <div class="publications-index publications-by-type" id="publications-top">
   <header class="publications-hero">
     <p class="publications-kicker">Research output · Connect Lab</p>
-    <h1>Publications<br>by type.</h1>
-    <p class="publications-intro">Browse peer-reviewed articles, conference papers, technical reports, theses, and patents across the lab’s research programme.</p>
+    <h1>Publications.</h1>
     <nav class="publications-view-switch" aria-label="Publication views">
       <a href="{{ '/publications/' | relative_url }}">By year</a>
       <a class="is-active" href="{{ '/publications_by_type/' | relative_url }}">By type</a>
@@ -19,10 +18,7 @@ hide_hero: true
   </header>
 
   <section class="publications-tools" aria-labelledby="publication-search-title">
-    <div>
-      <p class="publications-kicker">Find a work</p>
-      <h2 id="publication-search-title">Search every format.</h2>
-    </div>
+    <h2 id="publication-search-title">Search publications</h2>
     <div class="publications-search-wrap">
       <label class="sr-only" for="publication-search">Search publications</label>
       <input id="publication-search" type="search" placeholder="Title, author, venue, or keyword…" autocomplete="off">

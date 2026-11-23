@@ -10,7 +10,6 @@ hide_hero: true
   <header class="publications-hero">
     <p class="publications-kicker">Research output · Connect Lab</p>
     <h1>Publications.</h1>
-    <p class="publications-intro">Our work develops mathematical foundations for networked and multi-agent systems, from graph structure and geometric control to passivity, resilience, optimization, and robotic validation.</p>
     <nav class="publications-view-switch" aria-label="Publication views">
       <a class="is-active" href="{{ '/publications/' | relative_url }}">By year</a>
       <a href="{{ '/publications_by_type/' | relative_url }}">By type</a>
@@ -19,10 +18,7 @@ hide_hero: true
   </header>
 
   <section class="publications-tools" aria-labelledby="publication-search-title">
-    <div>
-      <p class="publications-kicker">Find a work</p>
-      <h2 id="publication-search-title">Search the catalogue.</h2>
-    </div>
+    <h2 id="publication-search-title">Search publications</h2>
     <div class="publications-search-wrap">
       <label class="sr-only" for="publication-search">Search publications</label>
       <input id="publication-search" type="search" placeholder="Title, author, venue, or keyword…" autocomplete="off">
@@ -36,12 +32,7 @@ hide_hero: true
     <a href="#year-2026">2026</a><a href="#year-2025">2025</a><a href="#year-2024">2024</a><a href="#year-2023">2023</a><a href="#year-2022">2022</a><a href="#publication-archive">Earlier</a>
   </nav>
 
-  <section class="publications-recent" aria-labelledby="recent-publications-title">
-    <div class="publications-section-heading">
-      <p class="publications-kicker">Current work</p>
-      <h2 id="recent-publications-title">Recent publications.</h2>
-    </div>
-
+  <section class="publications-recent" aria-label="Publications by year">
     <section class="publication-year" id="year-2026">
       <div class="publication-year__label"><span>2026</span><a href="#publications-top">Top ↑</a></div>
       <div class="publication-year__list">{% bibliography --query @*[year=2026] --group_by none %}</div>
